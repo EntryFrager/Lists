@@ -20,13 +20,10 @@ enum code_error {                               ///< Error codes.
     ERR_FOPEN,                                  ///< Error opening file.
     ERR_FCLOSE,                                 ///< Error closing file.
     ERR_FREAD,                                  ///< Error when reading text from file.
-    ERR_ARGC,                                   ///< Error reading argument.
-    ERR_LABEL,                                  ///< Error reading label.
-    ERR_RAM,                                    ///< Error when reading an argument associated with RAM.
-    ERR_REG,                                    ///< Error reading register.
-    ERR_COMMAND,                                ///< Error reading command.
-    ERR_INPUT_ARG,                              ///< Invalid argument entered from stream input.
-    ERR_BUF_IP,                                 ///< Buffer out of bounds committed.
+    ERR_DELETE,
+    ERR_MOVE_IP_1,
+    ERR_MOVE_IP_2,
+    ERR_MOVE,
 };
 
 const char* my_strerr (unsigned code_error);    ///< Error return function.
