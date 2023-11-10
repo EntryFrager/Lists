@@ -9,12 +9,13 @@
 
 static int CODE_ERROR = 0;
 
-#define assert_list(list) {                                             \
-    if ((CODE_ERROR = list_verification (list)) != LIST_OK)             \
-    {                                                                   \
-        list_dump (list, CODE_ERROR, __FILE__, __func__, __LINE__);     \
-        abort ();                                                       \
-    }                                                                   \
+#define assert_list(list) {                                                     \
+    if ((CODE_ERROR = list_verification (list)) != LIST_OK)                     \
+    {                                                                           \
+        list_dump_text (list, CODE_ERROR, __FILE__, __func__, __LINE__);        \
+        list_dump_graph_viz (list, CODE_ERROR, __FILE__, __func__, __LINE__);   \
+        abort ();                                                               \
+    }                                                                           \
 }
 
 enum list_code_error {
@@ -28,6 +29,7 @@ enum list_code_error {
     LIST_ERR_DATA,
     LIST_ERR_PTR_DATA,
     LIST_ERR_PTR_FREE,
+    LIST_ERR_CNT_NODE,
 
     LIST_POINTER_GARBAGE,
 
@@ -35,7 +37,7 @@ enum list_code_error {
     FILE_CLOSE_ERR,
 };
 
-const int LIST_ERROR_CNT = 10;
+const int LIST_ERROR_CNT = 13;
 
 typedef int ELEMENT;
 
@@ -79,6 +81,8 @@ void list_deinit (LIST *list);
 
 int list_verification (LIST *list);
 
-void list_dump (LIST *list, const int code_error, const char *file_err, const char *func_err, const int line_err);
+void list_dump_text (LIST *list, const int code_error, const char *file_err, const char *func_err, const int line_err);
+
+void list_dump_graph_viz (LIST *list, const int code_error, const char *file_err, const char *func_err, const int line_err);
 
 #endif //LIST_H

@@ -8,18 +8,19 @@
 #define BACK_GROUND_COLOR "\"#B8860B\""
 
 const char *err_msgs_arr[] = {
-    "ERROR NO.\n",
-    "ERROR: null pointer to list.\n",
-    "ERROR: incorrect list size.\n",
-    "ERROR: invalid pointer to the head of the list.\n",
-    "ERROR: invalid pointer to the tail of the list.\n",
-    "ERROR: invalid pointer to the first free cell in the list.\n",
-    "ERROR: invalid pointer to data array.\n",
-    "ERROR: the connection between the list nodes is broken.\n",
-    "ERROR: the connection between free nodes of the list is broken.\n",
-    "ERROR: your list is full of shit, call init.\n",
-    "ERROR: error when opening file.\n",
-    "ERROR: error when closing file.\n",
+    "ERROR NO.",
+    "ERROR: null pointer to list.",
+    "ERROR: incorrect list size.",
+    "ERROR: invalid pointer to the head of the list.",
+    "ERROR: invalid pointer to the tail of the list.",
+    "ERROR: invalid pointer to the first free cell in the list.",
+    "ERROR: invalid pointer to data array.",
+    "ERROR: the connection between the list nodes is broken.",
+    "ERROR: the connection between free nodes of the list is broken.",
+    "ERROR: the number of nodes is incorrect.",
+    "ERROR: your list is full of shit, call init.",
+    "ERROR: error when opening file.",
+    "ERROR: error when closing file.",
 };
 
 static const int HST_UP = 2;
@@ -40,13 +41,13 @@ LIST *list_init (size_t size)
         if (ip == size)
         {
             list->data[ip].next = 0;
-            list->data[ip].prev = PREV_NO_ELEM;
         }
         else
         {
             list->data[ip].next = ip + 1;
-            list->data[ip].prev = PREV_NO_ELEM;
         }
+
+        list->data[ip].prev = PREV_NO_ELEM;
     }
 
     list->size = size + 1;
@@ -248,6 +249,7 @@ void lineariz_list (LIST *list)
 
     new_data[counter - 1].next = 0;
     list->tail = counter - 1;
+    new_data[0].prev = list->tail;
     ip = list->free;
     list->free = counter;
 
@@ -333,18 +335,50 @@ int list_verification (LIST *list)
         return LIST_ERR_FREE;
     }
 
+    int ip = 0;
+    int counter = 0;
+
+    do {
+        if (list->data[list->data[ip].next].prev == -1)
+        {
+            counter++;
+            break;
+        }
+
+        if (list->data[list->data[ip].next].prev != ip)
+        {
+            return LIST_ERR_PTR_DATA;
+        }
+
+        ip = list->data[ip].next;
+        counter++;
+    } while (ip != 0);
+
+    ip = list->free;
+
+    do {
+        if (list->data[ip].prev != PREV_NO_ELEM)
+        {
+            return LIST_ERR_PTR_FREE;
+        }
+
+        ip = list->data[ip].next;
+        counter++;
+    } while (ip != 0);
+
+    if (counter != list->size)
+    {
+        return LIST_ERR_CNT_NODE;
+    }
+
     return LIST_OK;
 }
 
-void list_dump (LIST *list, const int code_error, const char *file_err, const char *func_err, const int line_err)
+void list_dump_text (LIST *list, const int code_error, const char *file_err, const char *func_err, const int line_err)
 {
     FILE *fp_err = fopen (fp_err_name, "a");
-    FILE *fp_dot = fopen (fp_dot_name, "wb+");
 
-    int weight = 10000;
-    const char *color = WHITE_COLOR;
-
-    if (fp_err == NULL || fp_dot == NULL)
+    if (fp_err == NULL)
     {
         fprintf (stderr, "%s", err_msgs_arr[FILE_OPEN_ERR]);
     }
@@ -353,7 +387,7 @@ void list_dump (LIST *list, const int code_error, const char *file_err, const ch
     {
         if (code_error < LIST_ERROR_CNT)
         {
-            fprintf (fp_err, "%s\n", err_msgs_arr[code_error]);
+            fprintf (fp_err, "%s\n\n", err_msgs_arr[code_error]);
         }
         else
         {
@@ -382,71 +416,6 @@ void list_dump (LIST *list, const int code_error, const char *file_err, const ch
                     fprintf (fp_err, "\t\tdata[%d]->next  = %d\n", ip, list->data[ip].next);
                     fprintf (fp_err, "\t\tdata[%d]->prev  = %d\n", ip, list->data[ip].prev);
                 }
-
-                fprintf (fp_dot, "digraph List {\n");
-                fprintf (fp_dot, "\trankdir = LR;\n");
-                fprintf (fp_dot, "\tnode [shape = record];\n");
-                fprintf (fp_dot, "\tbgcolor = " BACK_GROUND_COLOR ";\n");
-                fprintf (fp_dot, "\t0 -> 0");
-
-                for (int ip = 1; ip < list->size; ip++)
-                {
-                    fprintf (fp_dot, " -> %d", ip);
-                }
-
-                fprintf (fp_dot, " -> head -> tail -> free[arrowsize = 0.0, weight = %d, color = " BACK_GROUND_COLOR "];\n", weight);
-
-                for (int ip = 0; ip < list->size; ip++)
-                {
-                    if (list->data[ip].prev != PREV_NO_ELEM && ip != 0)
-                    {
-                        color = LIGHT_GREEN_COLOR;
-                    }
-                    else if (ip != 0)
-                    {
-                        color = TURQUOISE_COLOR;
-                    }
-                    else
-                    {
-                        color = PURPLE_COLOR;
-                    }
-
-                    fprintf (fp_dot, "\t%d [shape = Mrecord, style = filled, fillcolor = %s, label = \"idx: %d | data: %d | next: %d | prev: %d\"];\n", 
-                             ip, color, ip, list->data[ip].value, list->data[ip].next, list->data[ip].prev);
-                }
-
-                fprintf (fp_dot, "\thead [shape = Mrecord, style = filled, fillcolor = " LIGHT_GREEN_COLOR ", label = \"head: %d\"];\n", list->head);
-                fprintf (fp_dot, "\ttail [shape = Mrecord, style = filled, fillcolor = " LIGHT_GREEN_COLOR ", label = \"tail: %d\"];\n", list->tail);
-                fprintf (fp_dot, "\tfree [shape = Mrecord, style = filled, fillcolor = " TURQUOISE_COLOR ", label = \"free: %d\"];\n", list->free);
-
-                fprintf (fp_dot, "\t0 -> %d\n", list->data[list->head].prev);
-
-                int ip = list->head;
-                
-                fprintf (fp_dot, "\t%d -> %d\n", list->data[ip].prev, ip);
-
-                while (ip != 0)
-                {
-                    fprintf (fp_dot, "\t%d -> %d\n", ip, list->data[ip].next);
-
-                    ip = list->data[ip].next;
-                }
-
-                ip = list->free;
-
-                while (ip != 0)
-                {
-                    fprintf (fp_dot, "\t%d -> %d\n", ip, list->data[ip].next);
-
-                    ip = list->data[ip].next;
-                }
-
-                fprintf (fp_dot, "\thead -> %d\n", list->head);
-                fprintf (fp_dot, "\ttail -> %d\n", list->tail);
-                fprintf (fp_dot, "\tfree -> %d\n", list->free);
-
-                fprintf (fp_dot, "\tlabel = \"list_dump from function %s, List/%s:%d\";\n", func_err, file_err, line_err);
-                fprintf (fp_dot, "\tAll[shape = Mrecord, style = filled, fillcolor = " RED_COLOR ", label = \"size = %d | data_ptr = %p\"];}\n", list->size, list->data);
             }
             
             fprintf (fp_err, "\t}\n");
@@ -457,17 +426,12 @@ void list_dump (LIST *list, const int code_error, const char *file_err, const ch
         }
 
         fprintf (fp_err, "}\n\n-----------------------------------------------------------\n");
-
-        if (fclose (fp_err) != 0 && fclose (fp_dot) != 0)
-        {
-            fprintf (fp_err, "%s", err_msgs_arr[FILE_CLOSE_ERR]);
-        }
     }
     else
     {
         if (code_error < ERROR_CNT)
         {
-            fprintf (fp_err, "%s", err_msgs_arr[code_error]);
+            fprintf (fp_err, "%s\n\n", err_msgs_arr[code_error]);
         }
         else
         {
@@ -475,5 +439,99 @@ void list_dump (LIST *list, const int code_error, const char *file_err, const ch
         }
 
         fprintf (fp_err, "list[NULL] \"list\" called from %s(%d) %s\n", file_err, line_err, func_err);
+    }
+
+    if (fclose (fp_err) != 0)
+    {
+        fprintf (stderr, "%s", err_msgs_arr[FILE_CLOSE_ERR]);
+    }
+}
+
+void list_dump_graph_viz (LIST *list, const int code_error, const char *file_err, const char *func_err, const int line_err)
+{
+    FILE *fp_dot = fopen (fp_dot_name, "wb+");
+
+    if (fp_dot == NULL)
+    {
+        fprintf (stderr, "%s", err_msgs_arr[FILE_OPEN_ERR]);
+    }
+
+    int weight = 10000;
+    const char *color = WHITE_COLOR;
+
+    if (list != NULL)
+    {
+        fprintf (fp_dot, "digraph List {\n");
+        fprintf (fp_dot, "\trankdir = LR;\n");
+        fprintf (fp_dot, "\tnode [shape = record];\n");
+        fprintf (fp_dot, "\tbgcolor = " BACK_GROUND_COLOR ";\n");
+
+        if (code_error != LIST_ERR_SIZE)
+        {
+            fprintf (fp_dot, "\t0 -> 0");
+
+            for (int ip = 1; ip < list->size; ip++)
+            {
+                fprintf (fp_dot, " -> %d", ip);
+            }
+
+            fprintf (fp_dot, " -> head -> tail -> free[arrowsize = 0.0, weight = %d, color = " BACK_GROUND_COLOR "];\n", weight);
+
+            for (int ip = 0; ip < list->size; ip++)
+            {
+                if (list->data[ip].prev != PREV_NO_ELEM && ip != 0)
+                {
+                    color = LIGHT_GREEN_COLOR;
+                }
+                else if (ip != 0)
+                {
+                    color = TURQUOISE_COLOR;
+                }
+                else
+                {
+                    color = PURPLE_COLOR;
+                }
+
+                fprintf (fp_dot, "\t%d [shape = Mrecord, style = filled, fillcolor = %s, label = \"idx: %d | data: %d | next: %d | prev: %d\"];\n", 
+                            ip, color, ip, list->data[ip].value, list->data[ip].next, list->data[ip].prev);
+            }
+        }
+
+        fprintf (fp_dot, "\thead [shape = Mrecord, style = filled, fillcolor = " LIGHT_GREEN_COLOR ", label = \"head: %d\"];\n", list->head);
+        fprintf (fp_dot, "\ttail [shape = Mrecord, style = filled, fillcolor = " LIGHT_GREEN_COLOR ", label = \"tail: %d\"];\n", list->tail);
+        fprintf (fp_dot, "\tfree [shape = Mrecord, style = filled, fillcolor = " TURQUOISE_COLOR ", label = \"free: %d\"];\n", list->free);
+
+        int ip = 0;
+        
+        do
+        {
+            fprintf (fp_dot, "\t%d -> %d\n", ip, list->data[ip].next);
+
+            ip = list->data[ip].next;
+        } while (ip != 0);
+
+        if (code_error != LIST_ERR_FREE)
+        {
+            ip = list->free;
+
+            while (ip != 0)
+            {
+                fprintf (fp_dot, "\t%d -> %d\n", ip, list->data[ip].next);
+
+                ip = list->data[ip].next;
+            }
+        }
+
+        fprintf (fp_dot, "\thead -> %d\n", list->head);
+        fprintf (fp_dot, "\ttail -> %d\n", list->tail);
+        fprintf (fp_dot, "\tfree -> %d\n", list->free);
+
+        fprintf (fp_dot, "\tlabel = \"list_dump from function %s, List/%s:%d\";\n", func_err, file_err, line_err);
+        fprintf (fp_dot, "\tAll[shape = Mrecord, style = filled, fillcolor = " RED_COLOR ", label = \"size = %d | data_ptr = %p\"];}\n", list->size, list->data);
+    }
+
+    if (fclose (fp_dot) != 0)
+    {
+        fprintf (stderr, "%s", err_msgs_arr[FILE_CLOSE_ERR]);
     }
 }

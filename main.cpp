@@ -19,13 +19,13 @@ int main ()
 
     list_insert_elem_after (list, 400, 9);
 
-    printf ("%d", list_get_elem_ip (list, 11));
+    printf ("%d\n", list_get_elem_ip (list, 11));
 
     lineariz_list (list);
 
-    printf ("%d", list_get_elem_ip (list, 11));
+    printf ("%d\n", list_get_elem_ip (list, 11));
 
-    list_dump (list, 4, __FILE__, __func__, __LINE__);
+    list_dump_graph_viz (list, 4, __FILE__, __func__, __LINE__);
 
     list_print (list);
 
