@@ -1,0 +1,474 @@
+ERROR: invalid pointer to the first free cell in the list.
+
+list[00A9C7C0] "list" called from list.cpp(86) list_insert_elem
+{
+	size = 6
+	head = 1
+	tail = 5
+	free = 0
+	data[00A9BC28]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = 5
+		data[1]->value = 1
+		data[1]->next  = 2
+		data[1]->prev  = 0
+		data[2]->value = 2
+		data[2]->next  = 3
+		data[2]->prev  = 1
+		data[3]->value = 3
+		data[3]->next  = 4
+		data[3]->prev  = 2
+		data[4]->value = 4
+		data[4]->next  = 5
+		data[4]->prev  = 3
+		data[5]->value = 5
+		data[5]->next  = 0
+		data[5]->prev  = 4
+	}
+}
+
+-----------------------------------------------------------
+ERROR: invalid pointer to the first free cell in the list.
+
+list[0112C7C0] "list" called from list.cpp(86) list_insert_elem
+{
+	size = 6
+	head = 1
+	tail = 5
+	free = 0
+	data[0112BC28]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = 5
+		data[1]->value = 1
+		data[1]->next  = 2
+		data[1]->prev  = 0
+		data[2]->value = 2
+		data[2]->next  = 3
+		data[2]->prev  = 1
+		data[3]->value = 3
+		data[3]->next  = 4
+		data[3]->prev  = 2
+		data[4]->value = 4
+		data[4]->next  = 5
+		data[4]->prev  = 3
+		data[5]->value = 5
+		data[5]->next  = 0
+		data[5]->prev  = 4
+	}
+}
+
+-----------------------------------------------------------
+ERROR: the number of nodes is incorrect.
+
+list[010BC7C0] "list" called from list.cpp(59) list_init
+{
+	size = 6
+	head = 1
+	tail = 0
+	free = 1
+	data[010BBC28]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = -1
+		data[1]->value = 0
+		data[1]->next  = 2
+		data[1]->prev  = -1
+		data[2]->value = 0
+		data[2]->next  = 3
+		data[2]->prev  = -1
+		data[3]->value = 0
+		data[3]->next  = 4
+		data[3]->prev  = -1
+		data[4]->value = 0
+		data[4]->next  = 5
+		data[4]->prev  = -1
+		data[5]->value = 0
+		data[5]->next  = 0
+		data[5]->prev  = -1
+	}
+}
+
+-----------------------------------------------------------
+ERROR: invalid pointer to the first free cell in the list.
+
+list[008EC7C0] "list" called from list.cpp(86) list_insert_elem
+{
+	size = 6
+	head = 1
+	tail = 5
+	free = 0
+	data[008EBC28]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = 5
+		data[1]->value = 1
+		data[1]->next  = 2
+		data[1]->prev  = 0
+		data[2]->value = 2
+		data[2]->next  = 3
+		data[2]->prev  = 1
+		data[3]->value = 3
+		data[3]->next  = 4
+		data[3]->prev  = 2
+		data[4]->value = 4
+		data[4]->next  = 5
+		data[4]->prev  = 3
+		data[5]->value = 5
+		data[5]->next  = 0
+		data[5]->prev  = 4
+	}
+}
+
+-----------------------------------------------------------
+ERROR: invalid pointer to the first free cell in the list.
+
+list[0127C7C0] "list" called from list.cpp(86) list_insert_elem
+{
+	size = 6
+	head = 1
+	tail = 5
+	free = 0
+	data[0127BC28]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = 5
+		data[1]->value = 1
+		data[1]->next  = 2
+		data[1]->prev  = 0
+		data[2]->value = 2
+		data[2]->next  = 3
+		data[2]->prev  = 1
+		data[3]->value = 3
+		data[3]->next  = 4
+		data[3]->prev  = 2
+		data[4]->value = 4
+		data[4]->next  = 5
+		data[4]->prev  = 3
+		data[5]->value = 5
+		data[5]->next  = 0
+		data[5]->prev  = 4
+	}
+}
+
+-----------------------------------------------------------
+ERROR: invalid pointer to the first free cell in the list.
+
+list[010DC7C0] "list" called from list.cpp(90) list_insert_elem
+{
+	size = 6
+	head = 1
+	tail = 5
+	free = 0
+	data[010DBC28]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = 5
+		data[1]->value = 1
+		data[1]->next  = 2
+		data[1]->prev  = 0
+		data[2]->value = 2
+		data[2]->next  = 3
+		data[2]->prev  = 1
+		data[3]->value = 3
+		data[3]->next  = 4
+		data[3]->prev  = 2
+		data[4]->value = 4
+		data[4]->next  = 5
+		data[4]->prev  = 3
+		data[5]->value = 5
+		data[5]->next  = 0
+		data[5]->prev  = 4
+	}
+}
+
+-----------------------------------------------------------
+ERROR: invalid pointer to the first free cell in the list.
+
+list[00FCC7C0] "list" called from list.cpp(90) list_insert_elem
+{
+	size = 6
+	head = 1
+	tail = 5
+	free = 0
+	data[00FCBC28]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = 5
+		data[1]->value = 1
+		data[1]->next  = 2
+		data[1]->prev  = 0
+		data[2]->value = 2
+		data[2]->next  = 3
+		data[2]->prev  = 1
+		data[3]->value = 3
+		data[3]->next  = 4
+		data[3]->prev  = 2
+		data[4]->value = 4
+		data[4]->next  = 5
+		data[4]->prev  = 3
+		data[5]->value = 5
+		data[5]->next  = 0
+		data[5]->prev  = 4
+	}
+}
+
+-----------------------------------------------------------
+ERROR: the number of nodes is incorrect.
+
+list[001FC7C0] "list" called from list.cpp(259) lineariz_list
+{
+	size = 12
+	head = 1
+	tail = 8
+	free = 9
+	data[001FD218]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = 8
+		data[1]->value = 1
+		data[1]->next  = 2
+		data[1]->prev  = 0
+		data[2]->value = 2
+		data[2]->next  = 3
+		data[2]->prev  = 1
+		data[3]->value = 3
+		data[3]->next  = 4
+		data[3]->prev  = 2
+		data[4]->value = 300
+		data[4]->next  = 5
+		data[4]->prev  = 3
+		data[5]->value = 4
+		data[5]->next  = 6
+		data[5]->prev  = 4
+		data[6]->value = 200
+		data[6]->next  = 7
+		data[6]->prev  = 5
+		data[7]->value = 5
+		data[7]->next  = 8
+		data[7]->prev  = 6
+		data[8]->value = 6
+		data[8]->next  = 0
+		data[8]->prev  = 7
+		data[9]->value = 0
+		data[9]->next  = 0
+		data[9]->prev  = -1
+		data[10]->value = 0
+		data[10]->next  = 0
+		data[10]->prev  = 0
+		data[11]->value = 0
+		data[11]->next  = 0
+		data[11]->prev  = 0
+	}
+}
+
+-----------------------------------------------------------
+ERROR: the number of nodes is incorrect.
+
+list[0112C7C0] "list" called from list.cpp(259) lineariz_list
+{
+	size = 12
+	head = 1
+	tail = 8
+	free = 9
+	data[0112E220]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = 8
+		data[1]->value = 1
+		data[1]->next  = 2
+		data[1]->prev  = 0
+		data[2]->value = 2
+		data[2]->next  = 3
+		data[2]->prev  = 1
+		data[3]->value = 3
+		data[3]->next  = 4
+		data[3]->prev  = 2
+		data[4]->value = 300
+		data[4]->next  = 5
+		data[4]->prev  = 3
+		data[5]->value = 4
+		data[5]->next  = 6
+		data[5]->prev  = 4
+		data[6]->value = 200
+		data[6]->next  = 7
+		data[6]->prev  = 5
+		data[7]->value = 5
+		data[7]->next  = 8
+		data[7]->prev  = 6
+		data[8]->value = 6
+		data[8]->next  = 0
+		data[8]->prev  = 7
+		data[9]->value = 0
+		data[9]->next  = 0
+		data[9]->prev  = -1
+		data[10]->value = 0
+		data[10]->next  = 0
+		data[10]->prev  = 0
+		data[11]->value = 0
+		data[11]->next  = 0
+		data[11]->prev  = 0
+	}
+}
+
+-----------------------------------------------------------
+ERROR: the number of nodes is incorrect.
+
+list[0111C7C0] "list" called from list.cpp(261) lineariz_list
+{
+	size = 12
+	head = 1
+	tail = 8
+	free = 9
+	data[0111E220]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = 8
+		data[1]->value = 1
+		data[1]->next  = 2
+		data[1]->prev  = 0
+		data[2]->value = 2
+		data[2]->next  = 3
+		data[2]->prev  = 1
+		data[3]->value = 3
+		data[3]->next  = 4
+		data[3]->prev  = 2
+		data[4]->value = 300
+		data[4]->next  = 5
+		data[4]->prev  = 3
+		data[5]->value = 4
+		data[5]->next  = 6
+		data[5]->prev  = 4
+		data[6]->value = 200
+		data[6]->next  = 7
+		data[6]->prev  = 5
+		data[7]->value = 5
+		data[7]->next  = 8
+		data[7]->prev  = 6
+		data[8]->value = 6
+		data[8]->next  = 0
+		data[8]->prev  = 7
+		data[9]->value = 0
+		data[9]->next  = 0
+		data[9]->prev  = -1
+		data[10]->value = 0
+		data[10]->next  = 0
+		data[10]->prev  = 0
+		data[11]->value = 0
+		data[11]->next  = 0
+		data[11]->prev  = 0
+	}
+}
+
+-----------------------------------------------------------
+ERROR: the number of nodes is incorrect.
+
+list[0108C7C0] "list" called from list.cpp(261) lineariz_list
+{
+	size = 12
+	head = 1
+	tail = 8
+	free = 9
+	data[0108E220]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = 8
+		data[1]->value = 1
+		data[1]->next  = 2
+		data[1]->prev  = 0
+		data[2]->value = 2
+		data[2]->next  = 3
+		data[2]->prev  = 1
+		data[3]->value = 3
+		data[3]->next  = 4
+		data[3]->prev  = 2
+		data[4]->value = 300
+		data[4]->next  = 5
+		data[4]->prev  = 3
+		data[5]->value = 4
+		data[5]->next  = 6
+		data[5]->prev  = 4
+		data[6]->value = 200
+		data[6]->next  = 7
+		data[6]->prev  = 5
+		data[7]->value = 5
+		data[7]->next  = 8
+		data[7]->prev  = 6
+		data[8]->value = 6
+		data[8]->next  = 0
+		data[8]->prev  = 7
+		data[9]->value = 0
+		data[9]->next  = 0
+		data[9]->prev  = -1
+		data[10]->value = 0
+		data[10]->next  = 0
+		data[10]->prev  = 0
+		data[11]->value = 0
+		data[11]->next  = 0
+		data[11]->prev  = 0
+	}
+}
+
+-----------------------------------------------------------
+ERROR: the number of nodes is incorrect.
+
+list[0112C7C0] "list" called from list.cpp(261) lineariz_list
+{
+	size = 12
+	head = 1
+	tail = 8
+	free = 9
+	data[0112E220]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = 8
+		data[1]->value = 1
+		data[1]->next  = 2
+		data[1]->prev  = 0
+		data[2]->value = 2
+		data[2]->next  = 3
+		data[2]->prev  = 1
+		data[3]->value = 3
+		data[3]->next  = 4
+		data[3]->prev  = 2
+		data[4]->value = 300
+		data[4]->next  = 5
+		data[4]->prev  = 3
+		data[5]->value = 4
+		data[5]->next  = 6
+		data[5]->prev  = 4
+		data[6]->value = 200
+		data[6]->next  = 7
+		data[6]->prev  = 5
+		data[7]->value = 5
+		data[7]->next  = 8
+		data[7]->prev  = 6
+		data[8]->value = 6
+		data[8]->next  = 0
+		data[8]->prev  = 7
+		data[9]->value = 0
+		data[9]->next  = 0
+		data[9]->prev  = -1
+		data[10]->value = 0
+		data[10]->next  = 0
+		data[10]->prev  = 0
+		data[11]->value = 0
+		data[11]->next  = 0
+		data[11]->prev  = 0
+	}
+}
+
+-----------------------------------------------------------

@@ -65,7 +65,7 @@ void list_insert_elem (LIST *list, const int value)
 {
     assert_list (list);
 
-    if (list_get_elem_ip (list, list->free) == (list->size - 1))
+    if (list->free == (list->size - 1))
     {
         list_realloc (list);
     }
@@ -95,7 +95,7 @@ int list_insert_elem_after (LIST *list, const int value, int ip)
         return ERR_INSERT;
     }
 
-    if (list_get_elem_ip (list, list->free) == (list->size - 1))
+    if (list->free == (list->size - 1))
     {
         list_realloc (list);
     }
@@ -108,6 +108,11 @@ int list_insert_elem_after (LIST *list, const int value, int ip)
     }
     else
     {
+        if (ip == 0)
+        {
+            list->head = list->free;
+        }
+
         int free_next = list->data[list->free].next;
 
         list->data[list->free].value = value;
@@ -163,10 +168,17 @@ int list_get_elem_ip (LIST *list, int ip)
     my_assert (ip >= 0 && ip < list->size);
 
     int ip_pos = list->head;
-    
-    for (int counter = 0; counter < ip - 1; counter++)
+
+    if (ip == 0)
     {
-        ip_pos = list->data[ip_pos].next;
+        ip_pos = ip;
+    }
+    else
+    {
+        for (int counter = 0; counter < ip - 1; counter++)
+        {
+            ip_pos = list->data[ip_pos].next;
+        }
     }
 
     return ip_pos;
@@ -258,14 +270,12 @@ void list_print (LIST *list)
 
     int ip = list->head;
 
-    while (list->data[ip].next != 0)
+    while (ip != 0)
     {
         printf ("%d\n", list->data[ip].value);
 
         ip = list->data[ip].next;
     }
-
-    printf ("%d\n", list->data[ip].value);
 }
 
 void list_deinit (LIST *list)
@@ -340,17 +350,21 @@ int list_verification (LIST *list)
         counter++;
     } while (ip != 0);
 
-    ip = list->free;
 
-    do {
-        if (list->data[ip].prev != PREV_NO_ELEM)
-        {
-            return LIST_ERR_PTR_FREE;
-        }
+    if (list->free > 0)
+    {
+        ip = list->free;
+        
+        do {
+            if (list->data[ip].prev != PREV_NO_ELEM)
+            {
+                return LIST_ERR_PTR_FREE;
+            }
 
-        ip = list->data[ip].next;
-        counter++;
-    } while (ip != 0);
+            ip = list->data[ip].next;
+            counter++;
+        } while (ip != 0);
+    }
 
     if (counter != list->size)
     {
