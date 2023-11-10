@@ -9,6 +9,14 @@
 
 static int CODE_ERROR = 0;
 
+#define DEBUG                                                                               ///< Macro for program debugging.
+
+#ifdef DEBUG
+    #define CHECK_ERROR(code_error) if (code_error != ERR_NO) fprintf (stderr, "\x1b[31m%s\x1b[0m", my_strerr (code_error));
+#else
+    #define CHECK_ERROR(...)
+#endif
+
 #define assert_list(list) {                                                     \
     if ((CODE_ERROR = list_verification (list)) != LIST_OK)                     \
     {                                                                           \
@@ -61,15 +69,15 @@ typedef struct LIST {
     int free = LIST_VALUE_VENOM;
 } LIST;
 
-LIST *list_init (size_t size);
+LIST *list_init (const size_t size);
 
-void list_insert_elem (LIST *list, int value);
+void list_insert_elem (LIST *list, const int value);
 
-int list_insert_elem_after (LIST *list, int value, int ip);
+int list_insert_elem_after (LIST *list, const int value, int ip);
 
-int list_delete_elem (LIST *list, int ip);
+int list_delete_elem (LIST *list, const int ip);
 
-int list_get_elem_ip (LIST *list, int ip);
+int list_get_elem_ip (LIST *list, const int ip);
 
 void list_realloc (LIST *list);
 

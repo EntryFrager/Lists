@@ -11,13 +11,13 @@ int main ()
 
     list_delete_elem (list, list->tail);
 
-    list_insert_elem_after (list, 100, 0);
+    CHECK_ERROR (list_insert_elem_after (list, 100, 0));
 
-    list_insert_elem_after (list, 300, 3);
+    CHECK_ERROR (list_insert_elem_after (list, 300, 3));
 
-    list_insert_elem_after (list, 200, 5);
+    CHECK_ERROR (list_insert_elem_after (list, 200, 5));
 
-    list_insert_elem_after (list, 400, 9);
+    CHECK_ERROR (list_insert_elem_after (list, 400, 9));
 
     printf ("%d\n", list_get_elem_ip (list, 11));
 

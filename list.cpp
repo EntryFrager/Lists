@@ -28,8 +28,9 @@ static const int HST_UP = 2;
 static const char *fp_err_name = "file_err.txt";
 static const char *fp_dot_name = "dump.dot";
 
-LIST *list_init (size_t size)
-{    
+LIST *list_init (const size_t size)
+{
+    my_assert (size > 0);
     LIST *list = (LIST *) calloc (1, sizeof (LIST));
     my_assert (list != NULL);
 
@@ -60,7 +61,7 @@ LIST *list_init (size_t size)
     return list;
 }
 
-void list_insert_elem (LIST *list, int value)
+void list_insert_elem (LIST *list, const int value)
 {
     assert_list (list);
 
@@ -85,7 +86,7 @@ void list_insert_elem (LIST *list, int value)
     assert_list (list);
 }
 
-int list_insert_elem_after (LIST *list, int value, int ip)
+int list_insert_elem_after (LIST *list, const int value, int ip)
 {
     assert_list (list);
 
@@ -138,7 +139,7 @@ int list_insert_elem_after (LIST *list, int value, int ip)
     return ERR_NO;
 }
 
-int list_delete_elem (LIST *list, int ip)
+int list_delete_elem (LIST *list, const int ip)
 {
     assert_list (list);
 
