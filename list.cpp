@@ -65,7 +65,7 @@ void list_insert_elem (LIST *list, const int value)
 {
     assert_list (list);
 
-    if (list->free == (list->size - 1))
+    if (list_get_elem_ip (list, list->free) == (list->size - 1))
     {
         list_realloc (list);
     }
@@ -95,26 +95,12 @@ int list_insert_elem_after (LIST *list, const int value, int ip)
         return ERR_INSERT;
     }
 
-    if (list->free == (list->size - 1))
+    if (list_get_elem_ip (list, list->free) == (list->size - 1))
     {
         list_realloc (list);
     }
 
-    int ip_pos = list->head;
-
-    for (int counter = 1; counter < ip; counter++)
-    {
-        ip_pos = list->data[ip_pos].next;
-    }
-
-    if (ip != 0)
-    {
-        ip = ip_pos;
-    }
-    else
-    {
-        list->head = list->free;
-    }
+    ip = list_get_elem_ip (list, ip);
 
     if (ip == list->tail)
     {
@@ -139,7 +125,7 @@ int list_insert_elem_after (LIST *list, const int value, int ip)
     return ERR_NO;
 }
 
-int list_delete_elem (LIST *list, const int ip)
+int list_delete_elem (LIST *list, int ip)
 {
     assert_list (list);
 
@@ -148,22 +134,19 @@ int list_delete_elem (LIST *list, const int ip)
         return ERR_DELETE;
     }
 
+    ip = list_get_elem_ip (list, ip);
+
     if (ip == list->head)
     {
         list->head = list->data[list->head].next;
     }
-
-    list->data[list->data[ip].prev].next = list->data[ip].next;
-
-    if (ip != list->tail)
-    {
-        list->data[list->data[ip].next].prev = list->data[ip].prev;
-    }
-    else
+    else if (ip == list->tail)
     {
         list->tail = list->data[list->tail].prev;
-        list->data[0].prev = list->tail;
     }
+
+    list->data[list->data[ip].next].prev = list->data[ip].prev;
+    list->data[list->data[ip].prev].next = list->data[ip].next;
 
     list->data[ip].prev = PREV_NO_ELEM;
     list->data[ip].next = list->free;
@@ -186,7 +169,7 @@ int list_get_elem_ip (LIST *list, int ip)
         ip_pos = list->data[ip_pos].next;
     }
 
-    return list->data[ip_pos].value;
+    return ip_pos;
 }
 
 void list_realloc (LIST *list)
@@ -207,7 +190,7 @@ void list_realloc (LIST *list)
 
     list->data[last_free].next = list->size;
 
-    for (int ip = list->size; ip < size; ip++)
+    for (int ip = list->size - 1; ip < size; ip++)
     {
         if (ip == size - 1)
         {
@@ -298,6 +281,8 @@ void list_deinit (LIST *list)
     list->tail = LIST_VALUE_VENOM;
     list->free = LIST_VALUE_VENOM;
 }
+
+#ifdef DEBUG
 
 int list_verification (LIST *list)
 {
@@ -450,7 +435,7 @@ void list_dump_text (LIST *list, const int code_error, const char *file_err, con
 
 void list_dump_graph_viz (LIST *list, const int code_error, const char *file_err, const char *func_err, const int line_err)
 {
-    FILE *fp_dot = fopen (fp_dot_name, "wb+");
+    FILE *fp_dot  = fopen (fp_dot_name, "wb+");
 
     if (fp_dot == NULL)
     {
@@ -535,4 +520,8 @@ void list_dump_graph_viz (LIST *list, const int code_error, const char *file_err
     {
         fprintf (stderr, "%s", err_msgs_arr[FILE_CLOSE_ERR]);
     }
+
+    system ("dot -Tsvg dump.dot -o dot.svg");
 }
+
+#endif

@@ -17,14 +17,16 @@ static int CODE_ERROR = 0;
     #define CHECK_ERROR(...)
 #endif
 
-#define assert_list(list) {                                                     \
-    if ((CODE_ERROR = list_verification (list)) != LIST_OK)                     \
-    {                                                                           \
-        list_dump_text (list, CODE_ERROR, __FILE__, __func__, __LINE__);        \
-        list_dump_graph_viz (list, CODE_ERROR, __FILE__, __func__, __LINE__);   \
-        abort ();                                                               \
-    }                                                                           \
-}
+#ifdef DEBUG
+    #define assert_list(list) {                                                     \
+        if ((CODE_ERROR = list_verification (list)) != LIST_OK)                     \
+        {                                                                           \
+            list_dump_text (list, CODE_ERROR, __FILE__, __func__, __LINE__);        \
+            list_dump_graph_viz (list, CODE_ERROR, __FILE__, __func__, __LINE__);   \
+            abort ();                                                               \
+        }                                                                           \
+    }
+#endif
 
 enum list_code_error {
     LIST_OK,
@@ -87,10 +89,12 @@ void list_print (LIST *list);
 
 void list_deinit (LIST *list);
 
-int list_verification (LIST *list);
+#ifdef DEBUG
+    int list_verification (LIST *list);
 
-void list_dump_text (LIST *list, const int code_error, const char *file_err, const char *func_err, const int line_err);
+    void list_dump_text (LIST *list, const int code_error, const char *file_err, const char *func_err, const int line_err);
 
-void list_dump_graph_viz (LIST *list, const int code_error, const char *file_err, const char *func_err, const int line_err);
+    void list_dump_graph_viz (LIST *list, const int code_error, const char *file_err, const char *func_err, const int line_err);
+#endif
 
 #endif //LIST_H
