@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "error.h"
+#include "include\error.h"
 
 static int CODE_ERROR = 0;
 
@@ -26,8 +26,8 @@ enum list_code_error {
     LIST_ERR_FREE,
 
     LIST_ERR_DATA,
-    LIST_ERR_NEXT,
-    LIST_ERR_PREV,
+    LIST_ERR_PTR_DATA,
+    LIST_ERR_PTR_FREE,
 
     LIST_POINTER_GARBAGE,
 
@@ -35,7 +35,7 @@ enum list_code_error {
     FILE_CLOSE_ERR,
 };
 
-const int LIST_ERROR_CNT = 14;
+const int LIST_ERROR_CNT = 10;
 
 typedef int ELEMENT;
 
@@ -43,10 +43,14 @@ const ELEMENT LIST_VALUE_VENOM = -100000;
 
 const int PREV_NO_ELEM = -1;
 
+typedef struct {
+    int value = LIST_VALUE_VENOM;
+    int next = LIST_VALUE_VENOM;
+    int prev = LIST_VALUE_VENOM;
+} NODE;
+
 typedef struct LIST {
-    int *data = NULL;
-    int *next = NULL;
-    int *prev = NULL;
+    NODE *data = {};
 
     int size = LIST_VALUE_VENOM;
     
@@ -59,9 +63,15 @@ LIST *list_init (size_t size);
 
 void list_insert_elem (LIST *list, int value);
 
+int list_insert_elem_after (LIST *list, int value, int ip);
+
 int list_delete_elem (LIST *list, int ip);
 
+int list_get_elem_ip (LIST *list, int ip);
+
 void list_realloc (LIST *list);
+
+void lineariz_list (LIST *list);
 
 void list_print (LIST *list);
 

@@ -15,7 +15,7 @@ OBJECTS = $(SOURCES:.cpp=.o)
 
 EXECUTABLE = list
 
-VPATH = \include
+VPATH = include\
 
 all: $(SOURCES) $(INCLUDES) $(EXECUTABLE)
 
