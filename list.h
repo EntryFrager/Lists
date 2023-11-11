@@ -89,6 +89,8 @@ void list_realloc (LIST *list);
 
 void lineariz_list (LIST *list);
 
+void list_move_elem (LIST *list, int ip_1, int ip_2);
+
 void list_print (LIST *list);
 
 void list_deinit (LIST *list);

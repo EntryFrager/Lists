@@ -280,6 +280,96 @@ void lineariz_list (LIST *list)
     assert_list (list);
 }
 
+void list_move_elem (LIST *list, int ip_1, int ip_2)
+{
+    assert_list (list);
+
+    int ip_pos_1 = list_get_elem_ip (list, ip_1);
+    int ip_pos_2 = list_get_elem_ip (list, ip_2);
+
+    NODE *node_first  = &list->data[ip_pos_1];
+    NODE *node_second = &list->data[ip_pos_2];
+
+    int prev_first  = node_first->prev;
+    int next_first  = node_first->next;
+    int prev_second = node_second->prev;
+    int next_second = node_second->next;
+    printf ("%d %d %d %d\n", prev_first, next_first, prev_second, next_second);
+
+    if (next_first == ip_pos_2)
+    {
+        node_first->prev = ip_pos_2;
+        node_first->next = next_second;
+
+        node_second->prev = prev_first;
+        node_second->next = ip_pos_1;
+
+        if (ip_pos_1 != list->head)
+        {
+            list->data[prev_first].next = ip_pos_2;
+        }
+
+        if (ip_pos_2 != list->tail)
+        {
+            list->data[next_second].prev = ip_pos_1;
+        }
+    }
+    else if (next_second == ip_pos_1)
+    {
+        node_first->prev = prev_second;
+        node_first->next = ip_pos_2;
+
+        node_second->prev = ip_pos_1;
+        node_second->next = next_first;
+
+        if (ip_pos_2 != list->head)
+        {
+            list->data[next_second].prev = ip_pos_1;
+        }
+
+        if (ip_pos_1 != list->tail)
+        {
+            list->data[prev_first].next = ip_pos_2;
+        }
+    }
+    else
+    {
+        list->data[prev_first].next = ip_pos_2;
+        list->data[prev_second].next = ip_pos_1;
+
+        node_first->prev = prev_second;
+        node_first->next = next_second;
+
+        node_second->prev = prev_first;
+        node_second->next = next_first;
+
+        list->data[next_first].prev = ip_pos_2;
+        list->data[next_second].prev = ip_pos_1;
+    }
+
+    if (ip_pos_1 == list->head)
+    {
+        list->head = ip_pos_2;
+    }
+    else if (ip_pos_2 == list->head)
+    {
+        list->head = ip_pos_1;
+    }
+    
+    if (ip_pos_1 == list->tail)
+    {
+        list->tail = ip_pos_2;
+    }
+    else if (ip_pos_2 == list->tail)
+    {
+        list->tail = ip_pos_1;
+    }
+
+    list->list_linear = LIST_NO_LINEAR;
+
+    assert_list (list);
+}
+
 void list_print (LIST *list)
 {
     assert_list (list);
