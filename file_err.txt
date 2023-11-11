@@ -472,3 +472,61 @@ list[0112C7C0] "list" called from list.cpp(261) lineariz_list
 }
 
 -----------------------------------------------------------
+ERROR: the connection between free nodes of the list is broken.
+
+list[007AFEE8] "list" called from list.cpp(58) list_init
+{
+	size = 5
+	head = 1
+	tail = 0
+	free = 1
+	data[011CBC28]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = -1
+		data[1]->value = 0
+		data[1]->next  = 2
+		data[1]->prev  = -1
+		data[2]->value = 0
+		data[2]->next  = 3
+		data[2]->prev  = -1
+		data[3]->value = 0
+		data[3]->next  = 4
+		data[3]->prev  = -1
+		data[4]->value = 0
+		data[4]->next  = 5
+		data[4]->prev  = -1
+	}
+}
+
+-----------------------------------------------------------
+ERROR: the connection between free nodes of the list is broken.
+
+list[007AFEE8] "list" called from list.cpp(58) list_init
+{
+	size = 5
+	head = 1
+	tail = 0
+	free = 1
+	data[0107BC28]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = -1
+		data[1]->value = 0
+		data[1]->next  = 2
+		data[1]->prev  = -1
+		data[2]->value = 0
+		data[2]->next  = 3
+		data[2]->prev  = -1
+		data[3]->value = 0
+		data[3]->next  = 4
+		data[3]->prev  = -1
+		data[4]->value = 0
+		data[4]->next  = 5
+		data[4]->prev  = -1
+	}
+}
+
+-----------------------------------------------------------

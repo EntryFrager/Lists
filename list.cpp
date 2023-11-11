@@ -28,18 +28,17 @@ static const int HST_UP = 2;
 static const char *fp_err_name = "file_err.txt";
 static const char *fp_dot_name = "dump.dot";
 
-LIST *list_init (const size_t size)
+LIST *list_init (LIST *list, const size_t size)
 {
     my_assert (size > 0);
-    LIST *list = (LIST *) calloc (1, sizeof (LIST));
     my_assert (list != NULL);
 
-    list->data = (NODE *) calloc ((size + 1), sizeof (NODE));
+    list->data = (NODE *) calloc (size, sizeof (NODE));
     my_assert (list->data != NULL);
 
-    for (size_t ip = 0; ip < size + 1; ip++)
+    for (size_t ip = 0; ip < size; ip++)
     {
-        if (ip == size)
+        if (ip == size - 1)
         {
             list->data[ip].next = 0;
         }
@@ -51,10 +50,12 @@ LIST *list_init (const size_t size)
         list->data[ip].prev = PREV_NO_ELEM;
     }
 
-    list->size = size + 1;
+    list->size = size;
     list->head = 1;
     list->tail = 0;
     list->free = 1;
+
+    list->list_linear = LIST_LINEAR;
 
     assert_list (list);
 
@@ -108,6 +109,8 @@ int list_insert_elem_after (LIST *list, const int value, int ip)
     }
     else
     {
+        list->list_linear = LIST_NO_LINEAR;
+
         if (ip == 0)
         {
             list->head = list->free;
@@ -157,6 +160,11 @@ int list_delete_elem (LIST *list, int ip)
     list->data[ip].next = list->free;
     list->free = ip;
 
+    if (ip != list->tail)
+    {
+        list->list_linear = LIST_NO_LINEAR;
+    }
+
     assert_list (list);
 
     return ERR_NO;
@@ -169,15 +177,22 @@ int list_get_elem_ip (LIST *list, int ip)
 
     int ip_pos = list->head;
 
-    if (ip == 0)
+    if (list->list_linear)
     {
         ip_pos = ip;
     }
     else
     {
-        for (int counter = 0; counter < ip - 1; counter++)
+        if (ip == 0)
         {
-            ip_pos = list->data[ip_pos].next;
+            ip_pos = ip;
+        }
+        else
+        {
+            for (int counter = 0; counter < ip - 1; counter++)
+            {
+                ip_pos = list->data[ip_pos].next;
+            }
         }
     }
 
@@ -202,7 +217,7 @@ void list_realloc (LIST *list)
 
     list->data[last_free].next = list->size;
 
-    for (int ip = list->size - 1; ip < size; ip++)
+    for (int ip = list->size; ip < size; ip++)
     {
         if (ip == size - 1)
         {
@@ -214,7 +229,7 @@ void list_realloc (LIST *list)
         }
 
         list->data[ip].value = 0;
-        list->data[ip].prev  = -1;
+        list->data[ip].prev  = PREV_NO_ELEM;
     }
 
     list->size = size;
@@ -260,6 +275,7 @@ void lineariz_list (LIST *list)
     new_data[counter - 1].next = 0;
 
     list->data = new_data;
+    list->list_linear = LIST_LINEAR;
 
     assert_list (list);
 }
@@ -286,10 +302,13 @@ void list_deinit (LIST *list)
 
     list->data = NULL;
 
-    list->size = LIST_VALUE_VENOM;
-    list->head = LIST_VALUE_VENOM;
-    list->tail = LIST_VALUE_VENOM;
-    list->free = LIST_VALUE_VENOM;
+    list->size        = LIST_VALUE_VENOM;
+    list->head        = LIST_VALUE_VENOM;
+    list->tail        = LIST_VALUE_VENOM;
+    list->free        = LIST_VALUE_VENOM;
+    list->list_linear = LIST_VALUE_VENOM;
+
+    list = NULL;
 }
 
 #ifdef DEBUG

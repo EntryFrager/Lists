@@ -53,7 +53,9 @@ typedef int ELEMENT;
 
 const ELEMENT LIST_VALUE_VENOM = -100000;
 
-const int PREV_NO_ELEM = -1;
+const int PREV_NO_ELEM   = -1;
+const int LIST_LINEAR    = 1;
+const int LIST_NO_LINEAR = 0;
 
 typedef struct {
     int value = LIST_VALUE_VENOM;
@@ -69,9 +71,11 @@ typedef struct LIST {
     int head = LIST_VALUE_VENOM;
     int tail = LIST_VALUE_VENOM;
     int free = LIST_VALUE_VENOM;
+    
+    int list_linear = LIST_VALUE_VENOM;
 } LIST;
 
-LIST *list_init (const size_t size);
+LIST *list_init (LIST *list, const size_t size);
 
 void list_insert_elem (LIST *list, const int value);
 
