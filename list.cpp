@@ -8,6 +8,10 @@
 #define LIGHT_GREEN_COLOR "\"#ccff99\""
 #define BACK_GROUND_COLOR "\"#696969\""
 
+#define FONTNAME "\"Times-New-Roman\""
+
+#define CHECK_SIZE() if (list->free == (list->size - 1)) {list_realloc (list);}
+
 const char *err_msgs_arr[] = {
     "ERROR NO.",
     "ERROR: null pointer to list.",
@@ -67,10 +71,7 @@ void list_insert_elem (LIST *list, const int value)
 {
     assert_list (list);
 
-    if (list->free == (list->size - 1))
-    {
-        list_realloc (list);
-    }
+    CHECK_SIZE ();
 
     list->data[list->free].value = value;
     list->data[list->free].prev  = list->tail;
@@ -97,10 +98,7 @@ int list_insert_elem_after (LIST *list, const int value, int ip)
         return ERR_INSERT;
     }
 
-    if (list->free == (list->size - 1))
-    {
-        list_realloc (list);
-    }
+    CHECK_SIZE ();
 
     ip = list_get_elem_ip (list, ip);
 
@@ -204,19 +202,12 @@ void list_realloc (LIST *list)
 {
     assert_list (list);
 
-    int last_free = list->free;
-
-    while (list->data[last_free].next != 0)
-    {
-        last_free = list->data[last_free].next;
-    }
-
     int size = list->size * HST_UP;
 
     list->data = (NODE *) realloc (list->data, size * sizeof (NODE));
     my_assert (list->data != NULL);
 
-    list->data[last_free].next = list->size;
+    list->data[list->free].next = list->size;
 
     for (int ip = list->size; ip < size; ip++)
     {
@@ -244,36 +235,45 @@ void lineariz_list (LIST *list)
 
     NODE *new_data = (NODE *) calloc (list->size, sizeof (NODE));
 
-    new_data[0].next = 1;
-
-    int ip = list->head;
-    int counter = 1;
+    int ip_pos = 0;
+    int flag_free = 0;
     list->head = 1;
 
-    do {
-        new_data[counter].value = list->data[ip].value;
-        new_data[counter].next  = counter + 1;
-        new_data[counter].prev  = counter - 1;
+    for (int ip = 0; ip < list->size; ip++)
+    {
+        new_data[ip].value = list->data[ip_pos].value;
 
-        ip = list->data[ip].next;
-        counter++;
-    } while (ip != 0);
+        if (ip == (list->size - 1) || list->data[ip_pos].next == 0)
+        {
+            new_data[ip].next = 0;
+        }
+        else
+        {
+            new_data[ip].next = ip + 1;
+        }
 
-    new_data[counter - 1].next = 0;
-    list->tail = counter - 1;
-    new_data[0].prev = list->tail;
-    ip = list->free;
-    list->free = counter;
+        if (flag_free == 1)
+        {
+            new_data[ip].prev = PREV_NO_ELEM;
+        }
+        else
+        {
+            if (ip != 0)
+            {
+                new_data[ip].prev  = ip - 1;
+            }
+        }
 
-    do {
-        new_data[counter].next = counter + 1;
-        new_data[counter].prev = -1;
+        ip_pos = list->data[ip_pos].next;
 
-        ip = list->data[ip].next;
-        counter++;
-    } while (ip != 0);
-
-    new_data[counter - 1].next = 0;
+        if (ip_pos == 0)
+        {
+            list->tail = ip;
+            new_data[0].prev = list->tail;
+            list->free = ip + 1;
+            flag_free = 1;
+        }
+    }
 
     free(list->data);
     list->data = new_data;
@@ -585,7 +585,7 @@ void list_dump_graph_viz (LIST *list, const int code_error, const char *file_err
                 fprintf (fp_dot, " -> %d", ip);
             }
 
-            fprintf (fp_dot, " -> head -> tail -> free[arrowsize = 0.0, weight = %d, color = " BACK_GROUND_COLOR "];\n", weight);
+            fprintf (fp_dot, " -> head -> tail -> free[arrowsize = 0.0, weight = %d, color = " BACK_GROUND_COLOR ", fontname = " FONTNAME "];\n", weight);
 
             for (int ip = 0; ip < list->size; ip++)
             {

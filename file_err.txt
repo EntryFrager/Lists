@@ -1270,3 +1270,225 @@ list[007AFEE4] "list" called from list.cpp(370) list_move_elem
 }
 
 -----------------------------------------------------------
+ERROR: the connection between free nodes of the list is broken.
+
+list[007AFEE4] "list" called from list.cpp(308) lineariz_list
+{
+	size = 20
+	head = 1
+	tail = 10
+	free = 11
+	data[013DD310]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = 10
+		data[1]->value = 100
+		data[1]->next  = 2
+		data[1]->prev  = 0
+		data[2]->value = 1
+		data[2]->next  = 3
+		data[2]->prev  = 1
+		data[3]->value = 2
+		data[3]->next  = 4
+		data[3]->prev  = 2
+		data[4]->value = 300
+		data[4]->next  = 5
+		data[4]->prev  = 3
+		data[5]->value = 3
+		data[5]->next  = 6
+		data[5]->prev  = 4
+		data[6]->value = 200
+		data[6]->next  = 7
+		data[6]->prev  = 5
+		data[7]->value = 4
+		data[7]->next  = 8
+		data[7]->prev  = 6
+		data[8]->value = 5
+		data[8]->next  = 9
+		data[8]->prev  = 7
+		data[9]->value = 6
+		data[9]->next  = 10
+		data[9]->prev  = 8
+		data[10]->value = 400
+		data[10]->next  = 0
+		data[10]->prev  = 9
+		data[11]->value = 0
+		data[11]->next  = 12
+		data[11]->prev  = -1
+		data[12]->value = 100
+		data[12]->next  = 13
+		data[12]->prev  = -1
+		data[13]->value = 1
+		data[13]->next  = 14
+		data[13]->prev  = -1
+		data[14]->value = 2
+		data[14]->next  = 15
+		data[14]->prev  = -1
+		data[15]->value = 300
+		data[15]->next  = 16
+		data[15]->prev  = -1
+		data[16]->value = 3
+		data[16]->next  = 17
+		data[16]->prev  = -1
+		data[17]->value = 200
+		data[17]->next  = 18
+		data[17]->prev  = -1
+		data[18]->value = 4
+		data[18]->next  = 19
+		data[18]->prev  = -1
+		data[19]->value = 5
+		data[19]->next  = 20
+		data[19]->prev  = -1
+	}
+}
+
+-----------------------------------------------------------
+ERROR: the connection between free nodes of the list is broken.
+
+list[007AFEE4] "list" called from list.cpp(315) lineariz_list
+{
+	size = 20
+	head = 1
+	tail = 10
+	free = 11
+	data[0112D310]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = 10
+		data[1]->value = 100
+		data[1]->next  = 2
+		data[1]->prev  = 0
+		data[2]->value = 1
+		data[2]->next  = 3
+		data[2]->prev  = 1
+		data[3]->value = 2
+		data[3]->next  = 4
+		data[3]->prev  = 2
+		data[4]->value = 300
+		data[4]->next  = 5
+		data[4]->prev  = 3
+		data[5]->value = 3
+		data[5]->next  = 6
+		data[5]->prev  = 4
+		data[6]->value = 200
+		data[6]->next  = 7
+		data[6]->prev  = 5
+		data[7]->value = 4
+		data[7]->next  = 8
+		data[7]->prev  = 6
+		data[8]->value = 5
+		data[8]->next  = 9
+		data[8]->prev  = 7
+		data[9]->value = 6
+		data[9]->next  = 10
+		data[9]->prev  = 8
+		data[10]->value = 400
+		data[10]->next  = 0
+		data[10]->prev  = 9
+		data[11]->value = 0
+		data[11]->next  = 12
+		data[11]->prev  = -1
+		data[12]->value = 100
+		data[12]->next  = 13
+		data[12]->prev  = -1
+		data[13]->value = 1
+		data[13]->next  = 14
+		data[13]->prev  = -1
+		data[14]->value = 2
+		data[14]->next  = 15
+		data[14]->prev  = -1
+		data[15]->value = 300
+		data[15]->next  = 16
+		data[15]->prev  = -1
+		data[16]->value = 3
+		data[16]->next  = 17
+		data[16]->prev  = -1
+		data[17]->value = 200
+		data[17]->next  = 18
+		data[17]->prev  = -1
+		data[18]->value = 4
+		data[18]->next  = 19
+		data[18]->prev  = -1
+		data[19]->value = 5
+		data[19]->next  = 20
+		data[19]->prev  = -1
+	}
+}
+
+-----------------------------------------------------------
+ERROR: the connection between free nodes of the list is broken.
+
+list[007AFEE4] "list" called from list.cpp(315) lineariz_list
+{
+	size = 20
+	head = 1
+	tail = 10
+	free = 11
+	data[0111D310]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = 10
+		data[1]->value = 100
+		data[1]->next  = 2
+		data[1]->prev  = 0
+		data[2]->value = 1
+		data[2]->next  = 3
+		data[2]->prev  = 1
+		data[3]->value = 2
+		data[3]->next  = 4
+		data[3]->prev  = 2
+		data[4]->value = 300
+		data[4]->next  = 5
+		data[4]->prev  = 3
+		data[5]->value = 3
+		data[5]->next  = 6
+		data[5]->prev  = 4
+		data[6]->value = 200
+		data[6]->next  = 7
+		data[6]->prev  = 5
+		data[7]->value = 4
+		data[7]->next  = 8
+		data[7]->prev  = 6
+		data[8]->value = 5
+		data[8]->next  = 9
+		data[8]->prev  = 7
+		data[9]->value = 6
+		data[9]->next  = 10
+		data[9]->prev  = 8
+		data[10]->value = 400
+		data[10]->next  = 0
+		data[10]->prev  = 9
+		data[11]->value = 0
+		data[11]->next  = 12
+		data[11]->prev  = -1
+		data[12]->value = 100
+		data[12]->next  = 13
+		data[12]->prev  = -1
+		data[13]->value = 1
+		data[13]->next  = 14
+		data[13]->prev  = -1
+		data[14]->value = 2
+		data[14]->next  = 15
+		data[14]->prev  = -1
+		data[15]->value = 300
+		data[15]->next  = 16
+		data[15]->prev  = -1
+		data[16]->value = 3
+		data[16]->next  = 17
+		data[16]->prev  = -1
+		data[17]->value = 200
+		data[17]->next  = 18
+		data[17]->prev  = -1
+		data[18]->value = 4
+		data[18]->next  = 19
+		data[18]->prev  = -1
+		data[19]->value = 5
+		data[19]->next  = 0
+		data[19]->prev  = 0
+	}
+}
+
+-----------------------------------------------------------
