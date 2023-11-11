@@ -6,6 +6,7 @@
 #include <string.h>
 
 #include "include\error.h"
+#include "include\utils.h"
 
 static int CODE_ERROR = 0;
 
@@ -99,6 +100,8 @@ void list_deinit (LIST *list);
     int list_verification (LIST *list);
 
     void list_dump_text (LIST *list, const int code_error, const char *file_err, const char *func_err, const int line_err);
+
+    void list_dump_html ();
 
     void list_dump_graph_viz (LIST *list, const int code_error, const char *file_err, const char *func_err, const int line_err);
 #endif

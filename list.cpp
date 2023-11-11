@@ -32,6 +32,8 @@ static const int HST_UP = 2;
 
 static const char *fp_err_name = "file_err.txt";
 static const char *fp_dot_name = "dump.dot";
+static const char *fp_html_dot_name = "dot.html";
+static const char *fp_image = "dot.svg";
 
 LIST *list_init (LIST *list, const size_t size)
 {
@@ -559,7 +561,7 @@ void list_dump_text (LIST *list, const int code_error, const char *file_err, con
 
 void list_dump_graph_viz (LIST *list, const int code_error, const char *file_err, const char *func_err, const int line_err)
 {
-    FILE *fp_dot  = fopen (fp_dot_name, "wb+");
+    FILE *fp_dot = fopen (fp_dot_name, "wb+");
 
     if (fp_dot == NULL)
     {
@@ -646,6 +648,34 @@ void list_dump_graph_viz (LIST *list, const int code_error, const char *file_err
     }
 
     system ("dot -Tsvg dump.dot -o dot.svg");
+
+    list_dump_html ();
+}
+
+void list_dump_html ()
+{
+    FILE *fp_dot = fopen (fp_image, "r");
+    FILE *fp_html_dot = fopen (fp_html_dot_name, "a");
+
+    if (fp_dot == NULL ||fp_html_dot == NULL)
+    {
+        fprintf (stderr, "%s", err_msgs_arr[FILE_OPEN_ERR]);
+    }
+
+    size_t size_dot = get_file_size (fp_dot);
+
+    char *data_dot = (char *) calloc (size_dot, sizeof (char));
+
+    fread (data_dot, sizeof (char), size_dot, fp_dot);
+
+    printf ("%s\n", data_dot);
+
+    fprintf (fp_html_dot, "%s\n", data_dot);
+
+    if (fclose (fp_dot) != 0 || fclose (fp_html_dot) != 0)
+    {
+        fprintf (stderr, "%s", err_msgs_arr[FILE_CLOSE_ERR]);
+    }
 }
 
 #endif
