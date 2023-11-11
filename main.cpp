@@ -25,6 +25,8 @@ int main ()
     
     list_move_elem (&list, 1, 10);
 
+    lineariz_list (&list);
+
     list_dump_graph_viz (&list, 4, __FILE__, __func__, __LINE__);
 
     list_print (&list);

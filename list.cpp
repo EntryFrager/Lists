@@ -1,11 +1,12 @@
 #include "list.h"
 
 #define WHITE_COLOR "\"#ffffff\""
-#define TURQUOISE_COLOR "\"#40E0D0\""
+#define BLUE_COLOR "\"#00BFFF\""
+#define YELLOW_COLOR "\"#FFFF00\""
 #define PURPLE_COLOR "\"#8B00FF\""
 #define RED_COLOR "\"#ff0000\""
 #define LIGHT_GREEN_COLOR "\"#ccff99\""
-#define BACK_GROUND_COLOR "\"#B8860B\""
+#define BACK_GROUND_COLOR "\"#696969\""
 
 const char *err_msgs_arr[] = {
     "ERROR NO.",
@@ -274,6 +275,7 @@ void lineariz_list (LIST *list)
 
     new_data[counter - 1].next = 0;
 
+    free(list->data);
     list->data = new_data;
     list->list_linear = LIST_LINEAR;
 
@@ -294,7 +296,6 @@ void list_move_elem (LIST *list, int ip_1, int ip_2)
     int next_first  = node_first->next;
     int prev_second = node_second->prev;
     int next_second = node_second->next;
-    printf ("%d %d %d %d\n", prev_first, next_first, prev_second, next_second);
 
     if (next_first == ip_pos_2)
     {
@@ -594,11 +595,11 @@ void list_dump_graph_viz (LIST *list, const int code_error, const char *file_err
                 }
                 else if (ip != 0)
                 {
-                    color = TURQUOISE_COLOR;
+                    color = BLUE_COLOR;
                 }
                 else
                 {
-                    color = PURPLE_COLOR;
+                    color = RED_COLOR;
                 }
 
                 fprintf (fp_dot, "\t%d [shape = Mrecord, style = filled, fillcolor = %s, label = \"idx: %d | data: %d | next: %d | prev: %d\"];\n", 
@@ -608,7 +609,7 @@ void list_dump_graph_viz (LIST *list, const int code_error, const char *file_err
 
         fprintf (fp_dot, "\thead [shape = Mrecord, style = filled, fillcolor = " LIGHT_GREEN_COLOR ", label = \"head: %d\"];\n", list->head);
         fprintf (fp_dot, "\ttail [shape = Mrecord, style = filled, fillcolor = " LIGHT_GREEN_COLOR ", label = \"tail: %d\"];\n", list->tail);
-        fprintf (fp_dot, "\tfree [shape = Mrecord, style = filled, fillcolor = " TURQUOISE_COLOR ", label = \"free: %d\"];\n", list->free);
+        fprintf (fp_dot, "\tfree [shape = Mrecord, style = filled, fillcolor = " BLUE_COLOR ", label = \"free: %d\"];\n", list->free);
 
         int ip = 0;
         
@@ -636,7 +637,7 @@ void list_dump_graph_viz (LIST *list, const int code_error, const char *file_err
         fprintf (fp_dot, "\tfree -> %d\n", list->free);
 
         fprintf (fp_dot, "\tlabel = \"list_dump from function %s, List/%s:%d\";\n", func_err, file_err, line_err);
-        fprintf (fp_dot, "\tAll[shape = Mrecord, style = filled, fillcolor = " RED_COLOR ", label = \"size = %d | data_ptr = %p\"];}\n", list->size, list->data);
+        fprintf (fp_dot, "\tAll[shape = Mrecord, style = filled, fillcolor = " PURPLE_COLOR ", label = \"size = %d\"];}\n", list->size);
     }
 
     if (fclose (fp_dot) != 0)
