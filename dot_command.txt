@@ -1,1 +1,0 @@
-dot -Tsvg dump.dot -o dot.svg

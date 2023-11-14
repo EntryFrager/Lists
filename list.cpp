@@ -7,33 +7,41 @@
 #define RED_COLOR "\"#ff0000\""
 #define LIGHT_GREEN_COLOR "\"#ccff99\""
 #define BACK_GROUND_COLOR "\"#696969\""
+#define WEIGHT "\"10000\""
 
 #define FONTNAME "\"Times-New-Roman\""
 
+// TD: function > macros
 #define CHECK_SIZE() if (list->free == (list->size - 1)) {list_realloc (list);}
 
-const char *err_msgs_arr[] = {
-    "ERROR NO.",
-    "ERROR: null pointer to list.",
-    "ERROR: incorrect list size.",
-    "ERROR: invalid pointer to the head of the list.",
-    "ERROR: invalid pointer to the tail of the list.",
-    "ERROR: invalid pointer to the first free cell in the list.",
-    "ERROR: invalid pointer to data array.",
-    "ERROR: the connection between the list nodes is broken.",
-    "ERROR: the connection between free nodes of the list is broken.",
-    "ERROR: the number of nodes is incorrect.",
-    "ERROR: your list is full of shit, call init.",
-    "ERROR: error when opening file.",
-    "ERROR: error when closing file.",
+// err_msgs_arr[MALLOC_ERROR] = "msg";
+const char *err_msgs_arr[] = { // TD: copypaste ERROR
+    "NO",
+    "null pointer to list",
+    "incorrect list size",
+    "invalid pointer to the head of the list",
+    "invalid pointer to the tail of the list",
+    "invalid pointer to the first free cell in the list",
+    "invalid pointer to data array",
+    "the connection between the list nodes is broken",
+    "the connection between free nodes of the list is broken",
+    "the number of nodes is incorrect",
+    "pointer to the next element in data, pointing to itself",
+    "pointer to the next element in free, pointing to itself",
+    "your list is full of shit, call init",
+    "error when opening file",
+    "error when closing file",
 };
 
-static const int HST_UP = 2;
+static const int COEF_UP = 2;
 
 static const char *fp_err_name = "file_err.txt";
 static const char *fp_dot_name = "dump.dot";
 static const char *fp_html_dot_name = "dot.html";
 static const char *fp_image = "dot.svg";
+
+static int list_get_elem_index (const LIST *list, int index);
+static void list_filling (LIST *list, const int index);
 
 LIST *list_init (LIST *list, const size_t size)
 {
@@ -43,21 +51,10 @@ LIST *list_init (LIST *list, const size_t size)
     list->data = (NODE *) calloc (size, sizeof (NODE));
     my_assert (list->data != NULL);
 
-    for (size_t ip = 0; ip < size; ip++)
-    {
-        if (ip == size - 1)
-        {
-            list->data[ip].next = 0;
-        }
-        else
-        {
-            list->data[ip].next = ip + 1;
-        }
-
-        list->data[ip].prev = PREV_NO_ELEM;
-    }
-
     list->size = size;
+
+    list_filling (list, FICTIV_ELEM_ID);
+
     list->head = 1;
     list->tail = 0;
     list->free = 1;
@@ -69,29 +66,34 @@ LIST *list_init (LIST *list, const size_t size)
     return list;
 }
 
+void list_filling (LIST *list, const int index)
+{
+    for (size_t ip = index; ip < list->size; ip++)
+    {
+        if (ip == list->size - 1)
+        {
+            list->data[ip].next = 0;
+        }
+        else
+        {
+            list->data[ip].next = ip + 1;
+        }
+
+        list->data[ip].value = POISON_VALUE;
+        list->data[ip].prev  = PREV_NO_ELEM;
+    }
+}
+
 void list_insert_elem (LIST *list, const int value)
 {
     assert_list (list);
 
-    CHECK_SIZE ();
-
-    list->data[list->free].value = value;
-    list->data[list->free].prev  = list->tail;
-
-    int free_next = list->data[list->free].next;
-    list->data[list->free].next = 0;
-
-    list->data[0].prev = list->free;
-
-    list->data[list->tail].next = list->free;
-
-    list->tail = list->free;
-    list->free = free_next;
+    list_insert_elem_after_ph (list, value, list->tail);
     
     assert_list (list);
 }
 
-int list_insert_elem_after (LIST *list, const int value, int ip)
+int list_insert_elem_after_ph (LIST *list, const int value, int ip)
 {
     assert_list (list);
 
@@ -102,11 +104,19 @@ int list_insert_elem_after (LIST *list, const int value, int ip)
 
     CHECK_SIZE ();
 
-    ip = list_get_elem_ip (list, ip);
+    int free_next = list->data[list->free].next;
+    list->data[list->free].value = value;
 
     if (ip == list->tail)
     {
-        list_insert_elem (list, value);
+        list->data[list->free].prev = list->tail;
+        list->data[list->free].next = POISON_VALUE;
+
+        list->data[FICTIV_ELEM_ID].prev = list->free;
+
+        list->data[list->tail].next = list->free;
+
+        list->tail = list->free;
     }
     else
     {
@@ -117,21 +127,36 @@ int list_insert_elem_after (LIST *list, const int value, int ip)
             list->head = list->free;
         }
 
-        int free_next = list->data[list->free].next;
-
-        list->data[list->free].value = value;
         list->data[list->free].next = list->data[ip].next;
         list->data[list->free].prev = ip;
 
         list->data[list->data[ip].next].prev = list->free;
         list->data[ip].next = list->free;
-
-        list->free = free_next;
     }
+
+    list->free = free_next;
 
     assert_list (list);
 
     return ERR_NO;
+}
+
+int list_insert_elem_after_log (LIST *list, const int value, int ip)
+{
+    assert_list (list);
+
+    if (ip < 0 || ip > list->size)
+    {
+        return ERR_INSERT;
+    }
+
+    ip = list_get_elem_index (list, ip);
+
+    int code_error = list_insert_elem_after_ph (list, value, ip);
+
+    assert_list (list);
+
+    return code_error;
 }
 
 int list_delete_elem (LIST *list, int ip)
@@ -143,7 +168,7 @@ int list_delete_elem (LIST *list, int ip)
         return ERR_DELETE;
     }
 
-    ip = list_get_elem_ip (list, ip);
+    ip = list_get_elem_index (list, ip);
 
     if (ip == list->head)
     {
@@ -171,26 +196,26 @@ int list_delete_elem (LIST *list, int ip)
     return ERR_NO;
 }
 
-int list_get_elem_ip (LIST *list, int ip)
+int list_get_elem_index (const LIST *list, const int index)
 {
     assert_list (list);
-    my_assert (ip >= 0 && ip < list->size);
+    my_assert (index >= 0 && index < list->size);
 
     int ip_pos = list->head;
 
     if (list->list_linear)
     {
-        ip_pos = ip;
+        ip_pos = index;
     }
     else
     {
-        if (ip == 0)
+        if (index == 0)
         {
-            ip_pos = ip;
+            ip_pos = index;
         }
         else
         {
-            for (int counter = 0; counter < ip - 1; counter++)
+            for (int counter = 0; counter < index - 1; counter++)
             {
                 ip_pos = list->data[ip_pos].next;
             }
@@ -200,31 +225,18 @@ int list_get_elem_ip (LIST *list, int ip)
     return ip_pos;
 }
 
-void list_realloc (LIST *list)
+void list_realloc (LIST *list) // TD: realloc_down
 {
     assert_list (list);
 
-    int size = list->size * HST_UP;
+    int size = list->size * COEF_UP;
 
     list->data = (NODE *) realloc (list->data, size * sizeof (NODE));
     my_assert (list->data != NULL);
 
     list->data[list->free].next = list->size;
 
-    for (int ip = list->size; ip < size; ip++)
-    {
-        if (ip == size - 1)
-        {
-            list->data[ip].next = 0;
-        }
-        else
-        {
-            list->data[ip].next = ip + 1;
-        }
-
-        list->data[ip].value = 0;
-        list->data[ip].prev  = PREV_NO_ELEM;
-    }
+    list_filling (list, list->size);
 
     list->size = size;
 
@@ -237,15 +249,15 @@ void lineariz_list (LIST *list)
 
     NODE *new_data = (NODE *) calloc (list->size, sizeof (NODE));
 
-    int ip_pos = 0;
-    int flag_free = 0;
+    int ip = 1;
+    int ip_pos = list->head;
     list->head = 1;
 
-    for (int ip = 0; ip < list->size; ip++)
+    do
     {
-        new_data[ip].value = list->data[ip_pos].value;
-
-        if (ip == (list->size - 1) || list->data[ip_pos].next == 0)
+        new_data[ip++].value = list->data[ip_pos].value;
+        
+        if (list->data[ip_pos].next == 0)
         {
             new_data[ip].next = 0;
         }
@@ -254,28 +266,18 @@ void lineariz_list (LIST *list)
             new_data[ip].next = ip + 1;
         }
 
-        if (flag_free == 1)
-        {
-            new_data[ip].prev = PREV_NO_ELEM;
-        }
-        else
-        {
-            if (ip != 0)
-            {
-                new_data[ip].prev  = ip - 1;
-            }
-        }
+        new_data[ip].prev  = ip - 1;
 
         ip_pos = list->data[ip_pos].next;
+    } while (ip_pos != 0);
 
-        if (ip_pos == 0)
-        {
-            list->tail = ip;
-            new_data[0].prev = list->tail;
-            list->free = ip + 1;
-            flag_free = 1;
-        }
-    }
+    list->tail = ip;
+    list->free = ip + 1;
+    
+    new_data[FICTIV_ELEM_ID].next = 1;
+    new_data[FICTIV_ELEM_ID].prev = list->tail;
+
+    list_filling (list, list->free);
 
     free(list->data);
     list->data = new_data;
@@ -284,12 +286,12 @@ void lineariz_list (LIST *list)
     assert_list (list);
 }
 
-void list_move_elem (LIST *list, int ip_1, int ip_2)
+void list_swap_elem (LIST *list, int ip_1, int ip_2)
 {
     assert_list (list);
 
-    int ip_pos_1 = list_get_elem_ip (list, ip_1);
-    int ip_pos_2 = list_get_elem_ip (list, ip_2);
+    int ip_pos_1 = list_get_elem_index (list, ip_1);
+    int ip_pos_2 = list_get_elem_index (list, ip_2);
 
     NODE *node_first  = &list->data[ip_pos_1];
     NODE *node_second = &list->data[ip_pos_2];
@@ -373,7 +375,7 @@ void list_move_elem (LIST *list, int ip_1, int ip_2)
     assert_list (list);
 }
 
-void list_print (LIST *list)
+void list_print (const LIST *list)
 {
     assert_list (list);
 
@@ -406,9 +408,9 @@ void list_deinit (LIST *list)
 
 #ifdef DEBUG
 
-int list_verification (LIST *list)
+int list_verification (const LIST *list)
 {
-    if (list == NULL)
+    if (list == NULL) // TD: ifs -> macros
     {
         return LIST_ERR;
     }
@@ -420,7 +422,7 @@ int list_verification (LIST *list)
 
     if (list->size <= 0)
     {
-        return LIST_ERR_SIZE;
+        return LIST_ERR_SIZE; // TD: multiple errors support
     }
 
     if (list->data == NULL)
@@ -447,7 +449,7 @@ int list_verification (LIST *list)
     int counter = 0;
 
     do {
-        if (list->data[list->data[ip].next].prev == -1)
+        if (list->data[list->data[ip].next].prev == PREV_NO_ELEM) // TD: ?
         {
             counter++;
             break;
@@ -456,6 +458,11 @@ int list_verification (LIST *list)
         if (list->data[list->data[ip].next].prev != ip)
         {
             return LIST_ERR_PTR_DATA;
+        }
+
+        if (ip == list->data[ip].next)
+        {
+            return LIST_ERR_DATA_LOOP;
         }
 
         ip = list->data[ip].next;
@@ -473,6 +480,12 @@ int list_verification (LIST *list)
                 return LIST_ERR_PTR_FREE;
             }
 
+            if (ip == list->data[ip].next)
+            {
+                return LIST_ERR_FREE_LOOP;
+            }
+
+
             ip = list->data[ip].next;
             counter++;
         } while (ip != 0);
@@ -486,7 +499,7 @@ int list_verification (LIST *list)
     return LIST_OK;
 }
 
-void list_dump_text (LIST *list, const int code_error, const char *file_err, const char *func_err, const int line_err)
+void list_dump_text (const LIST *list, const int code_error, const char *file_err, const char *func_err, const int line_err)
 {
     FILE *fp_err = fopen (fp_err_name, "a");
 
@@ -499,7 +512,7 @@ void list_dump_text (LIST *list, const int code_error, const char *file_err, con
     {
         if (code_error < LIST_ERROR_CNT)
         {
-            fprintf (fp_err, "%s\n\n", err_msgs_arr[code_error]);
+            fprintf (fp_err, "ERROR: %s.\n\n", err_msgs_arr[code_error]);
         }
         else
         {
@@ -508,7 +521,7 @@ void list_dump_text (LIST *list, const int code_error, const char *file_err, con
 
         fprintf (fp_err, "list[%p] \"list\" called from %s(%d) %s\n", list, file_err, line_err, func_err);
 
-        fprintf (fp_err, "{\n");
+        fprintf (fp_err, "{\n"); // TD: DUMPLOG("sds");
 
         fprintf (fp_err, "\tsize = %d\n", list->size);
         fprintf (fp_err, "\thead = %d\n", list->head);
@@ -559,16 +572,15 @@ void list_dump_text (LIST *list, const int code_error, const char *file_err, con
     }
 }
 
-void list_dump_graph_viz (LIST *list, const int code_error, const char *file_err, const char *func_err, const int line_err)
+void list_dump_graph_viz (const LIST *list, const int code_error, const char *file_err, const char *func_err, const int line_err)
 {
-    FILE *fp_dot = fopen (fp_dot_name, "wb+");
+    FILE *fp_dot = fopen (fp_dot_name, "w+");
 
     if (fp_dot == NULL)
     {
         fprintf (stderr, "%s", err_msgs_arr[FILE_OPEN_ERR]);
     }
 
-    int weight = 10000;
     const char *color = WHITE_COLOR;
 
     if (list != NULL)
@@ -587,7 +599,7 @@ void list_dump_graph_viz (LIST *list, const int code_error, const char *file_err
                 fprintf (fp_dot, " -> %d", ip);
             }
 
-            fprintf (fp_dot, " -> head -> tail -> free[arrowsize = 0.0, weight = %d, color = " BACK_GROUND_COLOR ", fontname = " FONTNAME "];\n", weight);
+            fprintf (fp_dot, " -> head -> tail -> free[arrowsize = 0.0, weight = " WEIGHT ", color = " BACK_GROUND_COLOR ", fontname = " FONTNAME "];\n");
 
             for (int ip = 0; ip < list->size; ip++)
             {
@@ -609,6 +621,8 @@ void list_dump_graph_viz (LIST *list, const int code_error, const char *file_err
             }
         }
 
+        // TD: create node(color, label_fmt_string, ...)
+        // va_list
         fprintf (fp_dot, "\thead [shape = Mrecord, style = filled, fillcolor = " LIGHT_GREEN_COLOR ", label = \"head: %d\"];\n", list->head);
         fprintf (fp_dot, "\ttail [shape = Mrecord, style = filled, fillcolor = " LIGHT_GREEN_COLOR ", label = \"tail: %d\"];\n", list->tail);
         fprintf (fp_dot, "\tfree [shape = Mrecord, style = filled, fillcolor = " BLUE_COLOR ", label = \"free: %d\"];\n", list->free);
@@ -634,6 +648,7 @@ void list_dump_graph_viz (LIST *list, const int code_error, const char *file_err
             }
         }
 
+        // TD: connect_nodes()
         fprintf (fp_dot, "\thead -> %d\n", list->head);
         fprintf (fp_dot, "\ttail -> %d\n", list->tail);
         fprintf (fp_dot, "\tfree -> %d\n", list->free);
@@ -647,7 +662,11 @@ void list_dump_graph_viz (LIST *list, const int code_error, const char *file_err
         fprintf (stderr, "%s", err_msgs_arr[FILE_CLOSE_ERR]);
     }
 
-    system ("dot -Tsvg dump.dot -o dot.svg");
+    char *command = "dot -Tsvg";
+
+    sprintf (command, "%s -o %s", fp_dot_name, fp_image);
+
+    system (command);
 
     list_dump_html ();
 }
@@ -667,8 +686,6 @@ void list_dump_html ()
     char *data_dot = (char *) calloc (size_dot, sizeof (char));
 
     fread (data_dot, sizeof (char), size_dot, fp_dot);
-
-    printf ("%s\n", data_dot);
 
     fprintf (fp_html_dot, "%s\n", data_dot);
 

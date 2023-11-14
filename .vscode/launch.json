@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/vscode/Lists",
-      "program": "d:/vscode/Lists/build/Debug/outDebug",
+      "cwd": "d:/1 sem mipt/Lists",
+      "program": "d:/1 sem mipt/Lists/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
