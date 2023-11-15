@@ -98,7 +98,7 @@ int list_insert_elem_after_ph (LIST *list, const int value, int ip);
 
 int list_delete_elem (LIST *list, const int ip);
 
-void list_realloc (LIST *list);
+void list_realloc (LIST *list, const int mode);
 
 void lineariz_list (LIST *list);
 

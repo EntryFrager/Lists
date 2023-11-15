@@ -1492,3 +1492,179 @@ list[007AFEE4] "list" called from list.cpp(315) lineariz_list
 }
 
 -----------------------------------------------------------
+ERROR: the connection between free nodes of the list is broken.
+
+list[0064FEE4] "list" called from list.cpp(243) list_realloc
+{
+	size = 10
+	head = 1
+	tail = 3
+	free = 4
+	data[00E42BA0]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = 3
+		data[1]->value = 1
+		data[1]->next  = 2
+		data[1]->prev  = 0
+		data[2]->value = 2
+		data[2]->next  = 3
+		data[2]->prev  = 1
+		data[3]->value = 3
+		data[3]->next  = 0
+		data[3]->prev  = 2
+		data[4]->value = 0
+		data[4]->next  = 5
+		data[4]->prev  = -1
+		data[5]->value = 0
+		data[5]->next  = -2147483520
+		data[5]->prev  = 64938
+		data[6]->value = 14947432
+		data[6]->next  = 14953344
+		data[6]->prev  = 0
+		data[7]->value = 0
+		data[7]->next  = 0
+		data[7]->prev  = 0
+		data[8]->value = 0
+		data[8]->next  = 0
+		data[8]->prev  = 0
+		data[9]->value = 0
+		data[9]->next  = 0
+		data[9]->prev  = 0
+	}
+}
+
+-----------------------------------------------------------
+ERROR: the connection between free nodes of the list is broken.
+
+list[0064FEE4] "list" called from list.cpp(243) list_realloc
+{
+	size = 10
+	head = 1
+	tail = 3
+	free = 4
+	data[00BA2BA0]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = 3
+		data[1]->value = 1
+		data[1]->next  = 2
+		data[1]->prev  = 0
+		data[2]->value = 2
+		data[2]->next  = 3
+		data[2]->prev  = 1
+		data[3]->value = 3
+		data[3]->next  = 0
+		data[3]->prev  = 2
+		data[4]->value = 0
+		data[4]->next  = 5
+		data[4]->prev  = -1
+		data[5]->value = 0
+		data[5]->next  = -2147483520
+		data[5]->prev  = 35061
+		data[6]->value = 12194920
+		data[6]->next  = 12200832
+		data[6]->prev  = 0
+		data[7]->value = 0
+		data[7]->next  = 0
+		data[7]->prev  = 0
+		data[8]->value = 0
+		data[8]->next  = 0
+		data[8]->prev  = 0
+		data[9]->value = 0
+		data[9]->next  = 0
+		data[9]->prev  = 0
+	}
+}
+
+-----------------------------------------------------------
+ERROR: the connection between free nodes of the list is broken.
+
+list[0064FEE4] "list" called from list.cpp(243) list_realloc
+{
+	size = 10
+	head = 1
+	tail = 3
+	free = 4
+	data[009D2BA0]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = 3
+		data[1]->value = 1
+		data[1]->next  = 2
+		data[1]->prev  = 0
+		data[2]->value = 2
+		data[2]->next  = 3
+		data[2]->prev  = 1
+		data[3]->value = 3
+		data[3]->next  = 0
+		data[3]->prev  = 2
+		data[4]->value = 0
+		data[4]->next  = 5
+		data[4]->prev  = -1
+		data[5]->value = 0
+		data[5]->next  = -2147483520
+		data[5]->prev  = 22519
+		data[6]->value = 10294376
+		data[6]->next  = 10300288
+		data[6]->prev  = 0
+		data[7]->value = 0
+		data[7]->next  = 0
+		data[7]->prev  = 0
+		data[8]->value = 0
+		data[8]->next  = 0
+		data[8]->prev  = 0
+		data[9]->value = 0
+		data[9]->next  = 0
+		data[9]->prev  = 0
+	}
+}
+
+-----------------------------------------------------------
+ERROR: the connection between free nodes of the list is broken.
+
+list[0064FEE4] "list" called from list.cpp(243) list_realloc
+{
+	size = 10
+	head = 1
+	tail = 3
+	free = 4
+	data[00E21468]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = 3
+		data[1]->value = 1
+		data[1]->next  = 2
+		data[1]->prev  = 0
+		data[2]->value = 2
+		data[2]->next  = 3
+		data[2]->prev  = 1
+		data[3]->value = 3
+		data[3]->next  = 0
+		data[3]->prev  = 2
+		data[4]->value = 0
+		data[4]->next  = 5
+		data[4]->prev  = -1
+		data[5]->value = 0
+		data[5]->next  = -1560280925
+		data[5]->prev  = 41835
+		data[6]->value = 14826408
+		data[6]->next  = 14822272
+		data[6]->prev  = 913073524
+		data[7]->value = 1631985716
+		data[7]->next  = 2037148013
+		data[7]->prev  = 1293956640
+		data[8]->value = 1818584175
+		data[8]->next  = 892743968
+		data[8]->prev  = 1702122272
+		data[9]->value = 1852403824
+		data[9]->next  = 741482599
+		data[9]->prev  = 1852131104
+	}
+}
+
+-----------------------------------------------------------

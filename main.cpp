@@ -10,6 +10,8 @@ int main ()
         list_insert_elem (&list, ip);
     }
 
+    list_print (&list);
+
     CHECK_ERROR (list_delete_elem (&list, 3));
 
     list_dump_graph_viz (&list, 4, __FILE__, __func__, __LINE__); // TD: optional dump adter each func call
@@ -22,7 +24,6 @@ int main ()
 
     CHECK_ERROR (list_insert_elem_after_log (&list, 400, 9));
 
-    list_print (&list);
 
     list_deinit (&list);
 

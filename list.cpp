@@ -11,11 +11,11 @@
 
 #define FONTNAME "\"Times-New-Roman\""
 
-// TD: function > macros
-#define CHECK_SIZE() if (list->free == (list->size - 1)) {list_realloc (list);}
+#define UP 1
+#define DOWN 2
 
 // err_msgs_arr[MALLOC_ERROR] = "msg";
-const char *err_msgs_arr[] = { // TD: copypaste ERROR
+const char *err_msgs_arr[] = {
     "NO",
     "null pointer to list",
     "incorrect list size",
@@ -102,7 +102,7 @@ int list_insert_elem_after_ph (LIST *list, const int value, int ip)
         return ERR_INSERT;
     }
 
-    CHECK_SIZE ();
+    list_realloc (list, UP);
 
     int free_next = list->data[list->free].next;
     list->data[list->free].value = value;
@@ -225,7 +225,19 @@ int list_get_elem_index (const LIST *list, const int index)
     return ip_pos;
 }
 
-void list_realloc (LIST *list) // TD: realloc_down
+void list_check_realloc (LIST *list)
+{
+    assert_list (list);
+
+    if (list->free == (list->size - 1))
+    {
+        list_realloc (list, UP);
+    }
+
+    assert_list (list);
+}
+
+void list_realloc (LIST *list, const int mode) // TD: realloc_down
 {
     assert_list (list);
 
