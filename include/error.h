@@ -25,6 +25,7 @@ enum code_error {                               ///< Error codes.
     ERR_FREAD,                                  ///< Error when reading text from file.
     ERR_DELETE,
     ERR_INSERT,
+    ERR_REALLOC,
 };
 
 const char* my_strerr (unsigned code_error);    ///< Error return function.

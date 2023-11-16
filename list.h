@@ -14,25 +14,28 @@ static int CODE_ERROR = 0;
 #define DEBUG
 
 #ifdef DEBUG
-    #define CHECK_ERROR(code_error) if (code_error != ERR_NO) fprintf (stderr, "\x1b[31m%s\x1b[0m", my_strerr (code_error));
+    #define CHECK_ERROR_MAIN(code_error) if (code_error != ERR_NO) fprintf (stderr, "\x1b[31m%s\x1b[0m", my_strerr (code_error));
+    #define CHECK_ERROR_FUNC(code_error) if (code_error != ERR_NO) return code_error;
 #else
-    #define CHECK_ERROR(...)
+    #define CHECK_ERROR_MAIN(...)
+    #define CHECK_ERROR_FUNC(...)
 #endif
 
-// TD: CALL_DUMP(dump_func);
+#define CALL_DUMP(list, code_error)                                             \
+{                                                                               \
+    list_dump_text (list, code_error, __FILE__, __func__, __LINE__);            \
+    list_dump_graph_viz (list, code_error, __FILE__, __func__, __LINE__);       \
+}
 
 #ifdef DEBUG
     #define assert_list(list) {                                                     \
         if ((CODE_ERROR = list_verification (list)) != LIST_OK)                     \
         {                                                                           \
-            list_dump_text (list, CODE_ERROR, __FILE__, __func__, __LINE__);        \
-            list_dump_graph_viz (list, CODE_ERROR, __FILE__, __func__, __LINE__);   \
-            abort ();                                                               \
+            CALL_DUMP (list, CODE_ERROR);                                           \
+            return CODE_ERROR;                                                      \
         }                                                                           \
     }
 #endif
-
-// TD: abort, too hard
 
 enum list_code_error {
     LIST_OK,
@@ -63,12 +66,18 @@ const ELEMENT LIST_VALUE_VENOM = -100000;
 
 const int FICTIV_ELEM_ID = 0;
 
-const int POISON_VALUE   = 0;
-const int PREV_NO_ELEM    = -1;
-const bool LIST_LINEAR    = 1;
-const bool LIST_NO_LINEAR = 0;
+const int POISON_VALUE = 0;
+const int PREV_NO_ELEM = -1;
 
-//TODO инкапсуляция
+const bool LIST_LINEAR    = true;
+const bool LIST_NO_LINEAR = false;
+const bool LIST_INIT      = true;
+const bool LIST_NO_INIT   = false;
+
+const int UP   = 1;
+const int DOWN = 2;
+
+static const int COEF_UP = 2;
 
 typedef struct {
     int value = LIST_VALUE_VENOM;
@@ -84,13 +93,14 @@ typedef struct LIST {
     int head = LIST_VALUE_VENOM;
     int tail = LIST_VALUE_VENOM;
     int free = LIST_VALUE_VENOM;
-    
-    bool list_linear = LIST_VALUE_VENOM;
+
+    bool list_init = false;
+    bool list_linear = false;
 } LIST;
 
-LIST *list_init (LIST *list, const size_t size);
+int list_init (LIST *list, const size_t size);
 
-void list_insert_elem (LIST *list, const int value);
+int list_insert_elem (LIST *list, const int value);
 
 int list_insert_elem_after_log (LIST *list, const int value, int ip);
 
@@ -98,15 +108,17 @@ int list_insert_elem_after_ph (LIST *list, const int value, int ip);
 
 int list_delete_elem (LIST *list, const int ip);
 
-void list_realloc (LIST *list, const int mode);
+int list_check_realloc (LIST *list);
 
-void lineariz_list (LIST *list);
+int list_realloc (LIST *list, const int mode);
 
-void list_swap_elem (LIST *list, int ip_1, int ip_2);
+int lineariz_list (LIST *list);
 
-void list_print (const LIST *list);
+int list_swap_elem (LIST *list, int ip_1, int ip_2);
 
-void list_deinit (LIST *list);
+int list_print (const LIST *list);
+
+int list_deinit (LIST *list);
 
 #ifdef DEBUG
     int list_verification (const LIST *list);

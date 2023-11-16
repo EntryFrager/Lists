@@ -11,13 +11,9 @@ static const char* err_msgs_arr[] = {
     "ERROR: an error occurred while opening the file.\n",
     "ERROR: an error occurred while closing the file.\n",
     "ERROR: an error occurred while reading text from the file.\n",
-    "ERROR: invalid argument entered.\n",
-    "ERROR: number of labels exceeded.\n",
-    "ERROR: accessing RAM at the wrong address.\n",
-    "ERROR: Invalid case entered.\n",
-    "ERROR: invalid command entered.\n",
-    "ERROR: incorrectly entered argument from stream input.\n",
-    "ERROR: buffer out of bounds committed.\n",
+    "ERROR: error when deleting list item.\n",
+    "ERROR: error when inserting element into list.\n"
+    "ERROR: error when resizing list.\n",
 };
 
 /**

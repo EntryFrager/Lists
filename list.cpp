@@ -11,10 +11,6 @@
 
 #define FONTNAME "\"Times-New-Roman\""
 
-#define UP 1
-#define DOWN 2
-
-// err_msgs_arr[MALLOC_ERROR] = "msg";
 const char *err_msgs_arr[] = {
     "NO",
     "null pointer to list",
@@ -33,8 +29,6 @@ const char *err_msgs_arr[] = {
     "error when closing file",
 };
 
-static const int COEF_UP = 2;
-
 static const char *fp_err_name = "file_err.txt";
 static const char *fp_dot_name = "dump.dot";
 static const char *fp_html_dot_name = "dot.html";
@@ -43,7 +37,7 @@ static const char *fp_image = "dot.svg";
 static int list_get_elem_index (const LIST *list, int index);
 static void list_filling (LIST *list, const int index);
 
-LIST *list_init (LIST *list, const size_t size)
+int list_init (LIST *list, const size_t size)
 {
     my_assert (size > 0);
     my_assert (list != NULL);
@@ -53,22 +47,23 @@ LIST *list_init (LIST *list, const size_t size)
 
     list->size = size;
 
-    list_filling (list, FICTIV_ELEM_ID);
-
-    list->head = 1;
+    list->head = 0;
     list->tail = 0;
     list->free = 1;
 
+    list_filling (list, FICTIV_ELEM_ID);
+
     list->list_linear = LIST_LINEAR;
+    list->list_init   = LIST_INIT;
 
     assert_list (list);
 
-    return list;
+    return ERR_NO;
 }
 
 void list_filling (LIST *list, const int index)
 {
-    for (size_t ip = index; ip < list->size; ip++)
+    for (int ip = index; ip < list->size; ip++)
     {
         if (ip == list->size - 1)
         {
@@ -84,13 +79,15 @@ void list_filling (LIST *list, const int index)
     }
 }
 
-void list_insert_elem (LIST *list, const int value)
+int list_insert_elem (LIST *list, const int value)
 {
     assert_list (list);
 
-    list_insert_elem_after_ph (list, value, list->tail);
+    CHECK_ERROR_FUNC (list_insert_elem_after_ph (list, value, list->tail));
     
     assert_list (list);
+
+    return ERR_NO;
 }
 
 int list_insert_elem_after_ph (LIST *list, const int value, int ip)
@@ -102,7 +99,7 @@ int list_insert_elem_after_ph (LIST *list, const int value, int ip)
         return ERR_INSERT;
     }
 
-    list_realloc (list, UP);
+    list_check_realloc (list);
 
     int free_next = list->data[list->free].next;
     list->data[list->free].value = value;
@@ -134,6 +131,11 @@ int list_insert_elem_after_ph (LIST *list, const int value, int ip)
         list->data[ip].next = list->free;
     }
 
+    if (list->head == 0)
+    {
+        list->head = list->free;
+    }
+
     list->free = free_next;
 
     assert_list (list);
@@ -152,11 +154,11 @@ int list_insert_elem_after_log (LIST *list, const int value, int ip)
 
     ip = list_get_elem_index (list, ip);
 
-    int code_error = list_insert_elem_after_ph (list, value, ip);
+    CHECK_ERROR_FUNC (list_insert_elem_after_ph (list, value, ip));
 
     assert_list (list);
 
-    return code_error;
+    return ERR_NO;
 }
 
 int list_delete_elem (LIST *list, int ip)
@@ -225,80 +227,110 @@ int list_get_elem_index (const LIST *list, const int index)
     return ip_pos;
 }
 
-void list_check_realloc (LIST *list)
+int list_check_realloc (LIST *list)
 {
     assert_list (list);
 
     if (list->free == (list->size - 1))
     {
-        list_realloc (list, UP);
+        CHECK_ERROR_FUNC (list_realloc (list, UP));
     }
 
     assert_list (list);
+
+    return ERR_NO;
 }
 
-void list_realloc (LIST *list, const int mode) // TD: realloc_down
+int list_realloc (LIST *list, const int mode)
 {
     assert_list (list);
 
-    int size = list->size * COEF_UP;
+    int size = 0;
+
+    if (mode == UP)
+    {
+        size = list->size * COEF_UP;
+    }
+    else if (mode == DOWN)
+    {
+        CHECK_ERROR_FUNC( lineariz_list (list));
+
+        size = list->size - (list->size - list->free);
+    }
+    else
+    {
+        return ERR_REALLOC;
+    }
 
     list->data = (NODE *) realloc (list->data, size * sizeof (NODE));
     my_assert (list->data != NULL);
 
-    list->data[list->free].next = list->size;
-
-    list_filling (list, list->size);
-
+    int temp_size = list->size;
     list->size = size;
 
+    if (mode == UP)
+    {
+        list->data[list->free].next = temp_size;
+
+        list_filling (list, temp_size);
+    }
+    else
+    {
+        list->free = 0;
+    }
+
     assert_list (list);
+
+    return ERR_NO;
 }
 
-void lineariz_list (LIST *list)
+int lineariz_list (LIST *list)
 {
     assert_list (list);
 
     NODE *new_data = (NODE *) calloc (list->size, sizeof (NODE));
 
-    int ip = 1;
-    int ip_pos = list->head;
+    int ip_log = 0;
+    int ip_ph = list->head;
     list->head = 1;
 
     do
     {
-        new_data[ip++].value = list->data[ip_pos].value;
+        new_data[++ip_log].value = list->data[ip_ph].value;
         
-        if (list->data[ip_pos].next == 0)
+        if (list->data[ip_ph].next == 0)
         {
-            new_data[ip].next = 0;
+            new_data[ip_log].next = 0;
         }
         else
         {
-            new_data[ip].next = ip + 1;
+            new_data[ip_log].next = ip_log + 1;
         }
 
-        new_data[ip].prev  = ip - 1;
+        new_data[ip_log].prev = ip_log - 1;
 
-        ip_pos = list->data[ip_pos].next;
-    } while (ip_pos != 0);
+        ip_ph = list->data[ip_ph].next;
+    } while (ip_ph != 0);
 
-    list->tail = ip;
-    list->free = ip + 1;
+    list->tail = ip_log;
+    list->free = ip_log + 1;
     
     new_data[FICTIV_ELEM_ID].next = 1;
     new_data[FICTIV_ELEM_ID].prev = list->tail;
 
-    list_filling (list, list->free);
-
     free(list->data);
     list->data = new_data;
+
+    list_filling (list, list->free);
+
     list->list_linear = LIST_LINEAR;
 
     assert_list (list);
+
+    return ERR_NO;
 }
 
-void list_swap_elem (LIST *list, int ip_1, int ip_2)
+int list_swap_elem (LIST *list, int ip_1, int ip_2)
 {
     assert_list (list);
 
@@ -385,9 +417,11 @@ void list_swap_elem (LIST *list, int ip_1, int ip_2)
     list->list_linear = LIST_NO_LINEAR;
 
     assert_list (list);
+
+    return ERR_NO;
 }
 
-void list_print (const LIST *list)
+int list_print (const LIST *list)
 {
     assert_list (list);
 
@@ -399,9 +433,11 @@ void list_print (const LIST *list)
 
         ip = list->data[ip].next;
     }
+
+    return ERR_NO;
 }
 
-void list_deinit (LIST *list)
+int list_deinit (LIST *list)
 {
     assert_list (list);
 
@@ -413,28 +449,31 @@ void list_deinit (LIST *list)
     list->head        = LIST_VALUE_VENOM;
     list->tail        = LIST_VALUE_VENOM;
     list->free        = LIST_VALUE_VENOM;
-    list->list_linear = LIST_VALUE_VENOM;
+    list->list_linear = LIST_NO_LINEAR;
+    list->list_init   = LIST_NO_INIT;
 
     list = NULL;
+
+    return ERR_NO;
 }
 
 #ifdef DEBUG
 
 int list_verification (const LIST *list)
 {
-    if (list == NULL) // TD: ifs -> macros
+    if (list == NULL)
     {
         return LIST_ERR;
     }
 
-    if (list->size == LIST_VALUE_VENOM && list->head == LIST_VALUE_VENOM && list->tail == LIST_VALUE_VENOM && list->free == LIST_VALUE_VENOM)
+    if (list->list_init != LIST_INIT)
     {
         return LIST_POINTER_GARBAGE;
     }
 
     if (list->size <= 0)
     {
-        return LIST_ERR_SIZE; // TD: multiple errors support
+        return LIST_ERR_SIZE;
     }
 
     if (list->data == NULL)
@@ -452,35 +491,31 @@ int list_verification (const LIST *list)
         return LIST_ERR_TAIL;
     }
 
-    if (list->free < 0 || list->free >= list->size || (list->data[list->free].prev != -1))
+    if (list->free < 0 || list->free >= list->size)
     {
         return LIST_ERR_FREE;
     }
 
-    int ip = 0;
+    int ip = list->head;
     int counter = 0;
 
-    do {
-        if (list->data[list->data[ip].next].prev == PREV_NO_ELEM) // TD: ?
-        {
+    if (ip != 0)
+    {
+        do {
+            if (list->data[list->data[ip].next].prev != ip)
+            {
+                return LIST_ERR_PTR_DATA;
+            }
+
+            if (ip == list->data[ip].next)
+            {
+                return LIST_ERR_DATA_LOOP;
+            }
+
+            ip = list->data[ip].next;
             counter++;
-            break;
-        }
-
-        if (list->data[list->data[ip].next].prev != ip)
-        {
-            return LIST_ERR_PTR_DATA;
-        }
-
-        if (ip == list->data[ip].next)
-        {
-            return LIST_ERR_DATA_LOOP;
-        }
-
-        ip = list->data[ip].next;
-        counter++;
-    } while (ip != 0);
-
+        } while (ip != 0);
+    }
 
     if (list->free > 0)
     {
@@ -503,13 +538,15 @@ int list_verification (const LIST *list)
         } while (ip != 0);
     }
 
-    if (counter != list->size)
+    if (counter != (list->size - 1))
     {
         return LIST_ERR_CNT_NODE;
     }
 
     return LIST_OK;
 }
+
+#define DUMP_LOG(str) fprintf (fp_err, str);
 
 void list_dump_text (const LIST *list, const int code_error, const char *file_err, const char *func_err, const int line_err)
 {
@@ -519,8 +556,7 @@ void list_dump_text (const LIST *list, const int code_error, const char *file_er
     {
         fprintf (stderr, "%s", err_msgs_arr[FILE_OPEN_ERR]);
     }
-    
-    if (list != NULL)
+    else if (list != NULL)
     {
         if (code_error < LIST_ERROR_CNT)
         {
@@ -528,12 +564,12 @@ void list_dump_text (const LIST *list, const int code_error, const char *file_er
         }
         else
         {
-            fprintf (fp_err, "Unknown error.\n\n");
+            DUMP_LOG ("Unknown error.\n\n");
         }
 
         fprintf (fp_err, "list[%p] \"list\" called from %s(%d) %s\n", list, file_err, line_err, func_err);
 
-        fprintf (fp_err, "{\n"); // TD: DUMPLOG("sds");
+        DUMP_LOG ("{\n");
 
         fprintf (fp_err, "\tsize = %d\n", list->size);
         fprintf (fp_err, "\thead = %d\n", list->head);
@@ -543,7 +579,7 @@ void list_dump_text (const LIST *list, const int code_error, const char *file_er
         if (list->data != NULL)
         {
             fprintf (fp_err, "\tdata[%p]\n", list->data);
-            fprintf (fp_err, "\t{\n");
+            DUMP_LOG ("\t{\n");
 
             if (code_error != LIST_ERR_SIZE)
             {
@@ -555,14 +591,14 @@ void list_dump_text (const LIST *list, const int code_error, const char *file_er
                 }
             }
             
-            fprintf (fp_err, "\t}\n");
+            DUMP_LOG ("\t}\n");
         }
         else
         {
-            fprintf (fp_err, "\tdata[NULL]\n");
+            DUMP_LOG ("\tdata[NULL]\n");
         }
 
-        fprintf (fp_err, "}\n\n-----------------------------------------------------------\n");
+        DUMP_LOG ("}\n\n-----------------------------------------------------------\n");
     }
     else
     {
@@ -572,7 +608,7 @@ void list_dump_text (const LIST *list, const int code_error, const char *file_er
         }
         else
         {
-            fprintf (fp_err, "Unknown error.\n\n");
+            DUMP_LOG ("Unknown error.\n\n");
         }
 
         fprintf (fp_err, "list[NULL] \"list\" called from %s(%d) %s\n", file_err, line_err, func_err);
@@ -583,6 +619,8 @@ void list_dump_text (const LIST *list, const int code_error, const char *file_er
         fprintf (stderr, "%s", err_msgs_arr[FILE_CLOSE_ERR]);
     }
 }
+
+#undef DUMP_LOG
 
 void list_dump_graph_viz (const LIST *list, const int code_error, const char *file_err, const char *func_err, const int line_err)
 {
@@ -633,8 +671,6 @@ void list_dump_graph_viz (const LIST *list, const int code_error, const char *fi
             }
         }
 
-        // TD: create node(color, label_fmt_string, ...)
-        // va_list
         fprintf (fp_dot, "\thead [shape = Mrecord, style = filled, fillcolor = " LIGHT_GREEN_COLOR ", label = \"head: %d\"];\n", list->head);
         fprintf (fp_dot, "\ttail [shape = Mrecord, style = filled, fillcolor = " LIGHT_GREEN_COLOR ", label = \"tail: %d\"];\n", list->tail);
         fprintf (fp_dot, "\tfree [shape = Mrecord, style = filled, fillcolor = " BLUE_COLOR ", label = \"free: %d\"];\n", list->free);
@@ -660,7 +696,6 @@ void list_dump_graph_viz (const LIST *list, const int code_error, const char *fi
             }
         }
 
-        // TD: connect_nodes()
         fprintf (fp_dot, "\thead -> %d\n", list->head);
         fprintf (fp_dot, "\ttail -> %d\n", list->tail);
         fprintf (fp_dot, "\tfree -> %d\n", list->free);
@@ -674,9 +709,7 @@ void list_dump_graph_viz (const LIST *list, const int code_error, const char *fi
         fprintf (stderr, "%s", err_msgs_arr[FILE_CLOSE_ERR]);
     }
 
-    char *command = "dot -Tsvg";
-
-    sprintf (command, "%s -o %s", fp_dot_name, fp_image);
+    char *command = "dot -Tsvg dump.dot -o dot.svg";
 
     system (command);
 

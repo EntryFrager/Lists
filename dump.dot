@@ -1,0 +1,35 @@
+digraph List {
+	rankdir = LR;
+	node [shape = record];
+	bgcolor = "#696969";
+	0 -> 0 -> 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10 -> head -> tail -> free[arrowsize = 0.0, weight = "10000", color = "#696969", fontname = "Times-New-Roman"];
+	0 [shape = Mrecord, style = filled, fillcolor = "#ff0000", label = "idx: 0 | data: 0 | next: 1 | prev: 10"];
+	1 [shape = Mrecord, style = filled, fillcolor = "#ccff99", label = "idx: 1 | data: 100 | next: 2 | prev: 0"];
+	2 [shape = Mrecord, style = filled, fillcolor = "#ccff99", label = "idx: 2 | data: 1 | next: 3 | prev: 1"];
+	3 [shape = Mrecord, style = filled, fillcolor = "#ccff99", label = "idx: 3 | data: 2 | next: 4 | prev: 2"];
+	4 [shape = Mrecord, style = filled, fillcolor = "#ccff99", label = "idx: 4 | data: 300 | next: 5 | prev: 3"];
+	5 [shape = Mrecord, style = filled, fillcolor = "#ccff99", label = "idx: 5 | data: 4 | next: 6 | prev: 4"];
+	6 [shape = Mrecord, style = filled, fillcolor = "#ccff99", label = "idx: 6 | data: 200 | next: 7 | prev: 5"];
+	7 [shape = Mrecord, style = filled, fillcolor = "#ccff99", label = "idx: 7 | data: 5 | next: 8 | prev: 6"];
+	8 [shape = Mrecord, style = filled, fillcolor = "#ccff99", label = "idx: 8 | data: 6 | next: 9 | prev: 7"];
+	9 [shape = Mrecord, style = filled, fillcolor = "#ccff99", label = "idx: 9 | data: 7 | next: 10 | prev: 8"];
+	10 [shape = Mrecord, style = filled, fillcolor = "#ccff99", label = "idx: 10 | data: 400 | next: 0 | prev: 9"];
+	head [shape = Mrecord, style = filled, fillcolor = "#ccff99", label = "head: 1"];
+	tail [shape = Mrecord, style = filled, fillcolor = "#ccff99", label = "tail: 10"];
+	free [shape = Mrecord, style = filled, fillcolor = "#00BFFF", label = "free: 0"];
+	0 -> 1
+	1 -> 2
+	2 -> 3
+	3 -> 4
+	4 -> 5
+	5 -> 6
+	6 -> 7
+	7 -> 8
+	8 -> 9
+	9 -> 10
+	10 -> 0
+	head -> 1
+	tail -> 10
+	free -> 0
+	label = "list_dump from function main, List/main.cpp:29";
+	All[shape = Mrecord, style = filled, fillcolor = "#8B00FF", label = "size = 11"];}
