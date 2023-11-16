@@ -6,8 +6,8 @@
 #include <string.h>
 
 // g++ -I
-#include "include\error.h"
-#include "include\utils.h"
+#include "include/error.h"
+#include "include/utils.h"
 
 static int CODE_ERROR = 0;
 
