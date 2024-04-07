@@ -1,0 +1,9928 @@
+[31mERROR: the connection between the list nodes is broken[0m
+[31mERROR: the connection between free nodes of the list is broken[0m
+[31mERROR: the number of nodes is incorrect[0m
+list[0x7ffc6331ba00] "list" called from src/list.cpp(119) list_insert_elem_after_ph
+{
+	size = 200
+	head = 1
+	tail = 0
+	free = 2
+	data[0x5dbeb868f2a0]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = -1
+
+		data[1]->value = 100
+		data[1]->next  = 114
+		data[1]->prev  = 113
+
+		data[2]->value = 0
+		data[2]->next  = 3
+		data[2]->prev  = -1
+
+		data[3]->value = 0
+		data[3]->next  = 4
+		data[3]->prev  = -1
+
+		data[4]->value = 0
+		data[4]->next  = 5
+		data[4]->prev  = -1
+
+		data[5]->value = 0
+		data[5]->next  = 6
+		data[5]->prev  = -1
+
+		data[6]->value = 0
+		data[6]->next  = 7
+		data[6]->prev  = -1
+
+		data[7]->value = 0
+		data[7]->next  = 8
+		data[7]->prev  = -1
+
+		data[8]->value = 0
+		data[8]->next  = 9
+		data[8]->prev  = -1
+
+		data[9]->value = 0
+		data[9]->next  = 10
+		data[9]->prev  = -1
+
+		data[10]->value = 0
+		data[10]->next  = 11
+		data[10]->prev  = -1
+
+		data[11]->value = 0
+		data[11]->next  = 12
+		data[11]->prev  = -1
+
+		data[12]->value = 0
+		data[12]->next  = 13
+		data[12]->prev  = -1
+
+		data[13]->value = 0
+		data[13]->next  = 14
+		data[13]->prev  = -1
+
+		data[14]->value = 0
+		data[14]->next  = 15
+		data[14]->prev  = -1
+
+		data[15]->value = 0
+		data[15]->next  = 16
+		data[15]->prev  = -1
+
+		data[16]->value = 0
+		data[16]->next  = 17
+		data[16]->prev  = -1
+
+		data[17]->value = 0
+		data[17]->next  = 18
+		data[17]->prev  = -1
+
+		data[18]->value = 0
+		data[18]->next  = 19
+		data[18]->prev  = -1
+
+		data[19]->value = 0
+		data[19]->next  = 20
+		data[19]->prev  = -1
+
+		data[20]->value = 0
+		data[20]->next  = 21
+		data[20]->prev  = -1
+
+		data[21]->value = 0
+		data[21]->next  = 22
+		data[21]->prev  = -1
+
+		data[22]->value = 0
+		data[22]->next  = 23
+		data[22]->prev  = -1
+
+		data[23]->value = 0
+		data[23]->next  = 24
+		data[23]->prev  = -1
+
+		data[24]->value = 0
+		data[24]->next  = 25
+		data[24]->prev  = -1
+
+		data[25]->value = 0
+		data[25]->next  = 26
+		data[25]->prev  = -1
+
+		data[26]->value = 0
+		data[26]->next  = 27
+		data[26]->prev  = -1
+
+		data[27]->value = 0
+		data[27]->next  = 28
+		data[27]->prev  = -1
+
+		data[28]->value = 0
+		data[28]->next  = 29
+		data[28]->prev  = -1
+
+		data[29]->value = 0
+		data[29]->next  = 30
+		data[29]->prev  = -1
+
+		data[30]->value = 0
+		data[30]->next  = 31
+		data[30]->prev  = -1
+
+		data[31]->value = 0
+		data[31]->next  = 32
+		data[31]->prev  = -1
+
+		data[32]->value = 0
+		data[32]->next  = 33
+		data[32]->prev  = -1
+
+		data[33]->value = 0
+		data[33]->next  = 34
+		data[33]->prev  = -1
+
+		data[34]->value = 0
+		data[34]->next  = 35
+		data[34]->prev  = -1
+
+		data[35]->value = 0
+		data[35]->next  = 36
+		data[35]->prev  = -1
+
+		data[36]->value = 0
+		data[36]->next  = 37
+		data[36]->prev  = -1
+
+		data[37]->value = 0
+		data[37]->next  = 38
+		data[37]->prev  = -1
+
+		data[38]->value = 0
+		data[38]->next  = 39
+		data[38]->prev  = -1
+
+		data[39]->value = 0
+		data[39]->next  = 40
+		data[39]->prev  = -1
+
+		data[40]->value = 0
+		data[40]->next  = 41
+		data[40]->prev  = -1
+
+		data[41]->value = 0
+		data[41]->next  = 42
+		data[41]->prev  = -1
+
+		data[42]->value = 0
+		data[42]->next  = 43
+		data[42]->prev  = -1
+
+		data[43]->value = 0
+		data[43]->next  = 44
+		data[43]->prev  = -1
+
+		data[44]->value = 0
+		data[44]->next  = 45
+		data[44]->prev  = -1
+
+		data[45]->value = 0
+		data[45]->next  = 46
+		data[45]->prev  = -1
+
+		data[46]->value = 0
+		data[46]->next  = 47
+		data[46]->prev  = -1
+
+		data[47]->value = 0
+		data[47]->next  = 48
+		data[47]->prev  = -1
+
+		data[48]->value = 0
+		data[48]->next  = 49
+		data[48]->prev  = -1
+
+		data[49]->value = 0
+		data[49]->next  = 50
+		data[49]->prev  = -1
+
+		data[50]->value = 0
+		data[50]->next  = 51
+		data[50]->prev  = -1
+
+		data[51]->value = 0
+		data[51]->next  = 52
+		data[51]->prev  = -1
+
+		data[52]->value = 0
+		data[52]->next  = 53
+		data[52]->prev  = -1
+
+		data[53]->value = 0
+		data[53]->next  = 54
+		data[53]->prev  = -1
+
+		data[54]->value = 0
+		data[54]->next  = 55
+		data[54]->prev  = -1
+
+		data[55]->value = 0
+		data[55]->next  = 56
+		data[55]->prev  = -1
+
+		data[56]->value = 0
+		data[56]->next  = 57
+		data[56]->prev  = -1
+
+		data[57]->value = 0
+		data[57]->next  = 58
+		data[57]->prev  = -1
+
+		data[58]->value = 0
+		data[58]->next  = 59
+		data[58]->prev  = -1
+
+		data[59]->value = 0
+		data[59]->next  = 60
+		data[59]->prev  = -1
+
+		data[60]->value = 0
+		data[60]->next  = 61
+		data[60]->prev  = -1
+
+		data[61]->value = 0
+		data[61]->next  = 62
+		data[61]->prev  = -1
+
+		data[62]->value = 0
+		data[62]->next  = 63
+		data[62]->prev  = -1
+
+		data[63]->value = 0
+		data[63]->next  = 64
+		data[63]->prev  = -1
+
+		data[64]->value = 0
+		data[64]->next  = 65
+		data[64]->prev  = -1
+
+		data[65]->value = 0
+		data[65]->next  = 66
+		data[65]->prev  = -1
+
+		data[66]->value = 0
+		data[66]->next  = 67
+		data[66]->prev  = -1
+
+		data[67]->value = 0
+		data[67]->next  = 68
+		data[67]->prev  = -1
+
+		data[68]->value = 0
+		data[68]->next  = 69
+		data[68]->prev  = -1
+
+		data[69]->value = 0
+		data[69]->next  = 70
+		data[69]->prev  = -1
+
+		data[70]->value = 0
+		data[70]->next  = 71
+		data[70]->prev  = -1
+
+		data[71]->value = 0
+		data[71]->next  = 72
+		data[71]->prev  = -1
+
+		data[72]->value = 0
+		data[72]->next  = 73
+		data[72]->prev  = -1
+
+		data[73]->value = 0
+		data[73]->next  = 74
+		data[73]->prev  = -1
+
+		data[74]->value = 0
+		data[74]->next  = 75
+		data[74]->prev  = -1
+
+		data[75]->value = 0
+		data[75]->next  = 76
+		data[75]->prev  = -1
+
+		data[76]->value = 0
+		data[76]->next  = 77
+		data[76]->prev  = -1
+
+		data[77]->value = 0
+		data[77]->next  = 78
+		data[77]->prev  = -1
+
+		data[78]->value = 0
+		data[78]->next  = 79
+		data[78]->prev  = -1
+
+		data[79]->value = 0
+		data[79]->next  = 80
+		data[79]->prev  = -1
+
+		data[80]->value = 0
+		data[80]->next  = 81
+		data[80]->prev  = -1
+
+		data[81]->value = 0
+		data[81]->next  = 82
+		data[81]->prev  = -1
+
+		data[82]->value = 0
+		data[82]->next  = 83
+		data[82]->prev  = -1
+
+		data[83]->value = 0
+		data[83]->next  = 84
+		data[83]->prev  = -1
+
+		data[84]->value = 0
+		data[84]->next  = 85
+		data[84]->prev  = -1
+
+		data[85]->value = 0
+		data[85]->next  = 86
+		data[85]->prev  = -1
+
+		data[86]->value = 0
+		data[86]->next  = 87
+		data[86]->prev  = -1
+
+		data[87]->value = 0
+		data[87]->next  = 88
+		data[87]->prev  = -1
+
+		data[88]->value = 0
+		data[88]->next  = 89
+		data[88]->prev  = -1
+
+		data[89]->value = 0
+		data[89]->next  = 90
+		data[89]->prev  = -1
+
+		data[90]->value = 0
+		data[90]->next  = 91
+		data[90]->prev  = -1
+
+		data[91]->value = 0
+		data[91]->next  = 92
+		data[91]->prev  = -1
+
+		data[92]->value = 0
+		data[92]->next  = 93
+		data[92]->prev  = -1
+
+		data[93]->value = 0
+		data[93]->next  = 94
+		data[93]->prev  = -1
+
+		data[94]->value = 0
+		data[94]->next  = 95
+		data[94]->prev  = -1
+
+		data[95]->value = 0
+		data[95]->next  = 96
+		data[95]->prev  = -1
+
+		data[96]->value = 0
+		data[96]->next  = 97
+		data[96]->prev  = -1
+
+		data[97]->value = 0
+		data[97]->next  = 98
+		data[97]->prev  = -1
+
+		data[98]->value = 0
+		data[98]->next  = 99
+		data[98]->prev  = -1
+
+		data[99]->value = 0
+		data[99]->next  = 100
+		data[99]->prev  = -1
+
+		data[100]->value = 0
+		data[100]->next  = 101
+		data[100]->prev  = -1
+
+		data[101]->value = 0
+		data[101]->next  = 102
+		data[101]->prev  = -1
+
+		data[102]->value = 0
+		data[102]->next  = 103
+		data[102]->prev  = -1
+
+		data[103]->value = 0
+		data[103]->next  = 104
+		data[103]->prev  = -1
+
+		data[104]->value = 0
+		data[104]->next  = 105
+		data[104]->prev  = -1
+
+		data[105]->value = 0
+		data[105]->next  = 106
+		data[105]->prev  = -1
+
+		data[106]->value = 0
+		data[106]->next  = 107
+		data[106]->prev  = -1
+
+		data[107]->value = 0
+		data[107]->next  = 108
+		data[107]->prev  = -1
+
+		data[108]->value = 0
+		data[108]->next  = 109
+		data[108]->prev  = -1
+
+		data[109]->value = 0
+		data[109]->next  = 110
+		data[109]->prev  = -1
+
+		data[110]->value = 0
+		data[110]->next  = 111
+		data[110]->prev  = -1
+
+		data[111]->value = 0
+		data[111]->next  = 112
+		data[111]->prev  = -1
+
+		data[112]->value = 0
+		data[112]->next  = 113
+		data[112]->prev  = -1
+
+		data[113]->value = 0
+		data[113]->next  = 1
+		data[113]->prev  = -1
+
+		data[114]->value = 0
+		data[114]->next  = 115
+		data[114]->prev  = 1
+
+		data[115]->value = 0
+		data[115]->next  = 116
+		data[115]->prev  = -1
+
+		data[116]->value = 0
+		data[116]->next  = 117
+		data[116]->prev  = -1
+
+		data[117]->value = 0
+		data[117]->next  = 118
+		data[117]->prev  = -1
+
+		data[118]->value = 0
+		data[118]->next  = 119
+		data[118]->prev  = -1
+
+		data[119]->value = 0
+		data[119]->next  = 120
+		data[119]->prev  = -1
+
+		data[120]->value = 0
+		data[120]->next  = 121
+		data[120]->prev  = -1
+
+		data[121]->value = 0
+		data[121]->next  = 122
+		data[121]->prev  = -1
+
+		data[122]->value = 0
+		data[122]->next  = 123
+		data[122]->prev  = -1
+
+		data[123]->value = 0
+		data[123]->next  = 124
+		data[123]->prev  = -1
+
+		data[124]->value = 0
+		data[124]->next  = 125
+		data[124]->prev  = -1
+
+		data[125]->value = 0
+		data[125]->next  = 126
+		data[125]->prev  = -1
+
+		data[126]->value = 0
+		data[126]->next  = 127
+		data[126]->prev  = -1
+
+		data[127]->value = 0
+		data[127]->next  = 128
+		data[127]->prev  = -1
+
+		data[128]->value = 0
+		data[128]->next  = 129
+		data[128]->prev  = -1
+
+		data[129]->value = 0
+		data[129]->next  = 130
+		data[129]->prev  = -1
+
+		data[130]->value = 0
+		data[130]->next  = 131
+		data[130]->prev  = -1
+
+		data[131]->value = 0
+		data[131]->next  = 132
+		data[131]->prev  = -1
+
+		data[132]->value = 0
+		data[132]->next  = 133
+		data[132]->prev  = -1
+
+		data[133]->value = 0
+		data[133]->next  = 134
+		data[133]->prev  = -1
+
+		data[134]->value = 0
+		data[134]->next  = 135
+		data[134]->prev  = -1
+
+		data[135]->value = 0
+		data[135]->next  = 136
+		data[135]->prev  = -1
+
+		data[136]->value = 0
+		data[136]->next  = 137
+		data[136]->prev  = -1
+
+		data[137]->value = 0
+		data[137]->next  = 138
+		data[137]->prev  = -1
+
+		data[138]->value = 0
+		data[138]->next  = 139
+		data[138]->prev  = -1
+
+		data[139]->value = 0
+		data[139]->next  = 140
+		data[139]->prev  = -1
+
+		data[140]->value = 0
+		data[140]->next  = 141
+		data[140]->prev  = -1
+
+		data[141]->value = 0
+		data[141]->next  = 142
+		data[141]->prev  = -1
+
+		data[142]->value = 0
+		data[142]->next  = 143
+		data[142]->prev  = -1
+
+		data[143]->value = 0
+		data[143]->next  = 144
+		data[143]->prev  = -1
+
+		data[144]->value = 0
+		data[144]->next  = 145
+		data[144]->prev  = -1
+
+		data[145]->value = 0
+		data[145]->next  = 146
+		data[145]->prev  = -1
+
+		data[146]->value = 0
+		data[146]->next  = 147
+		data[146]->prev  = -1
+
+		data[147]->value = 0
+		data[147]->next  = 148
+		data[147]->prev  = -1
+
+		data[148]->value = 0
+		data[148]->next  = 149
+		data[148]->prev  = -1
+
+		data[149]->value = 0
+		data[149]->next  = 150
+		data[149]->prev  = -1
+
+		data[150]->value = 0
+		data[150]->next  = 151
+		data[150]->prev  = -1
+
+		data[151]->value = 0
+		data[151]->next  = 152
+		data[151]->prev  = -1
+
+		data[152]->value = 0
+		data[152]->next  = 153
+		data[152]->prev  = -1
+
+		data[153]->value = 0
+		data[153]->next  = 154
+		data[153]->prev  = -1
+
+		data[154]->value = 0
+		data[154]->next  = 155
+		data[154]->prev  = -1
+
+		data[155]->value = 0
+		data[155]->next  = 156
+		data[155]->prev  = -1
+
+		data[156]->value = 0
+		data[156]->next  = 157
+		data[156]->prev  = -1
+
+		data[157]->value = 0
+		data[157]->next  = 158
+		data[157]->prev  = -1
+
+		data[158]->value = 0
+		data[158]->next  = 159
+		data[158]->prev  = -1
+
+		data[159]->value = 0
+		data[159]->next  = 160
+		data[159]->prev  = -1
+
+		data[160]->value = 0
+		data[160]->next  = 161
+		data[160]->prev  = -1
+
+		data[161]->value = 0
+		data[161]->next  = 162
+		data[161]->prev  = -1
+
+		data[162]->value = 0
+		data[162]->next  = 163
+		data[162]->prev  = -1
+
+		data[163]->value = 0
+		data[163]->next  = 164
+		data[163]->prev  = -1
+
+		data[164]->value = 0
+		data[164]->next  = 165
+		data[164]->prev  = -1
+
+		data[165]->value = 0
+		data[165]->next  = 166
+		data[165]->prev  = -1
+
+		data[166]->value = 0
+		data[166]->next  = 167
+		data[166]->prev  = -1
+
+		data[167]->value = 0
+		data[167]->next  = 168
+		data[167]->prev  = -1
+
+		data[168]->value = 0
+		data[168]->next  = 169
+		data[168]->prev  = -1
+
+		data[169]->value = 0
+		data[169]->next  = 170
+		data[169]->prev  = -1
+
+		data[170]->value = 0
+		data[170]->next  = 171
+		data[170]->prev  = -1
+
+		data[171]->value = 0
+		data[171]->next  = 172
+		data[171]->prev  = -1
+
+		data[172]->value = 0
+		data[172]->next  = 173
+		data[172]->prev  = -1
+
+		data[173]->value = 0
+		data[173]->next  = 174
+		data[173]->prev  = -1
+
+		data[174]->value = 0
+		data[174]->next  = 175
+		data[174]->prev  = -1
+
+		data[175]->value = 0
+		data[175]->next  = 176
+		data[175]->prev  = -1
+
+		data[176]->value = 0
+		data[176]->next  = 177
+		data[176]->prev  = -1
+
+		data[177]->value = 0
+		data[177]->next  = 178
+		data[177]->prev  = -1
+
+		data[178]->value = 0
+		data[178]->next  = 179
+		data[178]->prev  = -1
+
+		data[179]->value = 0
+		data[179]->next  = 180
+		data[179]->prev  = -1
+
+		data[180]->value = 0
+		data[180]->next  = 181
+		data[180]->prev  = -1
+
+		data[181]->value = 0
+		data[181]->next  = 182
+		data[181]->prev  = -1
+
+		data[182]->value = 0
+		data[182]->next  = 183
+		data[182]->prev  = -1
+
+		data[183]->value = 0
+		data[183]->next  = 184
+		data[183]->prev  = -1
+
+		data[184]->value = 0
+		data[184]->next  = 185
+		data[184]->prev  = -1
+
+		data[185]->value = 0
+		data[185]->next  = 186
+		data[185]->prev  = -1
+
+		data[186]->value = 0
+		data[186]->next  = 187
+		data[186]->prev  = -1
+
+		data[187]->value = 0
+		data[187]->next  = 188
+		data[187]->prev  = -1
+
+		data[188]->value = 0
+		data[188]->next  = 189
+		data[188]->prev  = -1
+
+		data[189]->value = 0
+		data[189]->next  = 190
+		data[189]->prev  = -1
+
+		data[190]->value = 0
+		data[190]->next  = 191
+		data[190]->prev  = -1
+
+		data[191]->value = 0
+		data[191]->next  = 192
+		data[191]->prev  = -1
+
+		data[192]->value = 0
+		data[192]->next  = 193
+		data[192]->prev  = -1
+
+		data[193]->value = 0
+		data[193]->next  = 194
+		data[193]->prev  = -1
+
+		data[194]->value = 0
+		data[194]->next  = 195
+		data[194]->prev  = -1
+
+		data[195]->value = 0
+		data[195]->next  = 196
+		data[195]->prev  = -1
+
+		data[196]->value = 0
+		data[196]->next  = 197
+		data[196]->prev  = -1
+
+		data[197]->value = 0
+		data[197]->next  = 198
+		data[197]->prev  = -1
+
+		data[198]->value = 0
+		data[198]->next  = 199
+		data[198]->prev  = -1
+
+		data[199]->value = 0
+		data[199]->next  = 0
+		data[199]->prev  = -1
+
+	}
+}
+
+-----------------------------------------------------------
+[31mERROR: the connection between the list nodes is broken[0m
+[31mERROR: the connection between free nodes of the list is broken[0m
+[31mERROR: the number of nodes is incorrect[0m
+list[0x7ffc6331ba00] "list" called from src/list.cpp(246) lineariz_list
+{
+	size = 200
+	head = 1
+	tail = 0
+	free = 2
+	data[0x5dbeb868f2a0]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = -1
+
+		data[1]->value = 100
+		data[1]->next  = 114
+		data[1]->prev  = 113
+
+		data[2]->value = 0
+		data[2]->next  = 3
+		data[2]->prev  = -1
+
+		data[3]->value = 0
+		data[3]->next  = 4
+		data[3]->prev  = -1
+
+		data[4]->value = 0
+		data[4]->next  = 5
+		data[4]->prev  = -1
+
+		data[5]->value = 0
+		data[5]->next  = 6
+		data[5]->prev  = -1
+
+		data[6]->value = 0
+		data[6]->next  = 7
+		data[6]->prev  = -1
+
+		data[7]->value = 0
+		data[7]->next  = 8
+		data[7]->prev  = -1
+
+		data[8]->value = 0
+		data[8]->next  = 9
+		data[8]->prev  = -1
+
+		data[9]->value = 0
+		data[9]->next  = 10
+		data[9]->prev  = -1
+
+		data[10]->value = 0
+		data[10]->next  = 11
+		data[10]->prev  = -1
+
+		data[11]->value = 0
+		data[11]->next  = 12
+		data[11]->prev  = -1
+
+		data[12]->value = 0
+		data[12]->next  = 13
+		data[12]->prev  = -1
+
+		data[13]->value = 0
+		data[13]->next  = 14
+		data[13]->prev  = -1
+
+		data[14]->value = 0
+		data[14]->next  = 15
+		data[14]->prev  = -1
+
+		data[15]->value = 0
+		data[15]->next  = 16
+		data[15]->prev  = -1
+
+		data[16]->value = 0
+		data[16]->next  = 17
+		data[16]->prev  = -1
+
+		data[17]->value = 0
+		data[17]->next  = 18
+		data[17]->prev  = -1
+
+		data[18]->value = 0
+		data[18]->next  = 19
+		data[18]->prev  = -1
+
+		data[19]->value = 0
+		data[19]->next  = 20
+		data[19]->prev  = -1
+
+		data[20]->value = 0
+		data[20]->next  = 21
+		data[20]->prev  = -1
+
+		data[21]->value = 0
+		data[21]->next  = 22
+		data[21]->prev  = -1
+
+		data[22]->value = 0
+		data[22]->next  = 23
+		data[22]->prev  = -1
+
+		data[23]->value = 0
+		data[23]->next  = 24
+		data[23]->prev  = -1
+
+		data[24]->value = 0
+		data[24]->next  = 25
+		data[24]->prev  = -1
+
+		data[25]->value = 0
+		data[25]->next  = 26
+		data[25]->prev  = -1
+
+		data[26]->value = 0
+		data[26]->next  = 27
+		data[26]->prev  = -1
+
+		data[27]->value = 0
+		data[27]->next  = 28
+		data[27]->prev  = -1
+
+		data[28]->value = 0
+		data[28]->next  = 29
+		data[28]->prev  = -1
+
+		data[29]->value = 0
+		data[29]->next  = 30
+		data[29]->prev  = -1
+
+		data[30]->value = 0
+		data[30]->next  = 31
+		data[30]->prev  = -1
+
+		data[31]->value = 0
+		data[31]->next  = 32
+		data[31]->prev  = -1
+
+		data[32]->value = 0
+		data[32]->next  = 33
+		data[32]->prev  = -1
+
+		data[33]->value = 0
+		data[33]->next  = 34
+		data[33]->prev  = -1
+
+		data[34]->value = 0
+		data[34]->next  = 35
+		data[34]->prev  = -1
+
+		data[35]->value = 0
+		data[35]->next  = 36
+		data[35]->prev  = -1
+
+		data[36]->value = 0
+		data[36]->next  = 37
+		data[36]->prev  = -1
+
+		data[37]->value = 0
+		data[37]->next  = 38
+		data[37]->prev  = -1
+
+		data[38]->value = 0
+		data[38]->next  = 39
+		data[38]->prev  = -1
+
+		data[39]->value = 0
+		data[39]->next  = 40
+		data[39]->prev  = -1
+
+		data[40]->value = 0
+		data[40]->next  = 41
+		data[40]->prev  = -1
+
+		data[41]->value = 0
+		data[41]->next  = 42
+		data[41]->prev  = -1
+
+		data[42]->value = 0
+		data[42]->next  = 43
+		data[42]->prev  = -1
+
+		data[43]->value = 0
+		data[43]->next  = 44
+		data[43]->prev  = -1
+
+		data[44]->value = 0
+		data[44]->next  = 45
+		data[44]->prev  = -1
+
+		data[45]->value = 0
+		data[45]->next  = 46
+		data[45]->prev  = -1
+
+		data[46]->value = 0
+		data[46]->next  = 47
+		data[46]->prev  = -1
+
+		data[47]->value = 0
+		data[47]->next  = 48
+		data[47]->prev  = -1
+
+		data[48]->value = 0
+		data[48]->next  = 49
+		data[48]->prev  = -1
+
+		data[49]->value = 0
+		data[49]->next  = 50
+		data[49]->prev  = -1
+
+		data[50]->value = 0
+		data[50]->next  = 51
+		data[50]->prev  = -1
+
+		data[51]->value = 0
+		data[51]->next  = 52
+		data[51]->prev  = -1
+
+		data[52]->value = 0
+		data[52]->next  = 53
+		data[52]->prev  = -1
+
+		data[53]->value = 0
+		data[53]->next  = 54
+		data[53]->prev  = -1
+
+		data[54]->value = 0
+		data[54]->next  = 55
+		data[54]->prev  = -1
+
+		data[55]->value = 0
+		data[55]->next  = 56
+		data[55]->prev  = -1
+
+		data[56]->value = 0
+		data[56]->next  = 57
+		data[56]->prev  = -1
+
+		data[57]->value = 0
+		data[57]->next  = 58
+		data[57]->prev  = -1
+
+		data[58]->value = 0
+		data[58]->next  = 59
+		data[58]->prev  = -1
+
+		data[59]->value = 0
+		data[59]->next  = 60
+		data[59]->prev  = -1
+
+		data[60]->value = 0
+		data[60]->next  = 61
+		data[60]->prev  = -1
+
+		data[61]->value = 0
+		data[61]->next  = 62
+		data[61]->prev  = -1
+
+		data[62]->value = 0
+		data[62]->next  = 63
+		data[62]->prev  = -1
+
+		data[63]->value = 0
+		data[63]->next  = 64
+		data[63]->prev  = -1
+
+		data[64]->value = 0
+		data[64]->next  = 65
+		data[64]->prev  = -1
+
+		data[65]->value = 0
+		data[65]->next  = 66
+		data[65]->prev  = -1
+
+		data[66]->value = 0
+		data[66]->next  = 67
+		data[66]->prev  = -1
+
+		data[67]->value = 0
+		data[67]->next  = 68
+		data[67]->prev  = -1
+
+		data[68]->value = 0
+		data[68]->next  = 69
+		data[68]->prev  = -1
+
+		data[69]->value = 0
+		data[69]->next  = 70
+		data[69]->prev  = -1
+
+		data[70]->value = 0
+		data[70]->next  = 71
+		data[70]->prev  = -1
+
+		data[71]->value = 0
+		data[71]->next  = 72
+		data[71]->prev  = -1
+
+		data[72]->value = 0
+		data[72]->next  = 73
+		data[72]->prev  = -1
+
+		data[73]->value = 0
+		data[73]->next  = 74
+		data[73]->prev  = -1
+
+		data[74]->value = 0
+		data[74]->next  = 75
+		data[74]->prev  = -1
+
+		data[75]->value = 0
+		data[75]->next  = 76
+		data[75]->prev  = -1
+
+		data[76]->value = 0
+		data[76]->next  = 77
+		data[76]->prev  = -1
+
+		data[77]->value = 0
+		data[77]->next  = 78
+		data[77]->prev  = -1
+
+		data[78]->value = 0
+		data[78]->next  = 79
+		data[78]->prev  = -1
+
+		data[79]->value = 0
+		data[79]->next  = 80
+		data[79]->prev  = -1
+
+		data[80]->value = 0
+		data[80]->next  = 81
+		data[80]->prev  = -1
+
+		data[81]->value = 0
+		data[81]->next  = 82
+		data[81]->prev  = -1
+
+		data[82]->value = 0
+		data[82]->next  = 83
+		data[82]->prev  = -1
+
+		data[83]->value = 0
+		data[83]->next  = 84
+		data[83]->prev  = -1
+
+		data[84]->value = 0
+		data[84]->next  = 85
+		data[84]->prev  = -1
+
+		data[85]->value = 0
+		data[85]->next  = 86
+		data[85]->prev  = -1
+
+		data[86]->value = 0
+		data[86]->next  = 87
+		data[86]->prev  = -1
+
+		data[87]->value = 0
+		data[87]->next  = 88
+		data[87]->prev  = -1
+
+		data[88]->value = 0
+		data[88]->next  = 89
+		data[88]->prev  = -1
+
+		data[89]->value = 0
+		data[89]->next  = 90
+		data[89]->prev  = -1
+
+		data[90]->value = 0
+		data[90]->next  = 91
+		data[90]->prev  = -1
+
+		data[91]->value = 0
+		data[91]->next  = 92
+		data[91]->prev  = -1
+
+		data[92]->value = 0
+		data[92]->next  = 93
+		data[92]->prev  = -1
+
+		data[93]->value = 0
+		data[93]->next  = 94
+		data[93]->prev  = -1
+
+		data[94]->value = 0
+		data[94]->next  = 95
+		data[94]->prev  = -1
+
+		data[95]->value = 0
+		data[95]->next  = 96
+		data[95]->prev  = -1
+
+		data[96]->value = 0
+		data[96]->next  = 97
+		data[96]->prev  = -1
+
+		data[97]->value = 0
+		data[97]->next  = 98
+		data[97]->prev  = -1
+
+		data[98]->value = 0
+		data[98]->next  = 99
+		data[98]->prev  = -1
+
+		data[99]->value = 0
+		data[99]->next  = 100
+		data[99]->prev  = -1
+
+		data[100]->value = 0
+		data[100]->next  = 101
+		data[100]->prev  = -1
+
+		data[101]->value = 0
+		data[101]->next  = 102
+		data[101]->prev  = -1
+
+		data[102]->value = 0
+		data[102]->next  = 103
+		data[102]->prev  = -1
+
+		data[103]->value = 0
+		data[103]->next  = 104
+		data[103]->prev  = -1
+
+		data[104]->value = 0
+		data[104]->next  = 105
+		data[104]->prev  = -1
+
+		data[105]->value = 0
+		data[105]->next  = 106
+		data[105]->prev  = -1
+
+		data[106]->value = 0
+		data[106]->next  = 107
+		data[106]->prev  = -1
+
+		data[107]->value = 0
+		data[107]->next  = 108
+		data[107]->prev  = -1
+
+		data[108]->value = 0
+		data[108]->next  = 109
+		data[108]->prev  = -1
+
+		data[109]->value = 0
+		data[109]->next  = 110
+		data[109]->prev  = -1
+
+		data[110]->value = 0
+		data[110]->next  = 111
+		data[110]->prev  = -1
+
+		data[111]->value = 0
+		data[111]->next  = 112
+		data[111]->prev  = -1
+
+		data[112]->value = 0
+		data[112]->next  = 113
+		data[112]->prev  = -1
+
+		data[113]->value = 0
+		data[113]->next  = 1
+		data[113]->prev  = -1
+
+		data[114]->value = 0
+		data[114]->next  = 115
+		data[114]->prev  = 1
+
+		data[115]->value = 0
+		data[115]->next  = 116
+		data[115]->prev  = -1
+
+		data[116]->value = 0
+		data[116]->next  = 117
+		data[116]->prev  = -1
+
+		data[117]->value = 0
+		data[117]->next  = 118
+		data[117]->prev  = -1
+
+		data[118]->value = 0
+		data[118]->next  = 119
+		data[118]->prev  = -1
+
+		data[119]->value = 0
+		data[119]->next  = 120
+		data[119]->prev  = -1
+
+		data[120]->value = 0
+		data[120]->next  = 121
+		data[120]->prev  = -1
+
+		data[121]->value = 0
+		data[121]->next  = 122
+		data[121]->prev  = -1
+
+		data[122]->value = 0
+		data[122]->next  = 123
+		data[122]->prev  = -1
+
+		data[123]->value = 0
+		data[123]->next  = 124
+		data[123]->prev  = -1
+
+		data[124]->value = 0
+		data[124]->next  = 125
+		data[124]->prev  = -1
+
+		data[125]->value = 0
+		data[125]->next  = 126
+		data[125]->prev  = -1
+
+		data[126]->value = 0
+		data[126]->next  = 127
+		data[126]->prev  = -1
+
+		data[127]->value = 0
+		data[127]->next  = 128
+		data[127]->prev  = -1
+
+		data[128]->value = 0
+		data[128]->next  = 129
+		data[128]->prev  = -1
+
+		data[129]->value = 0
+		data[129]->next  = 130
+		data[129]->prev  = -1
+
+		data[130]->value = 0
+		data[130]->next  = 131
+		data[130]->prev  = -1
+
+		data[131]->value = 0
+		data[131]->next  = 132
+		data[131]->prev  = -1
+
+		data[132]->value = 0
+		data[132]->next  = 133
+		data[132]->prev  = -1
+
+		data[133]->value = 0
+		data[133]->next  = 134
+		data[133]->prev  = -1
+
+		data[134]->value = 0
+		data[134]->next  = 135
+		data[134]->prev  = -1
+
+		data[135]->value = 0
+		data[135]->next  = 136
+		data[135]->prev  = -1
+
+		data[136]->value = 0
+		data[136]->next  = 137
+		data[136]->prev  = -1
+
+		data[137]->value = 0
+		data[137]->next  = 138
+		data[137]->prev  = -1
+
+		data[138]->value = 0
+		data[138]->next  = 139
+		data[138]->prev  = -1
+
+		data[139]->value = 0
+		data[139]->next  = 140
+		data[139]->prev  = -1
+
+		data[140]->value = 0
+		data[140]->next  = 141
+		data[140]->prev  = -1
+
+		data[141]->value = 0
+		data[141]->next  = 142
+		data[141]->prev  = -1
+
+		data[142]->value = 0
+		data[142]->next  = 143
+		data[142]->prev  = -1
+
+		data[143]->value = 0
+		data[143]->next  = 144
+		data[143]->prev  = -1
+
+		data[144]->value = 0
+		data[144]->next  = 145
+		data[144]->prev  = -1
+
+		data[145]->value = 0
+		data[145]->next  = 146
+		data[145]->prev  = -1
+
+		data[146]->value = 0
+		data[146]->next  = 147
+		data[146]->prev  = -1
+
+		data[147]->value = 0
+		data[147]->next  = 148
+		data[147]->prev  = -1
+
+		data[148]->value = 0
+		data[148]->next  = 149
+		data[148]->prev  = -1
+
+		data[149]->value = 0
+		data[149]->next  = 150
+		data[149]->prev  = -1
+
+		data[150]->value = 0
+		data[150]->next  = 151
+		data[150]->prev  = -1
+
+		data[151]->value = 0
+		data[151]->next  = 152
+		data[151]->prev  = -1
+
+		data[152]->value = 0
+		data[152]->next  = 153
+		data[152]->prev  = -1
+
+		data[153]->value = 0
+		data[153]->next  = 154
+		data[153]->prev  = -1
+
+		data[154]->value = 0
+		data[154]->next  = 155
+		data[154]->prev  = -1
+
+		data[155]->value = 0
+		data[155]->next  = 156
+		data[155]->prev  = -1
+
+		data[156]->value = 0
+		data[156]->next  = 157
+		data[156]->prev  = -1
+
+		data[157]->value = 0
+		data[157]->next  = 158
+		data[157]->prev  = -1
+
+		data[158]->value = 0
+		data[158]->next  = 159
+		data[158]->prev  = -1
+
+		data[159]->value = 0
+		data[159]->next  = 160
+		data[159]->prev  = -1
+
+		data[160]->value = 0
+		data[160]->next  = 161
+		data[160]->prev  = -1
+
+		data[161]->value = 0
+		data[161]->next  = 162
+		data[161]->prev  = -1
+
+		data[162]->value = 0
+		data[162]->next  = 163
+		data[162]->prev  = -1
+
+		data[163]->value = 0
+		data[163]->next  = 164
+		data[163]->prev  = -1
+
+		data[164]->value = 0
+		data[164]->next  = 165
+		data[164]->prev  = -1
+
+		data[165]->value = 0
+		data[165]->next  = 166
+		data[165]->prev  = -1
+
+		data[166]->value = 0
+		data[166]->next  = 167
+		data[166]->prev  = -1
+
+		data[167]->value = 0
+		data[167]->next  = 168
+		data[167]->prev  = -1
+
+		data[168]->value = 0
+		data[168]->next  = 169
+		data[168]->prev  = -1
+
+		data[169]->value = 0
+		data[169]->next  = 170
+		data[169]->prev  = -1
+
+		data[170]->value = 0
+		data[170]->next  = 171
+		data[170]->prev  = -1
+
+		data[171]->value = 0
+		data[171]->next  = 172
+		data[171]->prev  = -1
+
+		data[172]->value = 0
+		data[172]->next  = 173
+		data[172]->prev  = -1
+
+		data[173]->value = 0
+		data[173]->next  = 174
+		data[173]->prev  = -1
+
+		data[174]->value = 0
+		data[174]->next  = 175
+		data[174]->prev  = -1
+
+		data[175]->value = 0
+		data[175]->next  = 176
+		data[175]->prev  = -1
+
+		data[176]->value = 0
+		data[176]->next  = 177
+		data[176]->prev  = -1
+
+		data[177]->value = 0
+		data[177]->next  = 178
+		data[177]->prev  = -1
+
+		data[178]->value = 0
+		data[178]->next  = 179
+		data[178]->prev  = -1
+
+		data[179]->value = 0
+		data[179]->next  = 180
+		data[179]->prev  = -1
+
+		data[180]->value = 0
+		data[180]->next  = 181
+		data[180]->prev  = -1
+
+		data[181]->value = 0
+		data[181]->next  = 182
+		data[181]->prev  = -1
+
+		data[182]->value = 0
+		data[182]->next  = 183
+		data[182]->prev  = -1
+
+		data[183]->value = 0
+		data[183]->next  = 184
+		data[183]->prev  = -1
+
+		data[184]->value = 0
+		data[184]->next  = 185
+		data[184]->prev  = -1
+
+		data[185]->value = 0
+		data[185]->next  = 186
+		data[185]->prev  = -1
+
+		data[186]->value = 0
+		data[186]->next  = 187
+		data[186]->prev  = -1
+
+		data[187]->value = 0
+		data[187]->next  = 188
+		data[187]->prev  = -1
+
+		data[188]->value = 0
+		data[188]->next  = 189
+		data[188]->prev  = -1
+
+		data[189]->value = 0
+		data[189]->next  = 190
+		data[189]->prev  = -1
+
+		data[190]->value = 0
+		data[190]->next  = 191
+		data[190]->prev  = -1
+
+		data[191]->value = 0
+		data[191]->next  = 192
+		data[191]->prev  = -1
+
+		data[192]->value = 0
+		data[192]->next  = 193
+		data[192]->prev  = -1
+
+		data[193]->value = 0
+		data[193]->next  = 194
+		data[193]->prev  = -1
+
+		data[194]->value = 0
+		data[194]->next  = 195
+		data[194]->prev  = -1
+
+		data[195]->value = 0
+		data[195]->next  = 196
+		data[195]->prev  = -1
+
+		data[196]->value = 0
+		data[196]->next  = 197
+		data[196]->prev  = -1
+
+		data[197]->value = 0
+		data[197]->next  = 198
+		data[197]->prev  = -1
+
+		data[198]->value = 0
+		data[198]->next  = 199
+		data[198]->prev  = -1
+
+		data[199]->value = 0
+		data[199]->next  = 0
+		data[199]->prev  = -1
+
+	}
+}
+
+-----------------------------------------------------------
+[31mERROR: the connection between the list nodes is broken[0m
+[31mERROR: the connection between free nodes of the list is broken[0m
+[31mERROR: the number of nodes is incorrect[0m
+list[0x7ffc6331ba00] "list" called from src/list.cpp(286) lineariz_list
+{
+	size = 200
+	head = 1
+	tail = 87
+	free = 88
+	data[0x5dbeb868ffd0]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = 87
+
+		data[1]->value = 100
+		data[1]->next  = 2
+		data[1]->prev  = 0
+
+		data[2]->value = 0
+		data[2]->next  = 3
+		data[2]->prev  = 1
+
+		data[3]->value = 0
+		data[3]->next  = 4
+		data[3]->prev  = 2
+
+		data[4]->value = 0
+		data[4]->next  = 5
+		data[4]->prev  = 3
+
+		data[5]->value = 0
+		data[5]->next  = 6
+		data[5]->prev  = 4
+
+		data[6]->value = 0
+		data[6]->next  = 7
+		data[6]->prev  = 5
+
+		data[7]->value = 0
+		data[7]->next  = 8
+		data[7]->prev  = 6
+
+		data[8]->value = 0
+		data[8]->next  = 9
+		data[8]->prev  = 7
+
+		data[9]->value = 0
+		data[9]->next  = 10
+		data[9]->prev  = 8
+
+		data[10]->value = 0
+		data[10]->next  = 11
+		data[10]->prev  = 9
+
+		data[11]->value = 0
+		data[11]->next  = 12
+		data[11]->prev  = 10
+
+		data[12]->value = 0
+		data[12]->next  = 13
+		data[12]->prev  = 11
+
+		data[13]->value = 0
+		data[13]->next  = 14
+		data[13]->prev  = 12
+
+		data[14]->value = 0
+		data[14]->next  = 15
+		data[14]->prev  = 13
+
+		data[15]->value = 0
+		data[15]->next  = 16
+		data[15]->prev  = 14
+
+		data[16]->value = 0
+		data[16]->next  = 17
+		data[16]->prev  = 15
+
+		data[17]->value = 0
+		data[17]->next  = 18
+		data[17]->prev  = 16
+
+		data[18]->value = 0
+		data[18]->next  = 19
+		data[18]->prev  = 17
+
+		data[19]->value = 0
+		data[19]->next  = 20
+		data[19]->prev  = 18
+
+		data[20]->value = 0
+		data[20]->next  = 21
+		data[20]->prev  = 19
+
+		data[21]->value = 0
+		data[21]->next  = 22
+		data[21]->prev  = 20
+
+		data[22]->value = 0
+		data[22]->next  = 23
+		data[22]->prev  = 21
+
+		data[23]->value = 0
+		data[23]->next  = 24
+		data[23]->prev  = 22
+
+		data[24]->value = 0
+		data[24]->next  = 25
+		data[24]->prev  = 23
+
+		data[25]->value = 0
+		data[25]->next  = 26
+		data[25]->prev  = 24
+
+		data[26]->value = 0
+		data[26]->next  = 27
+		data[26]->prev  = 25
+
+		data[27]->value = 0
+		data[27]->next  = 28
+		data[27]->prev  = 26
+
+		data[28]->value = 0
+		data[28]->next  = 29
+		data[28]->prev  = 27
+
+		data[29]->value = 0
+		data[29]->next  = 30
+		data[29]->prev  = 28
+
+		data[30]->value = 0
+		data[30]->next  = 31
+		data[30]->prev  = 29
+
+		data[31]->value = 0
+		data[31]->next  = 32
+		data[31]->prev  = 30
+
+		data[32]->value = 0
+		data[32]->next  = 33
+		data[32]->prev  = 31
+
+		data[33]->value = 0
+		data[33]->next  = 34
+		data[33]->prev  = 32
+
+		data[34]->value = 0
+		data[34]->next  = 35
+		data[34]->prev  = 33
+
+		data[35]->value = 0
+		data[35]->next  = 36
+		data[35]->prev  = 34
+
+		data[36]->value = 0
+		data[36]->next  = 37
+		data[36]->prev  = 35
+
+		data[37]->value = 0
+		data[37]->next  = 38
+		data[37]->prev  = 36
+
+		data[38]->value = 0
+		data[38]->next  = 39
+		data[38]->prev  = 37
+
+		data[39]->value = 0
+		data[39]->next  = 40
+		data[39]->prev  = 38
+
+		data[40]->value = 0
+		data[40]->next  = 41
+		data[40]->prev  = 39
+
+		data[41]->value = 0
+		data[41]->next  = 42
+		data[41]->prev  = 40
+
+		data[42]->value = 0
+		data[42]->next  = 43
+		data[42]->prev  = 41
+
+		data[43]->value = 0
+		data[43]->next  = 44
+		data[43]->prev  = 42
+
+		data[44]->value = 0
+		data[44]->next  = 45
+		data[44]->prev  = 43
+
+		data[45]->value = 0
+		data[45]->next  = 46
+		data[45]->prev  = 44
+
+		data[46]->value = 0
+		data[46]->next  = 47
+		data[46]->prev  = 45
+
+		data[47]->value = 0
+		data[47]->next  = 48
+		data[47]->prev  = 46
+
+		data[48]->value = 0
+		data[48]->next  = 49
+		data[48]->prev  = 47
+
+		data[49]->value = 0
+		data[49]->next  = 50
+		data[49]->prev  = 48
+
+		data[50]->value = 0
+		data[50]->next  = 51
+		data[50]->prev  = 49
+
+		data[51]->value = 0
+		data[51]->next  = 52
+		data[51]->prev  = 50
+
+		data[52]->value = 0
+		data[52]->next  = 53
+		data[52]->prev  = 51
+
+		data[53]->value = 0
+		data[53]->next  = 54
+		data[53]->prev  = 52
+
+		data[54]->value = 0
+		data[54]->next  = 55
+		data[54]->prev  = 53
+
+		data[55]->value = 0
+		data[55]->next  = 56
+		data[55]->prev  = 54
+
+		data[56]->value = 0
+		data[56]->next  = 57
+		data[56]->prev  = 55
+
+		data[57]->value = 0
+		data[57]->next  = 58
+		data[57]->prev  = 56
+
+		data[58]->value = 0
+		data[58]->next  = 59
+		data[58]->prev  = 57
+
+		data[59]->value = 0
+		data[59]->next  = 60
+		data[59]->prev  = 58
+
+		data[60]->value = 0
+		data[60]->next  = 61
+		data[60]->prev  = 59
+
+		data[61]->value = 0
+		data[61]->next  = 62
+		data[61]->prev  = 60
+
+		data[62]->value = 0
+		data[62]->next  = 63
+		data[62]->prev  = 61
+
+		data[63]->value = 0
+		data[63]->next  = 64
+		data[63]->prev  = 62
+
+		data[64]->value = 0
+		data[64]->next  = 65
+		data[64]->prev  = 63
+
+		data[65]->value = 0
+		data[65]->next  = 66
+		data[65]->prev  = 64
+
+		data[66]->value = 0
+		data[66]->next  = 67
+		data[66]->prev  = 65
+
+		data[67]->value = 0
+		data[67]->next  = 68
+		data[67]->prev  = 66
+
+		data[68]->value = 0
+		data[68]->next  = 69
+		data[68]->prev  = 67
+
+		data[69]->value = 0
+		data[69]->next  = 70
+		data[69]->prev  = 68
+
+		data[70]->value = 0
+		data[70]->next  = 71
+		data[70]->prev  = 69
+
+		data[71]->value = 0
+		data[71]->next  = 72
+		data[71]->prev  = 70
+
+		data[72]->value = 0
+		data[72]->next  = 73
+		data[72]->prev  = 71
+
+		data[73]->value = 0
+		data[73]->next  = 74
+		data[73]->prev  = 72
+
+		data[74]->value = 0
+		data[74]->next  = 75
+		data[74]->prev  = 73
+
+		data[75]->value = 0
+		data[75]->next  = 76
+		data[75]->prev  = 74
+
+		data[76]->value = 0
+		data[76]->next  = 77
+		data[76]->prev  = 75
+
+		data[77]->value = 0
+		data[77]->next  = 78
+		data[77]->prev  = 76
+
+		data[78]->value = 0
+		data[78]->next  = 79
+		data[78]->prev  = 77
+
+		data[79]->value = 0
+		data[79]->next  = 80
+		data[79]->prev  = 78
+
+		data[80]->value = 0
+		data[80]->next  = 81
+		data[80]->prev  = 79
+
+		data[81]->value = 0
+		data[81]->next  = 82
+		data[81]->prev  = 80
+
+		data[82]->value = 0
+		data[82]->next  = 83
+		data[82]->prev  = 81
+
+		data[83]->value = 0
+		data[83]->next  = 84
+		data[83]->prev  = 82
+
+		data[84]->value = 0
+		data[84]->next  = 85
+		data[84]->prev  = 83
+
+		data[85]->value = 0
+		data[85]->next  = 86
+		data[85]->prev  = 84
+
+		data[86]->value = 0
+		data[86]->next  = 87
+		data[86]->prev  = 85
+
+		data[87]->value = 0
+		data[87]->next  = 0
+		data[87]->prev  = 86
+
+		data[88]->value = 0
+		data[88]->next  = 89
+		data[88]->prev  = -1
+
+		data[89]->value = 0
+		data[89]->next  = 90
+		data[89]->prev  = -1
+
+		data[90]->value = 0
+		data[90]->next  = 91
+		data[90]->prev  = -1
+
+		data[91]->value = 0
+		data[91]->next  = 92
+		data[91]->prev  = -1
+
+		data[92]->value = 0
+		data[92]->next  = 93
+		data[92]->prev  = -1
+
+		data[93]->value = 0
+		data[93]->next  = 94
+		data[93]->prev  = -1
+
+		data[94]->value = 0
+		data[94]->next  = 95
+		data[94]->prev  = -1
+
+		data[95]->value = 0
+		data[95]->next  = 96
+		data[95]->prev  = -1
+
+		data[96]->value = 0
+		data[96]->next  = 97
+		data[96]->prev  = -1
+
+		data[97]->value = 0
+		data[97]->next  = 98
+		data[97]->prev  = -1
+
+		data[98]->value = 0
+		data[98]->next  = 99
+		data[98]->prev  = -1
+
+		data[99]->value = 0
+		data[99]->next  = 100
+		data[99]->prev  = -1
+
+		data[100]->value = 0
+		data[100]->next  = 101
+		data[100]->prev  = -1
+
+		data[101]->value = 0
+		data[101]->next  = 102
+		data[101]->prev  = -1
+
+		data[102]->value = 0
+		data[102]->next  = 103
+		data[102]->prev  = -1
+
+		data[103]->value = 0
+		data[103]->next  = 104
+		data[103]->prev  = -1
+
+		data[104]->value = 0
+		data[104]->next  = 105
+		data[104]->prev  = -1
+
+		data[105]->value = 0
+		data[105]->next  = 106
+		data[105]->prev  = -1
+
+		data[106]->value = 0
+		data[106]->next  = 107
+		data[106]->prev  = -1
+
+		data[107]->value = 0
+		data[107]->next  = 108
+		data[107]->prev  = -1
+
+		data[108]->value = 0
+		data[108]->next  = 109
+		data[108]->prev  = -1
+
+		data[109]->value = 0
+		data[109]->next  = 110
+		data[109]->prev  = -1
+
+		data[110]->value = 0
+		data[110]->next  = 111
+		data[110]->prev  = -1
+
+		data[111]->value = 0
+		data[111]->next  = 112
+		data[111]->prev  = -1
+
+		data[112]->value = 0
+		data[112]->next  = 113
+		data[112]->prev  = -1
+
+		data[113]->value = 0
+		data[113]->next  = 114
+		data[113]->prev  = -1
+
+		data[114]->value = 0
+		data[114]->next  = 115
+		data[114]->prev  = -1
+
+		data[115]->value = 0
+		data[115]->next  = 116
+		data[115]->prev  = -1
+
+		data[116]->value = 0
+		data[116]->next  = 117
+		data[116]->prev  = -1
+
+		data[117]->value = 0
+		data[117]->next  = 118
+		data[117]->prev  = -1
+
+		data[118]->value = 0
+		data[118]->next  = 119
+		data[118]->prev  = -1
+
+		data[119]->value = 0
+		data[119]->next  = 120
+		data[119]->prev  = -1
+
+		data[120]->value = 0
+		data[120]->next  = 121
+		data[120]->prev  = -1
+
+		data[121]->value = 0
+		data[121]->next  = 122
+		data[121]->prev  = -1
+
+		data[122]->value = 0
+		data[122]->next  = 123
+		data[122]->prev  = -1
+
+		data[123]->value = 0
+		data[123]->next  = 124
+		data[123]->prev  = -1
+
+		data[124]->value = 0
+		data[124]->next  = 125
+		data[124]->prev  = -1
+
+		data[125]->value = 0
+		data[125]->next  = 126
+		data[125]->prev  = -1
+
+		data[126]->value = 0
+		data[126]->next  = 127
+		data[126]->prev  = -1
+
+		data[127]->value = 0
+		data[127]->next  = 128
+		data[127]->prev  = -1
+
+		data[128]->value = 0
+		data[128]->next  = 129
+		data[128]->prev  = -1
+
+		data[129]->value = 0
+		data[129]->next  = 130
+		data[129]->prev  = -1
+
+		data[130]->value = 0
+		data[130]->next  = 131
+		data[130]->prev  = -1
+
+		data[131]->value = 0
+		data[131]->next  = 132
+		data[131]->prev  = -1
+
+		data[132]->value = 0
+		data[132]->next  = 133
+		data[132]->prev  = -1
+
+		data[133]->value = 0
+		data[133]->next  = 134
+		data[133]->prev  = -1
+
+		data[134]->value = 0
+		data[134]->next  = 135
+		data[134]->prev  = -1
+
+		data[135]->value = 0
+		data[135]->next  = 136
+		data[135]->prev  = -1
+
+		data[136]->value = 0
+		data[136]->next  = 137
+		data[136]->prev  = -1
+
+		data[137]->value = 0
+		data[137]->next  = 138
+		data[137]->prev  = -1
+
+		data[138]->value = 0
+		data[138]->next  = 139
+		data[138]->prev  = -1
+
+		data[139]->value = 0
+		data[139]->next  = 140
+		data[139]->prev  = -1
+
+		data[140]->value = 0
+		data[140]->next  = 141
+		data[140]->prev  = -1
+
+		data[141]->value = 0
+		data[141]->next  = 142
+		data[141]->prev  = -1
+
+		data[142]->value = 0
+		data[142]->next  = 143
+		data[142]->prev  = -1
+
+		data[143]->value = 0
+		data[143]->next  = 144
+		data[143]->prev  = -1
+
+		data[144]->value = 0
+		data[144]->next  = 145
+		data[144]->prev  = -1
+
+		data[145]->value = 0
+		data[145]->next  = 146
+		data[145]->prev  = -1
+
+		data[146]->value = 0
+		data[146]->next  = 147
+		data[146]->prev  = -1
+
+		data[147]->value = 0
+		data[147]->next  = 148
+		data[147]->prev  = -1
+
+		data[148]->value = 0
+		data[148]->next  = 149
+		data[148]->prev  = -1
+
+		data[149]->value = 0
+		data[149]->next  = 150
+		data[149]->prev  = -1
+
+		data[150]->value = 0
+		data[150]->next  = 151
+		data[150]->prev  = -1
+
+		data[151]->value = 0
+		data[151]->next  = 152
+		data[151]->prev  = -1
+
+		data[152]->value = 0
+		data[152]->next  = 153
+		data[152]->prev  = -1
+
+		data[153]->value = 0
+		data[153]->next  = 154
+		data[153]->prev  = -1
+
+		data[154]->value = 0
+		data[154]->next  = 155
+		data[154]->prev  = -1
+
+		data[155]->value = 0
+		data[155]->next  = 156
+		data[155]->prev  = -1
+
+		data[156]->value = 0
+		data[156]->next  = 157
+		data[156]->prev  = -1
+
+		data[157]->value = 0
+		data[157]->next  = 158
+		data[157]->prev  = -1
+
+		data[158]->value = 0
+		data[158]->next  = 159
+		data[158]->prev  = -1
+
+		data[159]->value = 0
+		data[159]->next  = 160
+		data[159]->prev  = -1
+
+		data[160]->value = 0
+		data[160]->next  = 161
+		data[160]->prev  = -1
+
+		data[161]->value = 0
+		data[161]->next  = 162
+		data[161]->prev  = -1
+
+		data[162]->value = 0
+		data[162]->next  = 163
+		data[162]->prev  = -1
+
+		data[163]->value = 0
+		data[163]->next  = 164
+		data[163]->prev  = -1
+
+		data[164]->value = 0
+		data[164]->next  = 165
+		data[164]->prev  = -1
+
+		data[165]->value = 0
+		data[165]->next  = 166
+		data[165]->prev  = -1
+
+		data[166]->value = 0
+		data[166]->next  = 167
+		data[166]->prev  = -1
+
+		data[167]->value = 0
+		data[167]->next  = 168
+		data[167]->prev  = -1
+
+		data[168]->value = 0
+		data[168]->next  = 169
+		data[168]->prev  = -1
+
+		data[169]->value = 0
+		data[169]->next  = 170
+		data[169]->prev  = -1
+
+		data[170]->value = 0
+		data[170]->next  = 171
+		data[170]->prev  = -1
+
+		data[171]->value = 0
+		data[171]->next  = 172
+		data[171]->prev  = -1
+
+		data[172]->value = 0
+		data[172]->next  = 173
+		data[172]->prev  = -1
+
+		data[173]->value = 0
+		data[173]->next  = 174
+		data[173]->prev  = -1
+
+		data[174]->value = 0
+		data[174]->next  = 175
+		data[174]->prev  = -1
+
+		data[175]->value = 0
+		data[175]->next  = 176
+		data[175]->prev  = -1
+
+		data[176]->value = 0
+		data[176]->next  = 177
+		data[176]->prev  = -1
+
+		data[177]->value = 0
+		data[177]->next  = 178
+		data[177]->prev  = -1
+
+		data[178]->value = 0
+		data[178]->next  = 179
+		data[178]->prev  = -1
+
+		data[179]->value = 0
+		data[179]->next  = 180
+		data[179]->prev  = -1
+
+		data[180]->value = 0
+		data[180]->next  = 181
+		data[180]->prev  = -1
+
+		data[181]->value = 0
+		data[181]->next  = 182
+		data[181]->prev  = -1
+
+		data[182]->value = 0
+		data[182]->next  = 183
+		data[182]->prev  = -1
+
+		data[183]->value = 0
+		data[183]->next  = 184
+		data[183]->prev  = -1
+
+		data[184]->value = 0
+		data[184]->next  = 185
+		data[184]->prev  = -1
+
+		data[185]->value = 0
+		data[185]->next  = 186
+		data[185]->prev  = -1
+
+		data[186]->value = 0
+		data[186]->next  = 187
+		data[186]->prev  = -1
+
+		data[187]->value = 0
+		data[187]->next  = 188
+		data[187]->prev  = -1
+
+		data[188]->value = 0
+		data[188]->next  = 189
+		data[188]->prev  = -1
+
+		data[189]->value = 0
+		data[189]->next  = 190
+		data[189]->prev  = -1
+
+		data[190]->value = 0
+		data[190]->next  = 191
+		data[190]->prev  = -1
+
+		data[191]->value = 0
+		data[191]->next  = 192
+		data[191]->prev  = -1
+
+		data[192]->value = 0
+		data[192]->next  = 193
+		data[192]->prev  = -1
+
+		data[193]->value = 0
+		data[193]->next  = 194
+		data[193]->prev  = -1
+
+		data[194]->value = 0
+		data[194]->next  = 195
+		data[194]->prev  = -1
+
+		data[195]->value = 0
+		data[195]->next  = 196
+		data[195]->prev  = -1
+
+		data[196]->value = 0
+		data[196]->next  = 197
+		data[196]->prev  = -1
+
+		data[197]->value = 0
+		data[197]->next  = 198
+		data[197]->prev  = -1
+
+		data[198]->value = 0
+		data[198]->next  = 199
+		data[198]->prev  = -1
+
+		data[199]->value = 0
+		data[199]->next  = 0
+		data[199]->prev  = -1
+
+	}
+}
+
+-----------------------------------------------------------
+[31mERROR: the connection between the list nodes is broken[0m
+[31mERROR: the connection between free nodes of the list is broken[0m
+[31mERROR: the number of nodes is incorrect[0m
+list[0x7ffc6331ba00] "list" called from src/main.cpp(25) main
+{
+	size = 200
+	head = 1
+	tail = 87
+	free = 88
+	data[0x5dbeb868ffd0]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = 87
+
+		data[1]->value = 100
+		data[1]->next  = 2
+		data[1]->prev  = 0
+
+		data[2]->value = 0
+		data[2]->next  = 3
+		data[2]->prev  = 1
+
+		data[3]->value = 0
+		data[3]->next  = 4
+		data[3]->prev  = 2
+
+		data[4]->value = 0
+		data[4]->next  = 5
+		data[4]->prev  = 3
+
+		data[5]->value = 0
+		data[5]->next  = 6
+		data[5]->prev  = 4
+
+		data[6]->value = 0
+		data[6]->next  = 7
+		data[6]->prev  = 5
+
+		data[7]->value = 0
+		data[7]->next  = 8
+		data[7]->prev  = 6
+
+		data[8]->value = 0
+		data[8]->next  = 9
+		data[8]->prev  = 7
+
+		data[9]->value = 0
+		data[9]->next  = 10
+		data[9]->prev  = 8
+
+		data[10]->value = 0
+		data[10]->next  = 11
+		data[10]->prev  = 9
+
+		data[11]->value = 0
+		data[11]->next  = 12
+		data[11]->prev  = 10
+
+		data[12]->value = 0
+		data[12]->next  = 13
+		data[12]->prev  = 11
+
+		data[13]->value = 0
+		data[13]->next  = 14
+		data[13]->prev  = 12
+
+		data[14]->value = 0
+		data[14]->next  = 15
+		data[14]->prev  = 13
+
+		data[15]->value = 0
+		data[15]->next  = 16
+		data[15]->prev  = 14
+
+		data[16]->value = 0
+		data[16]->next  = 17
+		data[16]->prev  = 15
+
+		data[17]->value = 0
+		data[17]->next  = 18
+		data[17]->prev  = 16
+
+		data[18]->value = 0
+		data[18]->next  = 19
+		data[18]->prev  = 17
+
+		data[19]->value = 0
+		data[19]->next  = 20
+		data[19]->prev  = 18
+
+		data[20]->value = 0
+		data[20]->next  = 21
+		data[20]->prev  = 19
+
+		data[21]->value = 0
+		data[21]->next  = 22
+		data[21]->prev  = 20
+
+		data[22]->value = 0
+		data[22]->next  = 23
+		data[22]->prev  = 21
+
+		data[23]->value = 0
+		data[23]->next  = 24
+		data[23]->prev  = 22
+
+		data[24]->value = 0
+		data[24]->next  = 25
+		data[24]->prev  = 23
+
+		data[25]->value = 0
+		data[25]->next  = 26
+		data[25]->prev  = 24
+
+		data[26]->value = 0
+		data[26]->next  = 27
+		data[26]->prev  = 25
+
+		data[27]->value = 0
+		data[27]->next  = 28
+		data[27]->prev  = 26
+
+		data[28]->value = 0
+		data[28]->next  = 29
+		data[28]->prev  = 27
+
+		data[29]->value = 0
+		data[29]->next  = 30
+		data[29]->prev  = 28
+
+		data[30]->value = 0
+		data[30]->next  = 31
+		data[30]->prev  = 29
+
+		data[31]->value = 0
+		data[31]->next  = 32
+		data[31]->prev  = 30
+
+		data[32]->value = 0
+		data[32]->next  = 33
+		data[32]->prev  = 31
+
+		data[33]->value = 0
+		data[33]->next  = 34
+		data[33]->prev  = 32
+
+		data[34]->value = 0
+		data[34]->next  = 35
+		data[34]->prev  = 33
+
+		data[35]->value = 0
+		data[35]->next  = 36
+		data[35]->prev  = 34
+
+		data[36]->value = 0
+		data[36]->next  = 37
+		data[36]->prev  = 35
+
+		data[37]->value = 0
+		data[37]->next  = 38
+		data[37]->prev  = 36
+
+		data[38]->value = 0
+		data[38]->next  = 39
+		data[38]->prev  = 37
+
+		data[39]->value = 0
+		data[39]->next  = 40
+		data[39]->prev  = 38
+
+		data[40]->value = 0
+		data[40]->next  = 41
+		data[40]->prev  = 39
+
+		data[41]->value = 0
+		data[41]->next  = 42
+		data[41]->prev  = 40
+
+		data[42]->value = 0
+		data[42]->next  = 43
+		data[42]->prev  = 41
+
+		data[43]->value = 0
+		data[43]->next  = 44
+		data[43]->prev  = 42
+
+		data[44]->value = 0
+		data[44]->next  = 45
+		data[44]->prev  = 43
+
+		data[45]->value = 0
+		data[45]->next  = 46
+		data[45]->prev  = 44
+
+		data[46]->value = 0
+		data[46]->next  = 47
+		data[46]->prev  = 45
+
+		data[47]->value = 0
+		data[47]->next  = 48
+		data[47]->prev  = 46
+
+		data[48]->value = 0
+		data[48]->next  = 49
+		data[48]->prev  = 47
+
+		data[49]->value = 0
+		data[49]->next  = 50
+		data[49]->prev  = 48
+
+		data[50]->value = 0
+		data[50]->next  = 51
+		data[50]->prev  = 49
+
+		data[51]->value = 0
+		data[51]->next  = 52
+		data[51]->prev  = 50
+
+		data[52]->value = 0
+		data[52]->next  = 53
+		data[52]->prev  = 51
+
+		data[53]->value = 0
+		data[53]->next  = 54
+		data[53]->prev  = 52
+
+		data[54]->value = 0
+		data[54]->next  = 55
+		data[54]->prev  = 53
+
+		data[55]->value = 0
+		data[55]->next  = 56
+		data[55]->prev  = 54
+
+		data[56]->value = 0
+		data[56]->next  = 57
+		data[56]->prev  = 55
+
+		data[57]->value = 0
+		data[57]->next  = 58
+		data[57]->prev  = 56
+
+		data[58]->value = 0
+		data[58]->next  = 59
+		data[58]->prev  = 57
+
+		data[59]->value = 0
+		data[59]->next  = 60
+		data[59]->prev  = 58
+
+		data[60]->value = 0
+		data[60]->next  = 61
+		data[60]->prev  = 59
+
+		data[61]->value = 0
+		data[61]->next  = 62
+		data[61]->prev  = 60
+
+		data[62]->value = 0
+		data[62]->next  = 63
+		data[62]->prev  = 61
+
+		data[63]->value = 0
+		data[63]->next  = 64
+		data[63]->prev  = 62
+
+		data[64]->value = 0
+		data[64]->next  = 65
+		data[64]->prev  = 63
+
+		data[65]->value = 0
+		data[65]->next  = 66
+		data[65]->prev  = 64
+
+		data[66]->value = 0
+		data[66]->next  = 67
+		data[66]->prev  = 65
+
+		data[67]->value = 0
+		data[67]->next  = 68
+		data[67]->prev  = 66
+
+		data[68]->value = 0
+		data[68]->next  = 69
+		data[68]->prev  = 67
+
+		data[69]->value = 0
+		data[69]->next  = 70
+		data[69]->prev  = 68
+
+		data[70]->value = 0
+		data[70]->next  = 71
+		data[70]->prev  = 69
+
+		data[71]->value = 0
+		data[71]->next  = 72
+		data[71]->prev  = 70
+
+		data[72]->value = 0
+		data[72]->next  = 73
+		data[72]->prev  = 71
+
+		data[73]->value = 0
+		data[73]->next  = 74
+		data[73]->prev  = 72
+
+		data[74]->value = 0
+		data[74]->next  = 75
+		data[74]->prev  = 73
+
+		data[75]->value = 0
+		data[75]->next  = 76
+		data[75]->prev  = 74
+
+		data[76]->value = 0
+		data[76]->next  = 77
+		data[76]->prev  = 75
+
+		data[77]->value = 0
+		data[77]->next  = 78
+		data[77]->prev  = 76
+
+		data[78]->value = 0
+		data[78]->next  = 79
+		data[78]->prev  = 77
+
+		data[79]->value = 0
+		data[79]->next  = 80
+		data[79]->prev  = 78
+
+		data[80]->value = 0
+		data[80]->next  = 81
+		data[80]->prev  = 79
+
+		data[81]->value = 0
+		data[81]->next  = 82
+		data[81]->prev  = 80
+
+		data[82]->value = 0
+		data[82]->next  = 83
+		data[82]->prev  = 81
+
+		data[83]->value = 0
+		data[83]->next  = 84
+		data[83]->prev  = 82
+
+		data[84]->value = 0
+		data[84]->next  = 85
+		data[84]->prev  = 83
+
+		data[85]->value = 0
+		data[85]->next  = 86
+		data[85]->prev  = 84
+
+		data[86]->value = 0
+		data[86]->next  = 87
+		data[86]->prev  = 85
+
+		data[87]->value = 0
+		data[87]->next  = 0
+		data[87]->prev  = 86
+
+		data[88]->value = 0
+		data[88]->next  = 89
+		data[88]->prev  = -1
+
+		data[89]->value = 0
+		data[89]->next  = 90
+		data[89]->prev  = -1
+
+		data[90]->value = 0
+		data[90]->next  = 91
+		data[90]->prev  = -1
+
+		data[91]->value = 0
+		data[91]->next  = 92
+		data[91]->prev  = -1
+
+		data[92]->value = 0
+		data[92]->next  = 93
+		data[92]->prev  = -1
+
+		data[93]->value = 0
+		data[93]->next  = 94
+		data[93]->prev  = -1
+
+		data[94]->value = 0
+		data[94]->next  = 95
+		data[94]->prev  = -1
+
+		data[95]->value = 0
+		data[95]->next  = 96
+		data[95]->prev  = -1
+
+		data[96]->value = 0
+		data[96]->next  = 97
+		data[96]->prev  = -1
+
+		data[97]->value = 0
+		data[97]->next  = 98
+		data[97]->prev  = -1
+
+		data[98]->value = 0
+		data[98]->next  = 99
+		data[98]->prev  = -1
+
+		data[99]->value = 0
+		data[99]->next  = 100
+		data[99]->prev  = -1
+
+		data[100]->value = 0
+		data[100]->next  = 101
+		data[100]->prev  = -1
+
+		data[101]->value = 0
+		data[101]->next  = 102
+		data[101]->prev  = -1
+
+		data[102]->value = 0
+		data[102]->next  = 103
+		data[102]->prev  = -1
+
+		data[103]->value = 0
+		data[103]->next  = 104
+		data[103]->prev  = -1
+
+		data[104]->value = 0
+		data[104]->next  = 105
+		data[104]->prev  = -1
+
+		data[105]->value = 0
+		data[105]->next  = 106
+		data[105]->prev  = -1
+
+		data[106]->value = 0
+		data[106]->next  = 107
+		data[106]->prev  = -1
+
+		data[107]->value = 0
+		data[107]->next  = 108
+		data[107]->prev  = -1
+
+		data[108]->value = 0
+		data[108]->next  = 109
+		data[108]->prev  = -1
+
+		data[109]->value = 0
+		data[109]->next  = 110
+		data[109]->prev  = -1
+
+		data[110]->value = 0
+		data[110]->next  = 111
+		data[110]->prev  = -1
+
+		data[111]->value = 0
+		data[111]->next  = 112
+		data[111]->prev  = -1
+
+		data[112]->value = 0
+		data[112]->next  = 113
+		data[112]->prev  = -1
+
+		data[113]->value = 0
+		data[113]->next  = 114
+		data[113]->prev  = -1
+
+		data[114]->value = 0
+		data[114]->next  = 115
+		data[114]->prev  = -1
+
+		data[115]->value = 0
+		data[115]->next  = 116
+		data[115]->prev  = -1
+
+		data[116]->value = 0
+		data[116]->next  = 117
+		data[116]->prev  = -1
+
+		data[117]->value = 0
+		data[117]->next  = 118
+		data[117]->prev  = -1
+
+		data[118]->value = 0
+		data[118]->next  = 119
+		data[118]->prev  = -1
+
+		data[119]->value = 0
+		data[119]->next  = 120
+		data[119]->prev  = -1
+
+		data[120]->value = 0
+		data[120]->next  = 121
+		data[120]->prev  = -1
+
+		data[121]->value = 0
+		data[121]->next  = 122
+		data[121]->prev  = -1
+
+		data[122]->value = 0
+		data[122]->next  = 123
+		data[122]->prev  = -1
+
+		data[123]->value = 0
+		data[123]->next  = 124
+		data[123]->prev  = -1
+
+		data[124]->value = 0
+		data[124]->next  = 125
+		data[124]->prev  = -1
+
+		data[125]->value = 0
+		data[125]->next  = 126
+		data[125]->prev  = -1
+
+		data[126]->value = 0
+		data[126]->next  = 127
+		data[126]->prev  = -1
+
+		data[127]->value = 0
+		data[127]->next  = 128
+		data[127]->prev  = -1
+
+		data[128]->value = 0
+		data[128]->next  = 129
+		data[128]->prev  = -1
+
+		data[129]->value = 0
+		data[129]->next  = 130
+		data[129]->prev  = -1
+
+		data[130]->value = 0
+		data[130]->next  = 131
+		data[130]->prev  = -1
+
+		data[131]->value = 0
+		data[131]->next  = 132
+		data[131]->prev  = -1
+
+		data[132]->value = 0
+		data[132]->next  = 133
+		data[132]->prev  = -1
+
+		data[133]->value = 0
+		data[133]->next  = 134
+		data[133]->prev  = -1
+
+		data[134]->value = 0
+		data[134]->next  = 135
+		data[134]->prev  = -1
+
+		data[135]->value = 0
+		data[135]->next  = 136
+		data[135]->prev  = -1
+
+		data[136]->value = 0
+		data[136]->next  = 137
+		data[136]->prev  = -1
+
+		data[137]->value = 0
+		data[137]->next  = 138
+		data[137]->prev  = -1
+
+		data[138]->value = 0
+		data[138]->next  = 139
+		data[138]->prev  = -1
+
+		data[139]->value = 0
+		data[139]->next  = 140
+		data[139]->prev  = -1
+
+		data[140]->value = 0
+		data[140]->next  = 141
+		data[140]->prev  = -1
+
+		data[141]->value = 0
+		data[141]->next  = 142
+		data[141]->prev  = -1
+
+		data[142]->value = 0
+		data[142]->next  = 143
+		data[142]->prev  = -1
+
+		data[143]->value = 0
+		data[143]->next  = 144
+		data[143]->prev  = -1
+
+		data[144]->value = 0
+		data[144]->next  = 145
+		data[144]->prev  = -1
+
+		data[145]->value = 0
+		data[145]->next  = 146
+		data[145]->prev  = -1
+
+		data[146]->value = 0
+		data[146]->next  = 147
+		data[146]->prev  = -1
+
+		data[147]->value = 0
+		data[147]->next  = 148
+		data[147]->prev  = -1
+
+		data[148]->value = 0
+		data[148]->next  = 149
+		data[148]->prev  = -1
+
+		data[149]->value = 0
+		data[149]->next  = 150
+		data[149]->prev  = -1
+
+		data[150]->value = 0
+		data[150]->next  = 151
+		data[150]->prev  = -1
+
+		data[151]->value = 0
+		data[151]->next  = 152
+		data[151]->prev  = -1
+
+		data[152]->value = 0
+		data[152]->next  = 153
+		data[152]->prev  = -1
+
+		data[153]->value = 0
+		data[153]->next  = 154
+		data[153]->prev  = -1
+
+		data[154]->value = 0
+		data[154]->next  = 155
+		data[154]->prev  = -1
+
+		data[155]->value = 0
+		data[155]->next  = 156
+		data[155]->prev  = -1
+
+		data[156]->value = 0
+		data[156]->next  = 157
+		data[156]->prev  = -1
+
+		data[157]->value = 0
+		data[157]->next  = 158
+		data[157]->prev  = -1
+
+		data[158]->value = 0
+		data[158]->next  = 159
+		data[158]->prev  = -1
+
+		data[159]->value = 0
+		data[159]->next  = 160
+		data[159]->prev  = -1
+
+		data[160]->value = 0
+		data[160]->next  = 161
+		data[160]->prev  = -1
+
+		data[161]->value = 0
+		data[161]->next  = 162
+		data[161]->prev  = -1
+
+		data[162]->value = 0
+		data[162]->next  = 163
+		data[162]->prev  = -1
+
+		data[163]->value = 0
+		data[163]->next  = 164
+		data[163]->prev  = -1
+
+		data[164]->value = 0
+		data[164]->next  = 165
+		data[164]->prev  = -1
+
+		data[165]->value = 0
+		data[165]->next  = 166
+		data[165]->prev  = -1
+
+		data[166]->value = 0
+		data[166]->next  = 167
+		data[166]->prev  = -1
+
+		data[167]->value = 0
+		data[167]->next  = 168
+		data[167]->prev  = -1
+
+		data[168]->value = 0
+		data[168]->next  = 169
+		data[168]->prev  = -1
+
+		data[169]->value = 0
+		data[169]->next  = 170
+		data[169]->prev  = -1
+
+		data[170]->value = 0
+		data[170]->next  = 171
+		data[170]->prev  = -1
+
+		data[171]->value = 0
+		data[171]->next  = 172
+		data[171]->prev  = -1
+
+		data[172]->value = 0
+		data[172]->next  = 173
+		data[172]->prev  = -1
+
+		data[173]->value = 0
+		data[173]->next  = 174
+		data[173]->prev  = -1
+
+		data[174]->value = 0
+		data[174]->next  = 175
+		data[174]->prev  = -1
+
+		data[175]->value = 0
+		data[175]->next  = 176
+		data[175]->prev  = -1
+
+		data[176]->value = 0
+		data[176]->next  = 177
+		data[176]->prev  = -1
+
+		data[177]->value = 0
+		data[177]->next  = 178
+		data[177]->prev  = -1
+
+		data[178]->value = 0
+		data[178]->next  = 179
+		data[178]->prev  = -1
+
+		data[179]->value = 0
+		data[179]->next  = 180
+		data[179]->prev  = -1
+
+		data[180]->value = 0
+		data[180]->next  = 181
+		data[180]->prev  = -1
+
+		data[181]->value = 0
+		data[181]->next  = 182
+		data[181]->prev  = -1
+
+		data[182]->value = 0
+		data[182]->next  = 183
+		data[182]->prev  = -1
+
+		data[183]->value = 0
+		data[183]->next  = 184
+		data[183]->prev  = -1
+
+		data[184]->value = 0
+		data[184]->next  = 185
+		data[184]->prev  = -1
+
+		data[185]->value = 0
+		data[185]->next  = 186
+		data[185]->prev  = -1
+
+		data[186]->value = 0
+		data[186]->next  = 187
+		data[186]->prev  = -1
+
+		data[187]->value = 0
+		data[187]->next  = 188
+		data[187]->prev  = -1
+
+		data[188]->value = 0
+		data[188]->next  = 189
+		data[188]->prev  = -1
+
+		data[189]->value = 0
+		data[189]->next  = 190
+		data[189]->prev  = -1
+
+		data[190]->value = 0
+		data[190]->next  = 191
+		data[190]->prev  = -1
+
+		data[191]->value = 0
+		data[191]->next  = 192
+		data[191]->prev  = -1
+
+		data[192]->value = 0
+		data[192]->next  = 193
+		data[192]->prev  = -1
+
+		data[193]->value = 0
+		data[193]->next  = 194
+		data[193]->prev  = -1
+
+		data[194]->value = 0
+		data[194]->next  = 195
+		data[194]->prev  = -1
+
+		data[195]->value = 0
+		data[195]->next  = 196
+		data[195]->prev  = -1
+
+		data[196]->value = 0
+		data[196]->next  = 197
+		data[196]->prev  = -1
+
+		data[197]->value = 0
+		data[197]->next  = 198
+		data[197]->prev  = -1
+
+		data[198]->value = 0
+		data[198]->next  = 199
+		data[198]->prev  = -1
+
+		data[199]->value = 0
+		data[199]->next  = 0
+		data[199]->prev  = -1
+
+	}
+}
+
+-----------------------------------------------------------
+[31mERROR: the connection between the list nodes is broken[0m
+[31mERROR: the connection between free nodes of the list is broken[0m
+[31mERROR: the number of nodes is incorrect[0m
+list[0x7ffc6331ba00] "list" called from src/list.cpp(380) list_print
+{
+	size = 200
+	head = 1
+	tail = 87
+	free = 88
+	data[0x5dbeb868ffd0]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = 87
+
+		data[1]->value = 100
+		data[1]->next  = 2
+		data[1]->prev  = 0
+
+		data[2]->value = 0
+		data[2]->next  = 3
+		data[2]->prev  = 1
+
+		data[3]->value = 0
+		data[3]->next  = 4
+		data[3]->prev  = 2
+
+		data[4]->value = 0
+		data[4]->next  = 5
+		data[4]->prev  = 3
+
+		data[5]->value = 0
+		data[5]->next  = 6
+		data[5]->prev  = 4
+
+		data[6]->value = 0
+		data[6]->next  = 7
+		data[6]->prev  = 5
+
+		data[7]->value = 0
+		data[7]->next  = 8
+		data[7]->prev  = 6
+
+		data[8]->value = 0
+		data[8]->next  = 9
+		data[8]->prev  = 7
+
+		data[9]->value = 0
+		data[9]->next  = 10
+		data[9]->prev  = 8
+
+		data[10]->value = 0
+		data[10]->next  = 11
+		data[10]->prev  = 9
+
+		data[11]->value = 0
+		data[11]->next  = 12
+		data[11]->prev  = 10
+
+		data[12]->value = 0
+		data[12]->next  = 13
+		data[12]->prev  = 11
+
+		data[13]->value = 0
+		data[13]->next  = 14
+		data[13]->prev  = 12
+
+		data[14]->value = 0
+		data[14]->next  = 15
+		data[14]->prev  = 13
+
+		data[15]->value = 0
+		data[15]->next  = 16
+		data[15]->prev  = 14
+
+		data[16]->value = 0
+		data[16]->next  = 17
+		data[16]->prev  = 15
+
+		data[17]->value = 0
+		data[17]->next  = 18
+		data[17]->prev  = 16
+
+		data[18]->value = 0
+		data[18]->next  = 19
+		data[18]->prev  = 17
+
+		data[19]->value = 0
+		data[19]->next  = 20
+		data[19]->prev  = 18
+
+		data[20]->value = 0
+		data[20]->next  = 21
+		data[20]->prev  = 19
+
+		data[21]->value = 0
+		data[21]->next  = 22
+		data[21]->prev  = 20
+
+		data[22]->value = 0
+		data[22]->next  = 23
+		data[22]->prev  = 21
+
+		data[23]->value = 0
+		data[23]->next  = 24
+		data[23]->prev  = 22
+
+		data[24]->value = 0
+		data[24]->next  = 25
+		data[24]->prev  = 23
+
+		data[25]->value = 0
+		data[25]->next  = 26
+		data[25]->prev  = 24
+
+		data[26]->value = 0
+		data[26]->next  = 27
+		data[26]->prev  = 25
+
+		data[27]->value = 0
+		data[27]->next  = 28
+		data[27]->prev  = 26
+
+		data[28]->value = 0
+		data[28]->next  = 29
+		data[28]->prev  = 27
+
+		data[29]->value = 0
+		data[29]->next  = 30
+		data[29]->prev  = 28
+
+		data[30]->value = 0
+		data[30]->next  = 31
+		data[30]->prev  = 29
+
+		data[31]->value = 0
+		data[31]->next  = 32
+		data[31]->prev  = 30
+
+		data[32]->value = 0
+		data[32]->next  = 33
+		data[32]->prev  = 31
+
+		data[33]->value = 0
+		data[33]->next  = 34
+		data[33]->prev  = 32
+
+		data[34]->value = 0
+		data[34]->next  = 35
+		data[34]->prev  = 33
+
+		data[35]->value = 0
+		data[35]->next  = 36
+		data[35]->prev  = 34
+
+		data[36]->value = 0
+		data[36]->next  = 37
+		data[36]->prev  = 35
+
+		data[37]->value = 0
+		data[37]->next  = 38
+		data[37]->prev  = 36
+
+		data[38]->value = 0
+		data[38]->next  = 39
+		data[38]->prev  = 37
+
+		data[39]->value = 0
+		data[39]->next  = 40
+		data[39]->prev  = 38
+
+		data[40]->value = 0
+		data[40]->next  = 41
+		data[40]->prev  = 39
+
+		data[41]->value = 0
+		data[41]->next  = 42
+		data[41]->prev  = 40
+
+		data[42]->value = 0
+		data[42]->next  = 43
+		data[42]->prev  = 41
+
+		data[43]->value = 0
+		data[43]->next  = 44
+		data[43]->prev  = 42
+
+		data[44]->value = 0
+		data[44]->next  = 45
+		data[44]->prev  = 43
+
+		data[45]->value = 0
+		data[45]->next  = 46
+		data[45]->prev  = 44
+
+		data[46]->value = 0
+		data[46]->next  = 47
+		data[46]->prev  = 45
+
+		data[47]->value = 0
+		data[47]->next  = 48
+		data[47]->prev  = 46
+
+		data[48]->value = 0
+		data[48]->next  = 49
+		data[48]->prev  = 47
+
+		data[49]->value = 0
+		data[49]->next  = 50
+		data[49]->prev  = 48
+
+		data[50]->value = 0
+		data[50]->next  = 51
+		data[50]->prev  = 49
+
+		data[51]->value = 0
+		data[51]->next  = 52
+		data[51]->prev  = 50
+
+		data[52]->value = 0
+		data[52]->next  = 53
+		data[52]->prev  = 51
+
+		data[53]->value = 0
+		data[53]->next  = 54
+		data[53]->prev  = 52
+
+		data[54]->value = 0
+		data[54]->next  = 55
+		data[54]->prev  = 53
+
+		data[55]->value = 0
+		data[55]->next  = 56
+		data[55]->prev  = 54
+
+		data[56]->value = 0
+		data[56]->next  = 57
+		data[56]->prev  = 55
+
+		data[57]->value = 0
+		data[57]->next  = 58
+		data[57]->prev  = 56
+
+		data[58]->value = 0
+		data[58]->next  = 59
+		data[58]->prev  = 57
+
+		data[59]->value = 0
+		data[59]->next  = 60
+		data[59]->prev  = 58
+
+		data[60]->value = 0
+		data[60]->next  = 61
+		data[60]->prev  = 59
+
+		data[61]->value = 0
+		data[61]->next  = 62
+		data[61]->prev  = 60
+
+		data[62]->value = 0
+		data[62]->next  = 63
+		data[62]->prev  = 61
+
+		data[63]->value = 0
+		data[63]->next  = 64
+		data[63]->prev  = 62
+
+		data[64]->value = 0
+		data[64]->next  = 65
+		data[64]->prev  = 63
+
+		data[65]->value = 0
+		data[65]->next  = 66
+		data[65]->prev  = 64
+
+		data[66]->value = 0
+		data[66]->next  = 67
+		data[66]->prev  = 65
+
+		data[67]->value = 0
+		data[67]->next  = 68
+		data[67]->prev  = 66
+
+		data[68]->value = 0
+		data[68]->next  = 69
+		data[68]->prev  = 67
+
+		data[69]->value = 0
+		data[69]->next  = 70
+		data[69]->prev  = 68
+
+		data[70]->value = 0
+		data[70]->next  = 71
+		data[70]->prev  = 69
+
+		data[71]->value = 0
+		data[71]->next  = 72
+		data[71]->prev  = 70
+
+		data[72]->value = 0
+		data[72]->next  = 73
+		data[72]->prev  = 71
+
+		data[73]->value = 0
+		data[73]->next  = 74
+		data[73]->prev  = 72
+
+		data[74]->value = 0
+		data[74]->next  = 75
+		data[74]->prev  = 73
+
+		data[75]->value = 0
+		data[75]->next  = 76
+		data[75]->prev  = 74
+
+		data[76]->value = 0
+		data[76]->next  = 77
+		data[76]->prev  = 75
+
+		data[77]->value = 0
+		data[77]->next  = 78
+		data[77]->prev  = 76
+
+		data[78]->value = 0
+		data[78]->next  = 79
+		data[78]->prev  = 77
+
+		data[79]->value = 0
+		data[79]->next  = 80
+		data[79]->prev  = 78
+
+		data[80]->value = 0
+		data[80]->next  = 81
+		data[80]->prev  = 79
+
+		data[81]->value = 0
+		data[81]->next  = 82
+		data[81]->prev  = 80
+
+		data[82]->value = 0
+		data[82]->next  = 83
+		data[82]->prev  = 81
+
+		data[83]->value = 0
+		data[83]->next  = 84
+		data[83]->prev  = 82
+
+		data[84]->value = 0
+		data[84]->next  = 85
+		data[84]->prev  = 83
+
+		data[85]->value = 0
+		data[85]->next  = 86
+		data[85]->prev  = 84
+
+		data[86]->value = 0
+		data[86]->next  = 87
+		data[86]->prev  = 85
+
+		data[87]->value = 0
+		data[87]->next  = 0
+		data[87]->prev  = 86
+
+		data[88]->value = 0
+		data[88]->next  = 89
+		data[88]->prev  = -1
+
+		data[89]->value = 0
+		data[89]->next  = 90
+		data[89]->prev  = -1
+
+		data[90]->value = 0
+		data[90]->next  = 91
+		data[90]->prev  = -1
+
+		data[91]->value = 0
+		data[91]->next  = 92
+		data[91]->prev  = -1
+
+		data[92]->value = 0
+		data[92]->next  = 93
+		data[92]->prev  = -1
+
+		data[93]->value = 0
+		data[93]->next  = 94
+		data[93]->prev  = -1
+
+		data[94]->value = 0
+		data[94]->next  = 95
+		data[94]->prev  = -1
+
+		data[95]->value = 0
+		data[95]->next  = 96
+		data[95]->prev  = -1
+
+		data[96]->value = 0
+		data[96]->next  = 97
+		data[96]->prev  = -1
+
+		data[97]->value = 0
+		data[97]->next  = 98
+		data[97]->prev  = -1
+
+		data[98]->value = 0
+		data[98]->next  = 99
+		data[98]->prev  = -1
+
+		data[99]->value = 0
+		data[99]->next  = 100
+		data[99]->prev  = -1
+
+		data[100]->value = 0
+		data[100]->next  = 101
+		data[100]->prev  = -1
+
+		data[101]->value = 0
+		data[101]->next  = 102
+		data[101]->prev  = -1
+
+		data[102]->value = 0
+		data[102]->next  = 103
+		data[102]->prev  = -1
+
+		data[103]->value = 0
+		data[103]->next  = 104
+		data[103]->prev  = -1
+
+		data[104]->value = 0
+		data[104]->next  = 105
+		data[104]->prev  = -1
+
+		data[105]->value = 0
+		data[105]->next  = 106
+		data[105]->prev  = -1
+
+		data[106]->value = 0
+		data[106]->next  = 107
+		data[106]->prev  = -1
+
+		data[107]->value = 0
+		data[107]->next  = 108
+		data[107]->prev  = -1
+
+		data[108]->value = 0
+		data[108]->next  = 109
+		data[108]->prev  = -1
+
+		data[109]->value = 0
+		data[109]->next  = 110
+		data[109]->prev  = -1
+
+		data[110]->value = 0
+		data[110]->next  = 111
+		data[110]->prev  = -1
+
+		data[111]->value = 0
+		data[111]->next  = 112
+		data[111]->prev  = -1
+
+		data[112]->value = 0
+		data[112]->next  = 113
+		data[112]->prev  = -1
+
+		data[113]->value = 0
+		data[113]->next  = 114
+		data[113]->prev  = -1
+
+		data[114]->value = 0
+		data[114]->next  = 115
+		data[114]->prev  = -1
+
+		data[115]->value = 0
+		data[115]->next  = 116
+		data[115]->prev  = -1
+
+		data[116]->value = 0
+		data[116]->next  = 117
+		data[116]->prev  = -1
+
+		data[117]->value = 0
+		data[117]->next  = 118
+		data[117]->prev  = -1
+
+		data[118]->value = 0
+		data[118]->next  = 119
+		data[118]->prev  = -1
+
+		data[119]->value = 0
+		data[119]->next  = 120
+		data[119]->prev  = -1
+
+		data[120]->value = 0
+		data[120]->next  = 121
+		data[120]->prev  = -1
+
+		data[121]->value = 0
+		data[121]->next  = 122
+		data[121]->prev  = -1
+
+		data[122]->value = 0
+		data[122]->next  = 123
+		data[122]->prev  = -1
+
+		data[123]->value = 0
+		data[123]->next  = 124
+		data[123]->prev  = -1
+
+		data[124]->value = 0
+		data[124]->next  = 125
+		data[124]->prev  = -1
+
+		data[125]->value = 0
+		data[125]->next  = 126
+		data[125]->prev  = -1
+
+		data[126]->value = 0
+		data[126]->next  = 127
+		data[126]->prev  = -1
+
+		data[127]->value = 0
+		data[127]->next  = 128
+		data[127]->prev  = -1
+
+		data[128]->value = 0
+		data[128]->next  = 129
+		data[128]->prev  = -1
+
+		data[129]->value = 0
+		data[129]->next  = 130
+		data[129]->prev  = -1
+
+		data[130]->value = 0
+		data[130]->next  = 131
+		data[130]->prev  = -1
+
+		data[131]->value = 0
+		data[131]->next  = 132
+		data[131]->prev  = -1
+
+		data[132]->value = 0
+		data[132]->next  = 133
+		data[132]->prev  = -1
+
+		data[133]->value = 0
+		data[133]->next  = 134
+		data[133]->prev  = -1
+
+		data[134]->value = 0
+		data[134]->next  = 135
+		data[134]->prev  = -1
+
+		data[135]->value = 0
+		data[135]->next  = 136
+		data[135]->prev  = -1
+
+		data[136]->value = 0
+		data[136]->next  = 137
+		data[136]->prev  = -1
+
+		data[137]->value = 0
+		data[137]->next  = 138
+		data[137]->prev  = -1
+
+		data[138]->value = 0
+		data[138]->next  = 139
+		data[138]->prev  = -1
+
+		data[139]->value = 0
+		data[139]->next  = 140
+		data[139]->prev  = -1
+
+		data[140]->value = 0
+		data[140]->next  = 141
+		data[140]->prev  = -1
+
+		data[141]->value = 0
+		data[141]->next  = 142
+		data[141]->prev  = -1
+
+		data[142]->value = 0
+		data[142]->next  = 143
+		data[142]->prev  = -1
+
+		data[143]->value = 0
+		data[143]->next  = 144
+		data[143]->prev  = -1
+
+		data[144]->value = 0
+		data[144]->next  = 145
+		data[144]->prev  = -1
+
+		data[145]->value = 0
+		data[145]->next  = 146
+		data[145]->prev  = -1
+
+		data[146]->value = 0
+		data[146]->next  = 147
+		data[146]->prev  = -1
+
+		data[147]->value = 0
+		data[147]->next  = 148
+		data[147]->prev  = -1
+
+		data[148]->value = 0
+		data[148]->next  = 149
+		data[148]->prev  = -1
+
+		data[149]->value = 0
+		data[149]->next  = 150
+		data[149]->prev  = -1
+
+		data[150]->value = 0
+		data[150]->next  = 151
+		data[150]->prev  = -1
+
+		data[151]->value = 0
+		data[151]->next  = 152
+		data[151]->prev  = -1
+
+		data[152]->value = 0
+		data[152]->next  = 153
+		data[152]->prev  = -1
+
+		data[153]->value = 0
+		data[153]->next  = 154
+		data[153]->prev  = -1
+
+		data[154]->value = 0
+		data[154]->next  = 155
+		data[154]->prev  = -1
+
+		data[155]->value = 0
+		data[155]->next  = 156
+		data[155]->prev  = -1
+
+		data[156]->value = 0
+		data[156]->next  = 157
+		data[156]->prev  = -1
+
+		data[157]->value = 0
+		data[157]->next  = 158
+		data[157]->prev  = -1
+
+		data[158]->value = 0
+		data[158]->next  = 159
+		data[158]->prev  = -1
+
+		data[159]->value = 0
+		data[159]->next  = 160
+		data[159]->prev  = -1
+
+		data[160]->value = 0
+		data[160]->next  = 161
+		data[160]->prev  = -1
+
+		data[161]->value = 0
+		data[161]->next  = 162
+		data[161]->prev  = -1
+
+		data[162]->value = 0
+		data[162]->next  = 163
+		data[162]->prev  = -1
+
+		data[163]->value = 0
+		data[163]->next  = 164
+		data[163]->prev  = -1
+
+		data[164]->value = 0
+		data[164]->next  = 165
+		data[164]->prev  = -1
+
+		data[165]->value = 0
+		data[165]->next  = 166
+		data[165]->prev  = -1
+
+		data[166]->value = 0
+		data[166]->next  = 167
+		data[166]->prev  = -1
+
+		data[167]->value = 0
+		data[167]->next  = 168
+		data[167]->prev  = -1
+
+		data[168]->value = 0
+		data[168]->next  = 169
+		data[168]->prev  = -1
+
+		data[169]->value = 0
+		data[169]->next  = 170
+		data[169]->prev  = -1
+
+		data[170]->value = 0
+		data[170]->next  = 171
+		data[170]->prev  = -1
+
+		data[171]->value = 0
+		data[171]->next  = 172
+		data[171]->prev  = -1
+
+		data[172]->value = 0
+		data[172]->next  = 173
+		data[172]->prev  = -1
+
+		data[173]->value = 0
+		data[173]->next  = 174
+		data[173]->prev  = -1
+
+		data[174]->value = 0
+		data[174]->next  = 175
+		data[174]->prev  = -1
+
+		data[175]->value = 0
+		data[175]->next  = 176
+		data[175]->prev  = -1
+
+		data[176]->value = 0
+		data[176]->next  = 177
+		data[176]->prev  = -1
+
+		data[177]->value = 0
+		data[177]->next  = 178
+		data[177]->prev  = -1
+
+		data[178]->value = 0
+		data[178]->next  = 179
+		data[178]->prev  = -1
+
+		data[179]->value = 0
+		data[179]->next  = 180
+		data[179]->prev  = -1
+
+		data[180]->value = 0
+		data[180]->next  = 181
+		data[180]->prev  = -1
+
+		data[181]->value = 0
+		data[181]->next  = 182
+		data[181]->prev  = -1
+
+		data[182]->value = 0
+		data[182]->next  = 183
+		data[182]->prev  = -1
+
+		data[183]->value = 0
+		data[183]->next  = 184
+		data[183]->prev  = -1
+
+		data[184]->value = 0
+		data[184]->next  = 185
+		data[184]->prev  = -1
+
+		data[185]->value = 0
+		data[185]->next  = 186
+		data[185]->prev  = -1
+
+		data[186]->value = 0
+		data[186]->next  = 187
+		data[186]->prev  = -1
+
+		data[187]->value = 0
+		data[187]->next  = 188
+		data[187]->prev  = -1
+
+		data[188]->value = 0
+		data[188]->next  = 189
+		data[188]->prev  = -1
+
+		data[189]->value = 0
+		data[189]->next  = 190
+		data[189]->prev  = -1
+
+		data[190]->value = 0
+		data[190]->next  = 191
+		data[190]->prev  = -1
+
+		data[191]->value = 0
+		data[191]->next  = 192
+		data[191]->prev  = -1
+
+		data[192]->value = 0
+		data[192]->next  = 193
+		data[192]->prev  = -1
+
+		data[193]->value = 0
+		data[193]->next  = 194
+		data[193]->prev  = -1
+
+		data[194]->value = 0
+		data[194]->next  = 195
+		data[194]->prev  = -1
+
+		data[195]->value = 0
+		data[195]->next  = 196
+		data[195]->prev  = -1
+
+		data[196]->value = 0
+		data[196]->next  = 197
+		data[196]->prev  = -1
+
+		data[197]->value = 0
+		data[197]->next  = 198
+		data[197]->prev  = -1
+
+		data[198]->value = 0
+		data[198]->next  = 199
+		data[198]->prev  = -1
+
+		data[199]->value = 0
+		data[199]->next  = 0
+		data[199]->prev  = -1
+
+	}
+}
+
+-----------------------------------------------------------
+[31mERROR: the connection between the list nodes is broken[0m
+[31mERROR: the connection between free nodes of the list is broken[0m
+[31mERROR: the number of nodes is incorrect[0m
+list[0x7ffc6331ba00] "list" called from src/list.cpp(394) list_deinit
+{
+	size = 200
+	head = 1
+	tail = 87
+	free = 88
+	data[0x5dbeb868ffd0]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = 87
+
+		data[1]->value = 100
+		data[1]->next  = 2
+		data[1]->prev  = 0
+
+		data[2]->value = 0
+		data[2]->next  = 3
+		data[2]->prev  = 1
+
+		data[3]->value = 0
+		data[3]->next  = 4
+		data[3]->prev  = 2
+
+		data[4]->value = 0
+		data[4]->next  = 5
+		data[4]->prev  = 3
+
+		data[5]->value = 0
+		data[5]->next  = 6
+		data[5]->prev  = 4
+
+		data[6]->value = 0
+		data[6]->next  = 7
+		data[6]->prev  = 5
+
+		data[7]->value = 0
+		data[7]->next  = 8
+		data[7]->prev  = 6
+
+		data[8]->value = 0
+		data[8]->next  = 9
+		data[8]->prev  = 7
+
+		data[9]->value = 0
+		data[9]->next  = 10
+		data[9]->prev  = 8
+
+		data[10]->value = 0
+		data[10]->next  = 11
+		data[10]->prev  = 9
+
+		data[11]->value = 0
+		data[11]->next  = 12
+		data[11]->prev  = 10
+
+		data[12]->value = 0
+		data[12]->next  = 13
+		data[12]->prev  = 11
+
+		data[13]->value = 0
+		data[13]->next  = 14
+		data[13]->prev  = 12
+
+		data[14]->value = 0
+		data[14]->next  = 15
+		data[14]->prev  = 13
+
+		data[15]->value = 0
+		data[15]->next  = 16
+		data[15]->prev  = 14
+
+		data[16]->value = 0
+		data[16]->next  = 17
+		data[16]->prev  = 15
+
+		data[17]->value = 0
+		data[17]->next  = 18
+		data[17]->prev  = 16
+
+		data[18]->value = 0
+		data[18]->next  = 19
+		data[18]->prev  = 17
+
+		data[19]->value = 0
+		data[19]->next  = 20
+		data[19]->prev  = 18
+
+		data[20]->value = 0
+		data[20]->next  = 21
+		data[20]->prev  = 19
+
+		data[21]->value = 0
+		data[21]->next  = 22
+		data[21]->prev  = 20
+
+		data[22]->value = 0
+		data[22]->next  = 23
+		data[22]->prev  = 21
+
+		data[23]->value = 0
+		data[23]->next  = 24
+		data[23]->prev  = 22
+
+		data[24]->value = 0
+		data[24]->next  = 25
+		data[24]->prev  = 23
+
+		data[25]->value = 0
+		data[25]->next  = 26
+		data[25]->prev  = 24
+
+		data[26]->value = 0
+		data[26]->next  = 27
+		data[26]->prev  = 25
+
+		data[27]->value = 0
+		data[27]->next  = 28
+		data[27]->prev  = 26
+
+		data[28]->value = 0
+		data[28]->next  = 29
+		data[28]->prev  = 27
+
+		data[29]->value = 0
+		data[29]->next  = 30
+		data[29]->prev  = 28
+
+		data[30]->value = 0
+		data[30]->next  = 31
+		data[30]->prev  = 29
+
+		data[31]->value = 0
+		data[31]->next  = 32
+		data[31]->prev  = 30
+
+		data[32]->value = 0
+		data[32]->next  = 33
+		data[32]->prev  = 31
+
+		data[33]->value = 0
+		data[33]->next  = 34
+		data[33]->prev  = 32
+
+		data[34]->value = 0
+		data[34]->next  = 35
+		data[34]->prev  = 33
+
+		data[35]->value = 0
+		data[35]->next  = 36
+		data[35]->prev  = 34
+
+		data[36]->value = 0
+		data[36]->next  = 37
+		data[36]->prev  = 35
+
+		data[37]->value = 0
+		data[37]->next  = 38
+		data[37]->prev  = 36
+
+		data[38]->value = 0
+		data[38]->next  = 39
+		data[38]->prev  = 37
+
+		data[39]->value = 0
+		data[39]->next  = 40
+		data[39]->prev  = 38
+
+		data[40]->value = 0
+		data[40]->next  = 41
+		data[40]->prev  = 39
+
+		data[41]->value = 0
+		data[41]->next  = 42
+		data[41]->prev  = 40
+
+		data[42]->value = 0
+		data[42]->next  = 43
+		data[42]->prev  = 41
+
+		data[43]->value = 0
+		data[43]->next  = 44
+		data[43]->prev  = 42
+
+		data[44]->value = 0
+		data[44]->next  = 45
+		data[44]->prev  = 43
+
+		data[45]->value = 0
+		data[45]->next  = 46
+		data[45]->prev  = 44
+
+		data[46]->value = 0
+		data[46]->next  = 47
+		data[46]->prev  = 45
+
+		data[47]->value = 0
+		data[47]->next  = 48
+		data[47]->prev  = 46
+
+		data[48]->value = 0
+		data[48]->next  = 49
+		data[48]->prev  = 47
+
+		data[49]->value = 0
+		data[49]->next  = 50
+		data[49]->prev  = 48
+
+		data[50]->value = 0
+		data[50]->next  = 51
+		data[50]->prev  = 49
+
+		data[51]->value = 0
+		data[51]->next  = 52
+		data[51]->prev  = 50
+
+		data[52]->value = 0
+		data[52]->next  = 53
+		data[52]->prev  = 51
+
+		data[53]->value = 0
+		data[53]->next  = 54
+		data[53]->prev  = 52
+
+		data[54]->value = 0
+		data[54]->next  = 55
+		data[54]->prev  = 53
+
+		data[55]->value = 0
+		data[55]->next  = 56
+		data[55]->prev  = 54
+
+		data[56]->value = 0
+		data[56]->next  = 57
+		data[56]->prev  = 55
+
+		data[57]->value = 0
+		data[57]->next  = 58
+		data[57]->prev  = 56
+
+		data[58]->value = 0
+		data[58]->next  = 59
+		data[58]->prev  = 57
+
+		data[59]->value = 0
+		data[59]->next  = 60
+		data[59]->prev  = 58
+
+		data[60]->value = 0
+		data[60]->next  = 61
+		data[60]->prev  = 59
+
+		data[61]->value = 0
+		data[61]->next  = 62
+		data[61]->prev  = 60
+
+		data[62]->value = 0
+		data[62]->next  = 63
+		data[62]->prev  = 61
+
+		data[63]->value = 0
+		data[63]->next  = 64
+		data[63]->prev  = 62
+
+		data[64]->value = 0
+		data[64]->next  = 65
+		data[64]->prev  = 63
+
+		data[65]->value = 0
+		data[65]->next  = 66
+		data[65]->prev  = 64
+
+		data[66]->value = 0
+		data[66]->next  = 67
+		data[66]->prev  = 65
+
+		data[67]->value = 0
+		data[67]->next  = 68
+		data[67]->prev  = 66
+
+		data[68]->value = 0
+		data[68]->next  = 69
+		data[68]->prev  = 67
+
+		data[69]->value = 0
+		data[69]->next  = 70
+		data[69]->prev  = 68
+
+		data[70]->value = 0
+		data[70]->next  = 71
+		data[70]->prev  = 69
+
+		data[71]->value = 0
+		data[71]->next  = 72
+		data[71]->prev  = 70
+
+		data[72]->value = 0
+		data[72]->next  = 73
+		data[72]->prev  = 71
+
+		data[73]->value = 0
+		data[73]->next  = 74
+		data[73]->prev  = 72
+
+		data[74]->value = 0
+		data[74]->next  = 75
+		data[74]->prev  = 73
+
+		data[75]->value = 0
+		data[75]->next  = 76
+		data[75]->prev  = 74
+
+		data[76]->value = 0
+		data[76]->next  = 77
+		data[76]->prev  = 75
+
+		data[77]->value = 0
+		data[77]->next  = 78
+		data[77]->prev  = 76
+
+		data[78]->value = 0
+		data[78]->next  = 79
+		data[78]->prev  = 77
+
+		data[79]->value = 0
+		data[79]->next  = 80
+		data[79]->prev  = 78
+
+		data[80]->value = 0
+		data[80]->next  = 81
+		data[80]->prev  = 79
+
+		data[81]->value = 0
+		data[81]->next  = 82
+		data[81]->prev  = 80
+
+		data[82]->value = 0
+		data[82]->next  = 83
+		data[82]->prev  = 81
+
+		data[83]->value = 0
+		data[83]->next  = 84
+		data[83]->prev  = 82
+
+		data[84]->value = 0
+		data[84]->next  = 85
+		data[84]->prev  = 83
+
+		data[85]->value = 0
+		data[85]->next  = 86
+		data[85]->prev  = 84
+
+		data[86]->value = 0
+		data[86]->next  = 87
+		data[86]->prev  = 85
+
+		data[87]->value = 0
+		data[87]->next  = 0
+		data[87]->prev  = 86
+
+		data[88]->value = 0
+		data[88]->next  = 89
+		data[88]->prev  = -1
+
+		data[89]->value = 0
+		data[89]->next  = 90
+		data[89]->prev  = -1
+
+		data[90]->value = 0
+		data[90]->next  = 91
+		data[90]->prev  = -1
+
+		data[91]->value = 0
+		data[91]->next  = 92
+		data[91]->prev  = -1
+
+		data[92]->value = 0
+		data[92]->next  = 93
+		data[92]->prev  = -1
+
+		data[93]->value = 0
+		data[93]->next  = 94
+		data[93]->prev  = -1
+
+		data[94]->value = 0
+		data[94]->next  = 95
+		data[94]->prev  = -1
+
+		data[95]->value = 0
+		data[95]->next  = 96
+		data[95]->prev  = -1
+
+		data[96]->value = 0
+		data[96]->next  = 97
+		data[96]->prev  = -1
+
+		data[97]->value = 0
+		data[97]->next  = 98
+		data[97]->prev  = -1
+
+		data[98]->value = 0
+		data[98]->next  = 99
+		data[98]->prev  = -1
+
+		data[99]->value = 0
+		data[99]->next  = 100
+		data[99]->prev  = -1
+
+		data[100]->value = 0
+		data[100]->next  = 101
+		data[100]->prev  = -1
+
+		data[101]->value = 0
+		data[101]->next  = 102
+		data[101]->prev  = -1
+
+		data[102]->value = 0
+		data[102]->next  = 103
+		data[102]->prev  = -1
+
+		data[103]->value = 0
+		data[103]->next  = 104
+		data[103]->prev  = -1
+
+		data[104]->value = 0
+		data[104]->next  = 105
+		data[104]->prev  = -1
+
+		data[105]->value = 0
+		data[105]->next  = 106
+		data[105]->prev  = -1
+
+		data[106]->value = 0
+		data[106]->next  = 107
+		data[106]->prev  = -1
+
+		data[107]->value = 0
+		data[107]->next  = 108
+		data[107]->prev  = -1
+
+		data[108]->value = 0
+		data[108]->next  = 109
+		data[108]->prev  = -1
+
+		data[109]->value = 0
+		data[109]->next  = 110
+		data[109]->prev  = -1
+
+		data[110]->value = 0
+		data[110]->next  = 111
+		data[110]->prev  = -1
+
+		data[111]->value = 0
+		data[111]->next  = 112
+		data[111]->prev  = -1
+
+		data[112]->value = 0
+		data[112]->next  = 113
+		data[112]->prev  = -1
+
+		data[113]->value = 0
+		data[113]->next  = 114
+		data[113]->prev  = -1
+
+		data[114]->value = 0
+		data[114]->next  = 115
+		data[114]->prev  = -1
+
+		data[115]->value = 0
+		data[115]->next  = 116
+		data[115]->prev  = -1
+
+		data[116]->value = 0
+		data[116]->next  = 117
+		data[116]->prev  = -1
+
+		data[117]->value = 0
+		data[117]->next  = 118
+		data[117]->prev  = -1
+
+		data[118]->value = 0
+		data[118]->next  = 119
+		data[118]->prev  = -1
+
+		data[119]->value = 0
+		data[119]->next  = 120
+		data[119]->prev  = -1
+
+		data[120]->value = 0
+		data[120]->next  = 121
+		data[120]->prev  = -1
+
+		data[121]->value = 0
+		data[121]->next  = 122
+		data[121]->prev  = -1
+
+		data[122]->value = 0
+		data[122]->next  = 123
+		data[122]->prev  = -1
+
+		data[123]->value = 0
+		data[123]->next  = 124
+		data[123]->prev  = -1
+
+		data[124]->value = 0
+		data[124]->next  = 125
+		data[124]->prev  = -1
+
+		data[125]->value = 0
+		data[125]->next  = 126
+		data[125]->prev  = -1
+
+		data[126]->value = 0
+		data[126]->next  = 127
+		data[126]->prev  = -1
+
+		data[127]->value = 0
+		data[127]->next  = 128
+		data[127]->prev  = -1
+
+		data[128]->value = 0
+		data[128]->next  = 129
+		data[128]->prev  = -1
+
+		data[129]->value = 0
+		data[129]->next  = 130
+		data[129]->prev  = -1
+
+		data[130]->value = 0
+		data[130]->next  = 131
+		data[130]->prev  = -1
+
+		data[131]->value = 0
+		data[131]->next  = 132
+		data[131]->prev  = -1
+
+		data[132]->value = 0
+		data[132]->next  = 133
+		data[132]->prev  = -1
+
+		data[133]->value = 0
+		data[133]->next  = 134
+		data[133]->prev  = -1
+
+		data[134]->value = 0
+		data[134]->next  = 135
+		data[134]->prev  = -1
+
+		data[135]->value = 0
+		data[135]->next  = 136
+		data[135]->prev  = -1
+
+		data[136]->value = 0
+		data[136]->next  = 137
+		data[136]->prev  = -1
+
+		data[137]->value = 0
+		data[137]->next  = 138
+		data[137]->prev  = -1
+
+		data[138]->value = 0
+		data[138]->next  = 139
+		data[138]->prev  = -1
+
+		data[139]->value = 0
+		data[139]->next  = 140
+		data[139]->prev  = -1
+
+		data[140]->value = 0
+		data[140]->next  = 141
+		data[140]->prev  = -1
+
+		data[141]->value = 0
+		data[141]->next  = 142
+		data[141]->prev  = -1
+
+		data[142]->value = 0
+		data[142]->next  = 143
+		data[142]->prev  = -1
+
+		data[143]->value = 0
+		data[143]->next  = 144
+		data[143]->prev  = -1
+
+		data[144]->value = 0
+		data[144]->next  = 145
+		data[144]->prev  = -1
+
+		data[145]->value = 0
+		data[145]->next  = 146
+		data[145]->prev  = -1
+
+		data[146]->value = 0
+		data[146]->next  = 147
+		data[146]->prev  = -1
+
+		data[147]->value = 0
+		data[147]->next  = 148
+		data[147]->prev  = -1
+
+		data[148]->value = 0
+		data[148]->next  = 149
+		data[148]->prev  = -1
+
+		data[149]->value = 0
+		data[149]->next  = 150
+		data[149]->prev  = -1
+
+		data[150]->value = 0
+		data[150]->next  = 151
+		data[150]->prev  = -1
+
+		data[151]->value = 0
+		data[151]->next  = 152
+		data[151]->prev  = -1
+
+		data[152]->value = 0
+		data[152]->next  = 153
+		data[152]->prev  = -1
+
+		data[153]->value = 0
+		data[153]->next  = 154
+		data[153]->prev  = -1
+
+		data[154]->value = 0
+		data[154]->next  = 155
+		data[154]->prev  = -1
+
+		data[155]->value = 0
+		data[155]->next  = 156
+		data[155]->prev  = -1
+
+		data[156]->value = 0
+		data[156]->next  = 157
+		data[156]->prev  = -1
+
+		data[157]->value = 0
+		data[157]->next  = 158
+		data[157]->prev  = -1
+
+		data[158]->value = 0
+		data[158]->next  = 159
+		data[158]->prev  = -1
+
+		data[159]->value = 0
+		data[159]->next  = 160
+		data[159]->prev  = -1
+
+		data[160]->value = 0
+		data[160]->next  = 161
+		data[160]->prev  = -1
+
+		data[161]->value = 0
+		data[161]->next  = 162
+		data[161]->prev  = -1
+
+		data[162]->value = 0
+		data[162]->next  = 163
+		data[162]->prev  = -1
+
+		data[163]->value = 0
+		data[163]->next  = 164
+		data[163]->prev  = -1
+
+		data[164]->value = 0
+		data[164]->next  = 165
+		data[164]->prev  = -1
+
+		data[165]->value = 0
+		data[165]->next  = 166
+		data[165]->prev  = -1
+
+		data[166]->value = 0
+		data[166]->next  = 167
+		data[166]->prev  = -1
+
+		data[167]->value = 0
+		data[167]->next  = 168
+		data[167]->prev  = -1
+
+		data[168]->value = 0
+		data[168]->next  = 169
+		data[168]->prev  = -1
+
+		data[169]->value = 0
+		data[169]->next  = 170
+		data[169]->prev  = -1
+
+		data[170]->value = 0
+		data[170]->next  = 171
+		data[170]->prev  = -1
+
+		data[171]->value = 0
+		data[171]->next  = 172
+		data[171]->prev  = -1
+
+		data[172]->value = 0
+		data[172]->next  = 173
+		data[172]->prev  = -1
+
+		data[173]->value = 0
+		data[173]->next  = 174
+		data[173]->prev  = -1
+
+		data[174]->value = 0
+		data[174]->next  = 175
+		data[174]->prev  = -1
+
+		data[175]->value = 0
+		data[175]->next  = 176
+		data[175]->prev  = -1
+
+		data[176]->value = 0
+		data[176]->next  = 177
+		data[176]->prev  = -1
+
+		data[177]->value = 0
+		data[177]->next  = 178
+		data[177]->prev  = -1
+
+		data[178]->value = 0
+		data[178]->next  = 179
+		data[178]->prev  = -1
+
+		data[179]->value = 0
+		data[179]->next  = 180
+		data[179]->prev  = -1
+
+		data[180]->value = 0
+		data[180]->next  = 181
+		data[180]->prev  = -1
+
+		data[181]->value = 0
+		data[181]->next  = 182
+		data[181]->prev  = -1
+
+		data[182]->value = 0
+		data[182]->next  = 183
+		data[182]->prev  = -1
+
+		data[183]->value = 0
+		data[183]->next  = 184
+		data[183]->prev  = -1
+
+		data[184]->value = 0
+		data[184]->next  = 185
+		data[184]->prev  = -1
+
+		data[185]->value = 0
+		data[185]->next  = 186
+		data[185]->prev  = -1
+
+		data[186]->value = 0
+		data[186]->next  = 187
+		data[186]->prev  = -1
+
+		data[187]->value = 0
+		data[187]->next  = 188
+		data[187]->prev  = -1
+
+		data[188]->value = 0
+		data[188]->next  = 189
+		data[188]->prev  = -1
+
+		data[189]->value = 0
+		data[189]->next  = 190
+		data[189]->prev  = -1
+
+		data[190]->value = 0
+		data[190]->next  = 191
+		data[190]->prev  = -1
+
+		data[191]->value = 0
+		data[191]->next  = 192
+		data[191]->prev  = -1
+
+		data[192]->value = 0
+		data[192]->next  = 193
+		data[192]->prev  = -1
+
+		data[193]->value = 0
+		data[193]->next  = 194
+		data[193]->prev  = -1
+
+		data[194]->value = 0
+		data[194]->next  = 195
+		data[194]->prev  = -1
+
+		data[195]->value = 0
+		data[195]->next  = 196
+		data[195]->prev  = -1
+
+		data[196]->value = 0
+		data[196]->next  = 197
+		data[196]->prev  = -1
+
+		data[197]->value = 0
+		data[197]->next  = 198
+		data[197]->prev  = -1
+
+		data[198]->value = 0
+		data[198]->next  = 199
+		data[198]->prev  = -1
+
+		data[199]->value = 0
+		data[199]->next  = 0
+		data[199]->prev  = -1
+
+	}
+}
+
+-----------------------------------------------------------
+[31mERROR: the connection between the list nodes is broken[0m
+[31mERROR: the connection between free nodes of the list is broken[0m
+[31mERROR: the number of nodes is incorrect[0m
+list[0x7ffc098f67f0] "list" called from src/list.cpp(119) list_insert_elem_after_ph
+{
+	size = 200
+	head = 1
+	tail = 0
+	free = 2
+	data[0x5bd439c412a0]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = -1
+
+		data[1]->value = 100
+		data[1]->next  = 114
+		data[1]->prev  = 113
+
+		data[2]->value = 0
+		data[2]->next  = 3
+		data[2]->prev  = -1
+
+		data[3]->value = 0
+		data[3]->next  = 4
+		data[3]->prev  = -1
+
+		data[4]->value = 0
+		data[4]->next  = 5
+		data[4]->prev  = -1
+
+		data[5]->value = 0
+		data[5]->next  = 6
+		data[5]->prev  = -1
+
+		data[6]->value = 0
+		data[6]->next  = 7
+		data[6]->prev  = -1
+
+		data[7]->value = 0
+		data[7]->next  = 8
+		data[7]->prev  = -1
+
+		data[8]->value = 0
+		data[8]->next  = 9
+		data[8]->prev  = -1
+
+		data[9]->value = 0
+		data[9]->next  = 10
+		data[9]->prev  = -1
+
+		data[10]->value = 0
+		data[10]->next  = 11
+		data[10]->prev  = -1
+
+		data[11]->value = 0
+		data[11]->next  = 12
+		data[11]->prev  = -1
+
+		data[12]->value = 0
+		data[12]->next  = 13
+		data[12]->prev  = -1
+
+		data[13]->value = 0
+		data[13]->next  = 14
+		data[13]->prev  = -1
+
+		data[14]->value = 0
+		data[14]->next  = 15
+		data[14]->prev  = -1
+
+		data[15]->value = 0
+		data[15]->next  = 16
+		data[15]->prev  = -1
+
+		data[16]->value = 0
+		data[16]->next  = 17
+		data[16]->prev  = -1
+
+		data[17]->value = 0
+		data[17]->next  = 18
+		data[17]->prev  = -1
+
+		data[18]->value = 0
+		data[18]->next  = 19
+		data[18]->prev  = -1
+
+		data[19]->value = 0
+		data[19]->next  = 20
+		data[19]->prev  = -1
+
+		data[20]->value = 0
+		data[20]->next  = 21
+		data[20]->prev  = -1
+
+		data[21]->value = 0
+		data[21]->next  = 22
+		data[21]->prev  = -1
+
+		data[22]->value = 0
+		data[22]->next  = 23
+		data[22]->prev  = -1
+
+		data[23]->value = 0
+		data[23]->next  = 24
+		data[23]->prev  = -1
+
+		data[24]->value = 0
+		data[24]->next  = 25
+		data[24]->prev  = -1
+
+		data[25]->value = 0
+		data[25]->next  = 26
+		data[25]->prev  = -1
+
+		data[26]->value = 0
+		data[26]->next  = 27
+		data[26]->prev  = -1
+
+		data[27]->value = 0
+		data[27]->next  = 28
+		data[27]->prev  = -1
+
+		data[28]->value = 0
+		data[28]->next  = 29
+		data[28]->prev  = -1
+
+		data[29]->value = 0
+		data[29]->next  = 30
+		data[29]->prev  = -1
+
+		data[30]->value = 0
+		data[30]->next  = 31
+		data[30]->prev  = -1
+
+		data[31]->value = 0
+		data[31]->next  = 32
+		data[31]->prev  = -1
+
+		data[32]->value = 0
+		data[32]->next  = 33
+		data[32]->prev  = -1
+
+		data[33]->value = 0
+		data[33]->next  = 34
+		data[33]->prev  = -1
+
+		data[34]->value = 0
+		data[34]->next  = 35
+		data[34]->prev  = -1
+
+		data[35]->value = 0
+		data[35]->next  = 36
+		data[35]->prev  = -1
+
+		data[36]->value = 0
+		data[36]->next  = 37
+		data[36]->prev  = -1
+
+		data[37]->value = 0
+		data[37]->next  = 38
+		data[37]->prev  = -1
+
+		data[38]->value = 0
+		data[38]->next  = 39
+		data[38]->prev  = -1
+
+		data[39]->value = 0
+		data[39]->next  = 40
+		data[39]->prev  = -1
+
+		data[40]->value = 0
+		data[40]->next  = 41
+		data[40]->prev  = -1
+
+		data[41]->value = 0
+		data[41]->next  = 42
+		data[41]->prev  = -1
+
+		data[42]->value = 0
+		data[42]->next  = 43
+		data[42]->prev  = -1
+
+		data[43]->value = 0
+		data[43]->next  = 44
+		data[43]->prev  = -1
+
+		data[44]->value = 0
+		data[44]->next  = 45
+		data[44]->prev  = -1
+
+		data[45]->value = 0
+		data[45]->next  = 46
+		data[45]->prev  = -1
+
+		data[46]->value = 0
+		data[46]->next  = 47
+		data[46]->prev  = -1
+
+		data[47]->value = 0
+		data[47]->next  = 48
+		data[47]->prev  = -1
+
+		data[48]->value = 0
+		data[48]->next  = 49
+		data[48]->prev  = -1
+
+		data[49]->value = 0
+		data[49]->next  = 50
+		data[49]->prev  = -1
+
+		data[50]->value = 0
+		data[50]->next  = 51
+		data[50]->prev  = -1
+
+		data[51]->value = 0
+		data[51]->next  = 52
+		data[51]->prev  = -1
+
+		data[52]->value = 0
+		data[52]->next  = 53
+		data[52]->prev  = -1
+
+		data[53]->value = 0
+		data[53]->next  = 54
+		data[53]->prev  = -1
+
+		data[54]->value = 0
+		data[54]->next  = 55
+		data[54]->prev  = -1
+
+		data[55]->value = 0
+		data[55]->next  = 56
+		data[55]->prev  = -1
+
+		data[56]->value = 0
+		data[56]->next  = 57
+		data[56]->prev  = -1
+
+		data[57]->value = 0
+		data[57]->next  = 58
+		data[57]->prev  = -1
+
+		data[58]->value = 0
+		data[58]->next  = 59
+		data[58]->prev  = -1
+
+		data[59]->value = 0
+		data[59]->next  = 60
+		data[59]->prev  = -1
+
+		data[60]->value = 0
+		data[60]->next  = 61
+		data[60]->prev  = -1
+
+		data[61]->value = 0
+		data[61]->next  = 62
+		data[61]->prev  = -1
+
+		data[62]->value = 0
+		data[62]->next  = 63
+		data[62]->prev  = -1
+
+		data[63]->value = 0
+		data[63]->next  = 64
+		data[63]->prev  = -1
+
+		data[64]->value = 0
+		data[64]->next  = 65
+		data[64]->prev  = -1
+
+		data[65]->value = 0
+		data[65]->next  = 66
+		data[65]->prev  = -1
+
+		data[66]->value = 0
+		data[66]->next  = 67
+		data[66]->prev  = -1
+
+		data[67]->value = 0
+		data[67]->next  = 68
+		data[67]->prev  = -1
+
+		data[68]->value = 0
+		data[68]->next  = 69
+		data[68]->prev  = -1
+
+		data[69]->value = 0
+		data[69]->next  = 70
+		data[69]->prev  = -1
+
+		data[70]->value = 0
+		data[70]->next  = 71
+		data[70]->prev  = -1
+
+		data[71]->value = 0
+		data[71]->next  = 72
+		data[71]->prev  = -1
+
+		data[72]->value = 0
+		data[72]->next  = 73
+		data[72]->prev  = -1
+
+		data[73]->value = 0
+		data[73]->next  = 74
+		data[73]->prev  = -1
+
+		data[74]->value = 0
+		data[74]->next  = 75
+		data[74]->prev  = -1
+
+		data[75]->value = 0
+		data[75]->next  = 76
+		data[75]->prev  = -1
+
+		data[76]->value = 0
+		data[76]->next  = 77
+		data[76]->prev  = -1
+
+		data[77]->value = 0
+		data[77]->next  = 78
+		data[77]->prev  = -1
+
+		data[78]->value = 0
+		data[78]->next  = 79
+		data[78]->prev  = -1
+
+		data[79]->value = 0
+		data[79]->next  = 80
+		data[79]->prev  = -1
+
+		data[80]->value = 0
+		data[80]->next  = 81
+		data[80]->prev  = -1
+
+		data[81]->value = 0
+		data[81]->next  = 82
+		data[81]->prev  = -1
+
+		data[82]->value = 0
+		data[82]->next  = 83
+		data[82]->prev  = -1
+
+		data[83]->value = 0
+		data[83]->next  = 84
+		data[83]->prev  = -1
+
+		data[84]->value = 0
+		data[84]->next  = 85
+		data[84]->prev  = -1
+
+		data[85]->value = 0
+		data[85]->next  = 86
+		data[85]->prev  = -1
+
+		data[86]->value = 0
+		data[86]->next  = 87
+		data[86]->prev  = -1
+
+		data[87]->value = 0
+		data[87]->next  = 88
+		data[87]->prev  = -1
+
+		data[88]->value = 0
+		data[88]->next  = 89
+		data[88]->prev  = -1
+
+		data[89]->value = 0
+		data[89]->next  = 90
+		data[89]->prev  = -1
+
+		data[90]->value = 0
+		data[90]->next  = 91
+		data[90]->prev  = -1
+
+		data[91]->value = 0
+		data[91]->next  = 92
+		data[91]->prev  = -1
+
+		data[92]->value = 0
+		data[92]->next  = 93
+		data[92]->prev  = -1
+
+		data[93]->value = 0
+		data[93]->next  = 94
+		data[93]->prev  = -1
+
+		data[94]->value = 0
+		data[94]->next  = 95
+		data[94]->prev  = -1
+
+		data[95]->value = 0
+		data[95]->next  = 96
+		data[95]->prev  = -1
+
+		data[96]->value = 0
+		data[96]->next  = 97
+		data[96]->prev  = -1
+
+		data[97]->value = 0
+		data[97]->next  = 98
+		data[97]->prev  = -1
+
+		data[98]->value = 0
+		data[98]->next  = 99
+		data[98]->prev  = -1
+
+		data[99]->value = 0
+		data[99]->next  = 100
+		data[99]->prev  = -1
+
+		data[100]->value = 0
+		data[100]->next  = 101
+		data[100]->prev  = -1
+
+		data[101]->value = 0
+		data[101]->next  = 102
+		data[101]->prev  = -1
+
+		data[102]->value = 0
+		data[102]->next  = 103
+		data[102]->prev  = -1
+
+		data[103]->value = 0
+		data[103]->next  = 104
+		data[103]->prev  = -1
+
+		data[104]->value = 0
+		data[104]->next  = 105
+		data[104]->prev  = -1
+
+		data[105]->value = 0
+		data[105]->next  = 106
+		data[105]->prev  = -1
+
+		data[106]->value = 0
+		data[106]->next  = 107
+		data[106]->prev  = -1
+
+		data[107]->value = 0
+		data[107]->next  = 108
+		data[107]->prev  = -1
+
+		data[108]->value = 0
+		data[108]->next  = 109
+		data[108]->prev  = -1
+
+		data[109]->value = 0
+		data[109]->next  = 110
+		data[109]->prev  = -1
+
+		data[110]->value = 0
+		data[110]->next  = 111
+		data[110]->prev  = -1
+
+		data[111]->value = 0
+		data[111]->next  = 112
+		data[111]->prev  = -1
+
+		data[112]->value = 0
+		data[112]->next  = 113
+		data[112]->prev  = -1
+
+		data[113]->value = 0
+		data[113]->next  = 1
+		data[113]->prev  = -1
+
+		data[114]->value = 0
+		data[114]->next  = 115
+		data[114]->prev  = 1
+
+		data[115]->value = 0
+		data[115]->next  = 116
+		data[115]->prev  = -1
+
+		data[116]->value = 0
+		data[116]->next  = 117
+		data[116]->prev  = -1
+
+		data[117]->value = 0
+		data[117]->next  = 118
+		data[117]->prev  = -1
+
+		data[118]->value = 0
+		data[118]->next  = 119
+		data[118]->prev  = -1
+
+		data[119]->value = 0
+		data[119]->next  = 120
+		data[119]->prev  = -1
+
+		data[120]->value = 0
+		data[120]->next  = 121
+		data[120]->prev  = -1
+
+		data[121]->value = 0
+		data[121]->next  = 122
+		data[121]->prev  = -1
+
+		data[122]->value = 0
+		data[122]->next  = 123
+		data[122]->prev  = -1
+
+		data[123]->value = 0
+		data[123]->next  = 124
+		data[123]->prev  = -1
+
+		data[124]->value = 0
+		data[124]->next  = 125
+		data[124]->prev  = -1
+
+		data[125]->value = 0
+		data[125]->next  = 126
+		data[125]->prev  = -1
+
+		data[126]->value = 0
+		data[126]->next  = 127
+		data[126]->prev  = -1
+
+		data[127]->value = 0
+		data[127]->next  = 128
+		data[127]->prev  = -1
+
+		data[128]->value = 0
+		data[128]->next  = 129
+		data[128]->prev  = -1
+
+		data[129]->value = 0
+		data[129]->next  = 130
+		data[129]->prev  = -1
+
+		data[130]->value = 0
+		data[130]->next  = 131
+		data[130]->prev  = -1
+
+		data[131]->value = 0
+		data[131]->next  = 132
+		data[131]->prev  = -1
+
+		data[132]->value = 0
+		data[132]->next  = 133
+		data[132]->prev  = -1
+
+		data[133]->value = 0
+		data[133]->next  = 134
+		data[133]->prev  = -1
+
+		data[134]->value = 0
+		data[134]->next  = 135
+		data[134]->prev  = -1
+
+		data[135]->value = 0
+		data[135]->next  = 136
+		data[135]->prev  = -1
+
+		data[136]->value = 0
+		data[136]->next  = 137
+		data[136]->prev  = -1
+
+		data[137]->value = 0
+		data[137]->next  = 138
+		data[137]->prev  = -1
+
+		data[138]->value = 0
+		data[138]->next  = 139
+		data[138]->prev  = -1
+
+		data[139]->value = 0
+		data[139]->next  = 140
+		data[139]->prev  = -1
+
+		data[140]->value = 0
+		data[140]->next  = 141
+		data[140]->prev  = -1
+
+		data[141]->value = 0
+		data[141]->next  = 142
+		data[141]->prev  = -1
+
+		data[142]->value = 0
+		data[142]->next  = 143
+		data[142]->prev  = -1
+
+		data[143]->value = 0
+		data[143]->next  = 144
+		data[143]->prev  = -1
+
+		data[144]->value = 0
+		data[144]->next  = 145
+		data[144]->prev  = -1
+
+		data[145]->value = 0
+		data[145]->next  = 146
+		data[145]->prev  = -1
+
+		data[146]->value = 0
+		data[146]->next  = 147
+		data[146]->prev  = -1
+
+		data[147]->value = 0
+		data[147]->next  = 148
+		data[147]->prev  = -1
+
+		data[148]->value = 0
+		data[148]->next  = 149
+		data[148]->prev  = -1
+
+		data[149]->value = 0
+		data[149]->next  = 150
+		data[149]->prev  = -1
+
+		data[150]->value = 0
+		data[150]->next  = 151
+		data[150]->prev  = -1
+
+		data[151]->value = 0
+		data[151]->next  = 152
+		data[151]->prev  = -1
+
+		data[152]->value = 0
+		data[152]->next  = 153
+		data[152]->prev  = -1
+
+		data[153]->value = 0
+		data[153]->next  = 154
+		data[153]->prev  = -1
+
+		data[154]->value = 0
+		data[154]->next  = 155
+		data[154]->prev  = -1
+
+		data[155]->value = 0
+		data[155]->next  = 156
+		data[155]->prev  = -1
+
+		data[156]->value = 0
+		data[156]->next  = 157
+		data[156]->prev  = -1
+
+		data[157]->value = 0
+		data[157]->next  = 158
+		data[157]->prev  = -1
+
+		data[158]->value = 0
+		data[158]->next  = 159
+		data[158]->prev  = -1
+
+		data[159]->value = 0
+		data[159]->next  = 160
+		data[159]->prev  = -1
+
+		data[160]->value = 0
+		data[160]->next  = 161
+		data[160]->prev  = -1
+
+		data[161]->value = 0
+		data[161]->next  = 162
+		data[161]->prev  = -1
+
+		data[162]->value = 0
+		data[162]->next  = 163
+		data[162]->prev  = -1
+
+		data[163]->value = 0
+		data[163]->next  = 164
+		data[163]->prev  = -1
+
+		data[164]->value = 0
+		data[164]->next  = 165
+		data[164]->prev  = -1
+
+		data[165]->value = 0
+		data[165]->next  = 166
+		data[165]->prev  = -1
+
+		data[166]->value = 0
+		data[166]->next  = 167
+		data[166]->prev  = -1
+
+		data[167]->value = 0
+		data[167]->next  = 168
+		data[167]->prev  = -1
+
+		data[168]->value = 0
+		data[168]->next  = 169
+		data[168]->prev  = -1
+
+		data[169]->value = 0
+		data[169]->next  = 170
+		data[169]->prev  = -1
+
+		data[170]->value = 0
+		data[170]->next  = 171
+		data[170]->prev  = -1
+
+		data[171]->value = 0
+		data[171]->next  = 172
+		data[171]->prev  = -1
+
+		data[172]->value = 0
+		data[172]->next  = 173
+		data[172]->prev  = -1
+
+		data[173]->value = 0
+		data[173]->next  = 174
+		data[173]->prev  = -1
+
+		data[174]->value = 0
+		data[174]->next  = 175
+		data[174]->prev  = -1
+
+		data[175]->value = 0
+		data[175]->next  = 176
+		data[175]->prev  = -1
+
+		data[176]->value = 0
+		data[176]->next  = 177
+		data[176]->prev  = -1
+
+		data[177]->value = 0
+		data[177]->next  = 178
+		data[177]->prev  = -1
+
+		data[178]->value = 0
+		data[178]->next  = 179
+		data[178]->prev  = -1
+
+		data[179]->value = 0
+		data[179]->next  = 180
+		data[179]->prev  = -1
+
+		data[180]->value = 0
+		data[180]->next  = 181
+		data[180]->prev  = -1
+
+		data[181]->value = 0
+		data[181]->next  = 182
+		data[181]->prev  = -1
+
+		data[182]->value = 0
+		data[182]->next  = 183
+		data[182]->prev  = -1
+
+		data[183]->value = 0
+		data[183]->next  = 184
+		data[183]->prev  = -1
+
+		data[184]->value = 0
+		data[184]->next  = 185
+		data[184]->prev  = -1
+
+		data[185]->value = 0
+		data[185]->next  = 186
+		data[185]->prev  = -1
+
+		data[186]->value = 0
+		data[186]->next  = 187
+		data[186]->prev  = -1
+
+		data[187]->value = 0
+		data[187]->next  = 188
+		data[187]->prev  = -1
+
+		data[188]->value = 0
+		data[188]->next  = 189
+		data[188]->prev  = -1
+
+		data[189]->value = 0
+		data[189]->next  = 190
+		data[189]->prev  = -1
+
+		data[190]->value = 0
+		data[190]->next  = 191
+		data[190]->prev  = -1
+
+		data[191]->value = 0
+		data[191]->next  = 192
+		data[191]->prev  = -1
+
+		data[192]->value = 0
+		data[192]->next  = 193
+		data[192]->prev  = -1
+
+		data[193]->value = 0
+		data[193]->next  = 194
+		data[193]->prev  = -1
+
+		data[194]->value = 0
+		data[194]->next  = 195
+		data[194]->prev  = -1
+
+		data[195]->value = 0
+		data[195]->next  = 196
+		data[195]->prev  = -1
+
+		data[196]->value = 0
+		data[196]->next  = 197
+		data[196]->prev  = -1
+
+		data[197]->value = 0
+		data[197]->next  = 198
+		data[197]->prev  = -1
+
+		data[198]->value = 0
+		data[198]->next  = 199
+		data[198]->prev  = -1
+
+		data[199]->value = 0
+		data[199]->next  = 0
+		data[199]->prev  = -1
+
+	}
+}
+
+-----------------------------------------------------------
+[31mERROR: the connection between the list nodes is broken[0m
+[31mERROR: the connection between free nodes of the list is broken[0m
+[31mERROR: the number of nodes is incorrect[0m
+list[0x7ffc098f67f0] "list" called from src/list.cpp(246) lineariz_list
+{
+	size = 200
+	head = 1
+	tail = 0
+	free = 2
+	data[0x5bd439c412a0]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = -1
+
+		data[1]->value = 100
+		data[1]->next  = 114
+		data[1]->prev  = 113
+
+		data[2]->value = 0
+		data[2]->next  = 3
+		data[2]->prev  = -1
+
+		data[3]->value = 0
+		data[3]->next  = 4
+		data[3]->prev  = -1
+
+		data[4]->value = 0
+		data[4]->next  = 5
+		data[4]->prev  = -1
+
+		data[5]->value = 0
+		data[5]->next  = 6
+		data[5]->prev  = -1
+
+		data[6]->value = 0
+		data[6]->next  = 7
+		data[6]->prev  = -1
+
+		data[7]->value = 0
+		data[7]->next  = 8
+		data[7]->prev  = -1
+
+		data[8]->value = 0
+		data[8]->next  = 9
+		data[8]->prev  = -1
+
+		data[9]->value = 0
+		data[9]->next  = 10
+		data[9]->prev  = -1
+
+		data[10]->value = 0
+		data[10]->next  = 11
+		data[10]->prev  = -1
+
+		data[11]->value = 0
+		data[11]->next  = 12
+		data[11]->prev  = -1
+
+		data[12]->value = 0
+		data[12]->next  = 13
+		data[12]->prev  = -1
+
+		data[13]->value = 0
+		data[13]->next  = 14
+		data[13]->prev  = -1
+
+		data[14]->value = 0
+		data[14]->next  = 15
+		data[14]->prev  = -1
+
+		data[15]->value = 0
+		data[15]->next  = 16
+		data[15]->prev  = -1
+
+		data[16]->value = 0
+		data[16]->next  = 17
+		data[16]->prev  = -1
+
+		data[17]->value = 0
+		data[17]->next  = 18
+		data[17]->prev  = -1
+
+		data[18]->value = 0
+		data[18]->next  = 19
+		data[18]->prev  = -1
+
+		data[19]->value = 0
+		data[19]->next  = 20
+		data[19]->prev  = -1
+
+		data[20]->value = 0
+		data[20]->next  = 21
+		data[20]->prev  = -1
+
+		data[21]->value = 0
+		data[21]->next  = 22
+		data[21]->prev  = -1
+
+		data[22]->value = 0
+		data[22]->next  = 23
+		data[22]->prev  = -1
+
+		data[23]->value = 0
+		data[23]->next  = 24
+		data[23]->prev  = -1
+
+		data[24]->value = 0
+		data[24]->next  = 25
+		data[24]->prev  = -1
+
+		data[25]->value = 0
+		data[25]->next  = 26
+		data[25]->prev  = -1
+
+		data[26]->value = 0
+		data[26]->next  = 27
+		data[26]->prev  = -1
+
+		data[27]->value = 0
+		data[27]->next  = 28
+		data[27]->prev  = -1
+
+		data[28]->value = 0
+		data[28]->next  = 29
+		data[28]->prev  = -1
+
+		data[29]->value = 0
+		data[29]->next  = 30
+		data[29]->prev  = -1
+
+		data[30]->value = 0
+		data[30]->next  = 31
+		data[30]->prev  = -1
+
+		data[31]->value = 0
+		data[31]->next  = 32
+		data[31]->prev  = -1
+
+		data[32]->value = 0
+		data[32]->next  = 33
+		data[32]->prev  = -1
+
+		data[33]->value = 0
+		data[33]->next  = 34
+		data[33]->prev  = -1
+
+		data[34]->value = 0
+		data[34]->next  = 35
+		data[34]->prev  = -1
+
+		data[35]->value = 0
+		data[35]->next  = 36
+		data[35]->prev  = -1
+
+		data[36]->value = 0
+		data[36]->next  = 37
+		data[36]->prev  = -1
+
+		data[37]->value = 0
+		data[37]->next  = 38
+		data[37]->prev  = -1
+
+		data[38]->value = 0
+		data[38]->next  = 39
+		data[38]->prev  = -1
+
+		data[39]->value = 0
+		data[39]->next  = 40
+		data[39]->prev  = -1
+
+		data[40]->value = 0
+		data[40]->next  = 41
+		data[40]->prev  = -1
+
+		data[41]->value = 0
+		data[41]->next  = 42
+		data[41]->prev  = -1
+
+		data[42]->value = 0
+		data[42]->next  = 43
+		data[42]->prev  = -1
+
+		data[43]->value = 0
+		data[43]->next  = 44
+		data[43]->prev  = -1
+
+		data[44]->value = 0
+		data[44]->next  = 45
+		data[44]->prev  = -1
+
+		data[45]->value = 0
+		data[45]->next  = 46
+		data[45]->prev  = -1
+
+		data[46]->value = 0
+		data[46]->next  = 47
+		data[46]->prev  = -1
+
+		data[47]->value = 0
+		data[47]->next  = 48
+		data[47]->prev  = -1
+
+		data[48]->value = 0
+		data[48]->next  = 49
+		data[48]->prev  = -1
+
+		data[49]->value = 0
+		data[49]->next  = 50
+		data[49]->prev  = -1
+
+		data[50]->value = 0
+		data[50]->next  = 51
+		data[50]->prev  = -1
+
+		data[51]->value = 0
+		data[51]->next  = 52
+		data[51]->prev  = -1
+
+		data[52]->value = 0
+		data[52]->next  = 53
+		data[52]->prev  = -1
+
+		data[53]->value = 0
+		data[53]->next  = 54
+		data[53]->prev  = -1
+
+		data[54]->value = 0
+		data[54]->next  = 55
+		data[54]->prev  = -1
+
+		data[55]->value = 0
+		data[55]->next  = 56
+		data[55]->prev  = -1
+
+		data[56]->value = 0
+		data[56]->next  = 57
+		data[56]->prev  = -1
+
+		data[57]->value = 0
+		data[57]->next  = 58
+		data[57]->prev  = -1
+
+		data[58]->value = 0
+		data[58]->next  = 59
+		data[58]->prev  = -1
+
+		data[59]->value = 0
+		data[59]->next  = 60
+		data[59]->prev  = -1
+
+		data[60]->value = 0
+		data[60]->next  = 61
+		data[60]->prev  = -1
+
+		data[61]->value = 0
+		data[61]->next  = 62
+		data[61]->prev  = -1
+
+		data[62]->value = 0
+		data[62]->next  = 63
+		data[62]->prev  = -1
+
+		data[63]->value = 0
+		data[63]->next  = 64
+		data[63]->prev  = -1
+
+		data[64]->value = 0
+		data[64]->next  = 65
+		data[64]->prev  = -1
+
+		data[65]->value = 0
+		data[65]->next  = 66
+		data[65]->prev  = -1
+
+		data[66]->value = 0
+		data[66]->next  = 67
+		data[66]->prev  = -1
+
+		data[67]->value = 0
+		data[67]->next  = 68
+		data[67]->prev  = -1
+
+		data[68]->value = 0
+		data[68]->next  = 69
+		data[68]->prev  = -1
+
+		data[69]->value = 0
+		data[69]->next  = 70
+		data[69]->prev  = -1
+
+		data[70]->value = 0
+		data[70]->next  = 71
+		data[70]->prev  = -1
+
+		data[71]->value = 0
+		data[71]->next  = 72
+		data[71]->prev  = -1
+
+		data[72]->value = 0
+		data[72]->next  = 73
+		data[72]->prev  = -1
+
+		data[73]->value = 0
+		data[73]->next  = 74
+		data[73]->prev  = -1
+
+		data[74]->value = 0
+		data[74]->next  = 75
+		data[74]->prev  = -1
+
+		data[75]->value = 0
+		data[75]->next  = 76
+		data[75]->prev  = -1
+
+		data[76]->value = 0
+		data[76]->next  = 77
+		data[76]->prev  = -1
+
+		data[77]->value = 0
+		data[77]->next  = 78
+		data[77]->prev  = -1
+
+		data[78]->value = 0
+		data[78]->next  = 79
+		data[78]->prev  = -1
+
+		data[79]->value = 0
+		data[79]->next  = 80
+		data[79]->prev  = -1
+
+		data[80]->value = 0
+		data[80]->next  = 81
+		data[80]->prev  = -1
+
+		data[81]->value = 0
+		data[81]->next  = 82
+		data[81]->prev  = -1
+
+		data[82]->value = 0
+		data[82]->next  = 83
+		data[82]->prev  = -1
+
+		data[83]->value = 0
+		data[83]->next  = 84
+		data[83]->prev  = -1
+
+		data[84]->value = 0
+		data[84]->next  = 85
+		data[84]->prev  = -1
+
+		data[85]->value = 0
+		data[85]->next  = 86
+		data[85]->prev  = -1
+
+		data[86]->value = 0
+		data[86]->next  = 87
+		data[86]->prev  = -1
+
+		data[87]->value = 0
+		data[87]->next  = 88
+		data[87]->prev  = -1
+
+		data[88]->value = 0
+		data[88]->next  = 89
+		data[88]->prev  = -1
+
+		data[89]->value = 0
+		data[89]->next  = 90
+		data[89]->prev  = -1
+
+		data[90]->value = 0
+		data[90]->next  = 91
+		data[90]->prev  = -1
+
+		data[91]->value = 0
+		data[91]->next  = 92
+		data[91]->prev  = -1
+
+		data[92]->value = 0
+		data[92]->next  = 93
+		data[92]->prev  = -1
+
+		data[93]->value = 0
+		data[93]->next  = 94
+		data[93]->prev  = -1
+
+		data[94]->value = 0
+		data[94]->next  = 95
+		data[94]->prev  = -1
+
+		data[95]->value = 0
+		data[95]->next  = 96
+		data[95]->prev  = -1
+
+		data[96]->value = 0
+		data[96]->next  = 97
+		data[96]->prev  = -1
+
+		data[97]->value = 0
+		data[97]->next  = 98
+		data[97]->prev  = -1
+
+		data[98]->value = 0
+		data[98]->next  = 99
+		data[98]->prev  = -1
+
+		data[99]->value = 0
+		data[99]->next  = 100
+		data[99]->prev  = -1
+
+		data[100]->value = 0
+		data[100]->next  = 101
+		data[100]->prev  = -1
+
+		data[101]->value = 0
+		data[101]->next  = 102
+		data[101]->prev  = -1
+
+		data[102]->value = 0
+		data[102]->next  = 103
+		data[102]->prev  = -1
+
+		data[103]->value = 0
+		data[103]->next  = 104
+		data[103]->prev  = -1
+
+		data[104]->value = 0
+		data[104]->next  = 105
+		data[104]->prev  = -1
+
+		data[105]->value = 0
+		data[105]->next  = 106
+		data[105]->prev  = -1
+
+		data[106]->value = 0
+		data[106]->next  = 107
+		data[106]->prev  = -1
+
+		data[107]->value = 0
+		data[107]->next  = 108
+		data[107]->prev  = -1
+
+		data[108]->value = 0
+		data[108]->next  = 109
+		data[108]->prev  = -1
+
+		data[109]->value = 0
+		data[109]->next  = 110
+		data[109]->prev  = -1
+
+		data[110]->value = 0
+		data[110]->next  = 111
+		data[110]->prev  = -1
+
+		data[111]->value = 0
+		data[111]->next  = 112
+		data[111]->prev  = -1
+
+		data[112]->value = 0
+		data[112]->next  = 113
+		data[112]->prev  = -1
+
+		data[113]->value = 0
+		data[113]->next  = 1
+		data[113]->prev  = -1
+
+		data[114]->value = 0
+		data[114]->next  = 115
+		data[114]->prev  = 1
+
+		data[115]->value = 0
+		data[115]->next  = 116
+		data[115]->prev  = -1
+
+		data[116]->value = 0
+		data[116]->next  = 117
+		data[116]->prev  = -1
+
+		data[117]->value = 0
+		data[117]->next  = 118
+		data[117]->prev  = -1
+
+		data[118]->value = 0
+		data[118]->next  = 119
+		data[118]->prev  = -1
+
+		data[119]->value = 0
+		data[119]->next  = 120
+		data[119]->prev  = -1
+
+		data[120]->value = 0
+		data[120]->next  = 121
+		data[120]->prev  = -1
+
+		data[121]->value = 0
+		data[121]->next  = 122
+		data[121]->prev  = -1
+
+		data[122]->value = 0
+		data[122]->next  = 123
+		data[122]->prev  = -1
+
+		data[123]->value = 0
+		data[123]->next  = 124
+		data[123]->prev  = -1
+
+		data[124]->value = 0
+		data[124]->next  = 125
+		data[124]->prev  = -1
+
+		data[125]->value = 0
+		data[125]->next  = 126
+		data[125]->prev  = -1
+
+		data[126]->value = 0
+		data[126]->next  = 127
+		data[126]->prev  = -1
+
+		data[127]->value = 0
+		data[127]->next  = 128
+		data[127]->prev  = -1
+
+		data[128]->value = 0
+		data[128]->next  = 129
+		data[128]->prev  = -1
+
+		data[129]->value = 0
+		data[129]->next  = 130
+		data[129]->prev  = -1
+
+		data[130]->value = 0
+		data[130]->next  = 131
+		data[130]->prev  = -1
+
+		data[131]->value = 0
+		data[131]->next  = 132
+		data[131]->prev  = -1
+
+		data[132]->value = 0
+		data[132]->next  = 133
+		data[132]->prev  = -1
+
+		data[133]->value = 0
+		data[133]->next  = 134
+		data[133]->prev  = -1
+
+		data[134]->value = 0
+		data[134]->next  = 135
+		data[134]->prev  = -1
+
+		data[135]->value = 0
+		data[135]->next  = 136
+		data[135]->prev  = -1
+
+		data[136]->value = 0
+		data[136]->next  = 137
+		data[136]->prev  = -1
+
+		data[137]->value = 0
+		data[137]->next  = 138
+		data[137]->prev  = -1
+
+		data[138]->value = 0
+		data[138]->next  = 139
+		data[138]->prev  = -1
+
+		data[139]->value = 0
+		data[139]->next  = 140
+		data[139]->prev  = -1
+
+		data[140]->value = 0
+		data[140]->next  = 141
+		data[140]->prev  = -1
+
+		data[141]->value = 0
+		data[141]->next  = 142
+		data[141]->prev  = -1
+
+		data[142]->value = 0
+		data[142]->next  = 143
+		data[142]->prev  = -1
+
+		data[143]->value = 0
+		data[143]->next  = 144
+		data[143]->prev  = -1
+
+		data[144]->value = 0
+		data[144]->next  = 145
+		data[144]->prev  = -1
+
+		data[145]->value = 0
+		data[145]->next  = 146
+		data[145]->prev  = -1
+
+		data[146]->value = 0
+		data[146]->next  = 147
+		data[146]->prev  = -1
+
+		data[147]->value = 0
+		data[147]->next  = 148
+		data[147]->prev  = -1
+
+		data[148]->value = 0
+		data[148]->next  = 149
+		data[148]->prev  = -1
+
+		data[149]->value = 0
+		data[149]->next  = 150
+		data[149]->prev  = -1
+
+		data[150]->value = 0
+		data[150]->next  = 151
+		data[150]->prev  = -1
+
+		data[151]->value = 0
+		data[151]->next  = 152
+		data[151]->prev  = -1
+
+		data[152]->value = 0
+		data[152]->next  = 153
+		data[152]->prev  = -1
+
+		data[153]->value = 0
+		data[153]->next  = 154
+		data[153]->prev  = -1
+
+		data[154]->value = 0
+		data[154]->next  = 155
+		data[154]->prev  = -1
+
+		data[155]->value = 0
+		data[155]->next  = 156
+		data[155]->prev  = -1
+
+		data[156]->value = 0
+		data[156]->next  = 157
+		data[156]->prev  = -1
+
+		data[157]->value = 0
+		data[157]->next  = 158
+		data[157]->prev  = -1
+
+		data[158]->value = 0
+		data[158]->next  = 159
+		data[158]->prev  = -1
+
+		data[159]->value = 0
+		data[159]->next  = 160
+		data[159]->prev  = -1
+
+		data[160]->value = 0
+		data[160]->next  = 161
+		data[160]->prev  = -1
+
+		data[161]->value = 0
+		data[161]->next  = 162
+		data[161]->prev  = -1
+
+		data[162]->value = 0
+		data[162]->next  = 163
+		data[162]->prev  = -1
+
+		data[163]->value = 0
+		data[163]->next  = 164
+		data[163]->prev  = -1
+
+		data[164]->value = 0
+		data[164]->next  = 165
+		data[164]->prev  = -1
+
+		data[165]->value = 0
+		data[165]->next  = 166
+		data[165]->prev  = -1
+
+		data[166]->value = 0
+		data[166]->next  = 167
+		data[166]->prev  = -1
+
+		data[167]->value = 0
+		data[167]->next  = 168
+		data[167]->prev  = -1
+
+		data[168]->value = 0
+		data[168]->next  = 169
+		data[168]->prev  = -1
+
+		data[169]->value = 0
+		data[169]->next  = 170
+		data[169]->prev  = -1
+
+		data[170]->value = 0
+		data[170]->next  = 171
+		data[170]->prev  = -1
+
+		data[171]->value = 0
+		data[171]->next  = 172
+		data[171]->prev  = -1
+
+		data[172]->value = 0
+		data[172]->next  = 173
+		data[172]->prev  = -1
+
+		data[173]->value = 0
+		data[173]->next  = 174
+		data[173]->prev  = -1
+
+		data[174]->value = 0
+		data[174]->next  = 175
+		data[174]->prev  = -1
+
+		data[175]->value = 0
+		data[175]->next  = 176
+		data[175]->prev  = -1
+
+		data[176]->value = 0
+		data[176]->next  = 177
+		data[176]->prev  = -1
+
+		data[177]->value = 0
+		data[177]->next  = 178
+		data[177]->prev  = -1
+
+		data[178]->value = 0
+		data[178]->next  = 179
+		data[178]->prev  = -1
+
+		data[179]->value = 0
+		data[179]->next  = 180
+		data[179]->prev  = -1
+
+		data[180]->value = 0
+		data[180]->next  = 181
+		data[180]->prev  = -1
+
+		data[181]->value = 0
+		data[181]->next  = 182
+		data[181]->prev  = -1
+
+		data[182]->value = 0
+		data[182]->next  = 183
+		data[182]->prev  = -1
+
+		data[183]->value = 0
+		data[183]->next  = 184
+		data[183]->prev  = -1
+
+		data[184]->value = 0
+		data[184]->next  = 185
+		data[184]->prev  = -1
+
+		data[185]->value = 0
+		data[185]->next  = 186
+		data[185]->prev  = -1
+
+		data[186]->value = 0
+		data[186]->next  = 187
+		data[186]->prev  = -1
+
+		data[187]->value = 0
+		data[187]->next  = 188
+		data[187]->prev  = -1
+
+		data[188]->value = 0
+		data[188]->next  = 189
+		data[188]->prev  = -1
+
+		data[189]->value = 0
+		data[189]->next  = 190
+		data[189]->prev  = -1
+
+		data[190]->value = 0
+		data[190]->next  = 191
+		data[190]->prev  = -1
+
+		data[191]->value = 0
+		data[191]->next  = 192
+		data[191]->prev  = -1
+
+		data[192]->value = 0
+		data[192]->next  = 193
+		data[192]->prev  = -1
+
+		data[193]->value = 0
+		data[193]->next  = 194
+		data[193]->prev  = -1
+
+		data[194]->value = 0
+		data[194]->next  = 195
+		data[194]->prev  = -1
+
+		data[195]->value = 0
+		data[195]->next  = 196
+		data[195]->prev  = -1
+
+		data[196]->value = 0
+		data[196]->next  = 197
+		data[196]->prev  = -1
+
+		data[197]->value = 0
+		data[197]->next  = 198
+		data[197]->prev  = -1
+
+		data[198]->value = 0
+		data[198]->next  = 199
+		data[198]->prev  = -1
+
+		data[199]->value = 0
+		data[199]->next  = 0
+		data[199]->prev  = -1
+
+	}
+}
+
+-----------------------------------------------------------
+[31mERROR: the connection between the list nodes is broken[0m
+[31mERROR: the connection between free nodes of the list is broken[0m
+[31mERROR: the number of nodes is incorrect[0m
+list[0x7ffc098f67f0] "list" called from src/list.cpp(286) lineariz_list
+{
+	size = 200
+	head = 1
+	tail = 87
+	free = 88
+	data[0x5bd439c41fd0]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = 87
+
+		data[1]->value = 100
+		data[1]->next  = 2
+		data[1]->prev  = 0
+
+		data[2]->value = 0
+		data[2]->next  = 3
+		data[2]->prev  = 1
+
+		data[3]->value = 0
+		data[3]->next  = 4
+		data[3]->prev  = 2
+
+		data[4]->value = 0
+		data[4]->next  = 5
+		data[4]->prev  = 3
+
+		data[5]->value = 0
+		data[5]->next  = 6
+		data[5]->prev  = 4
+
+		data[6]->value = 0
+		data[6]->next  = 7
+		data[6]->prev  = 5
+
+		data[7]->value = 0
+		data[7]->next  = 8
+		data[7]->prev  = 6
+
+		data[8]->value = 0
+		data[8]->next  = 9
+		data[8]->prev  = 7
+
+		data[9]->value = 0
+		data[9]->next  = 10
+		data[9]->prev  = 8
+
+		data[10]->value = 0
+		data[10]->next  = 11
+		data[10]->prev  = 9
+
+		data[11]->value = 0
+		data[11]->next  = 12
+		data[11]->prev  = 10
+
+		data[12]->value = 0
+		data[12]->next  = 13
+		data[12]->prev  = 11
+
+		data[13]->value = 0
+		data[13]->next  = 14
+		data[13]->prev  = 12
+
+		data[14]->value = 0
+		data[14]->next  = 15
+		data[14]->prev  = 13
+
+		data[15]->value = 0
+		data[15]->next  = 16
+		data[15]->prev  = 14
+
+		data[16]->value = 0
+		data[16]->next  = 17
+		data[16]->prev  = 15
+
+		data[17]->value = 0
+		data[17]->next  = 18
+		data[17]->prev  = 16
+
+		data[18]->value = 0
+		data[18]->next  = 19
+		data[18]->prev  = 17
+
+		data[19]->value = 0
+		data[19]->next  = 20
+		data[19]->prev  = 18
+
+		data[20]->value = 0
+		data[20]->next  = 21
+		data[20]->prev  = 19
+
+		data[21]->value = 0
+		data[21]->next  = 22
+		data[21]->prev  = 20
+
+		data[22]->value = 0
+		data[22]->next  = 23
+		data[22]->prev  = 21
+
+		data[23]->value = 0
+		data[23]->next  = 24
+		data[23]->prev  = 22
+
+		data[24]->value = 0
+		data[24]->next  = 25
+		data[24]->prev  = 23
+
+		data[25]->value = 0
+		data[25]->next  = 26
+		data[25]->prev  = 24
+
+		data[26]->value = 0
+		data[26]->next  = 27
+		data[26]->prev  = 25
+
+		data[27]->value = 0
+		data[27]->next  = 28
+		data[27]->prev  = 26
+
+		data[28]->value = 0
+		data[28]->next  = 29
+		data[28]->prev  = 27
+
+		data[29]->value = 0
+		data[29]->next  = 30
+		data[29]->prev  = 28
+
+		data[30]->value = 0
+		data[30]->next  = 31
+		data[30]->prev  = 29
+
+		data[31]->value = 0
+		data[31]->next  = 32
+		data[31]->prev  = 30
+
+		data[32]->value = 0
+		data[32]->next  = 33
+		data[32]->prev  = 31
+
+		data[33]->value = 0
+		data[33]->next  = 34
+		data[33]->prev  = 32
+
+		data[34]->value = 0
+		data[34]->next  = 35
+		data[34]->prev  = 33
+
+		data[35]->value = 0
+		data[35]->next  = 36
+		data[35]->prev  = 34
+
+		data[36]->value = 0
+		data[36]->next  = 37
+		data[36]->prev  = 35
+
+		data[37]->value = 0
+		data[37]->next  = 38
+		data[37]->prev  = 36
+
+		data[38]->value = 0
+		data[38]->next  = 39
+		data[38]->prev  = 37
+
+		data[39]->value = 0
+		data[39]->next  = 40
+		data[39]->prev  = 38
+
+		data[40]->value = 0
+		data[40]->next  = 41
+		data[40]->prev  = 39
+
+		data[41]->value = 0
+		data[41]->next  = 42
+		data[41]->prev  = 40
+
+		data[42]->value = 0
+		data[42]->next  = 43
+		data[42]->prev  = 41
+
+		data[43]->value = 0
+		data[43]->next  = 44
+		data[43]->prev  = 42
+
+		data[44]->value = 0
+		data[44]->next  = 45
+		data[44]->prev  = 43
+
+		data[45]->value = 0
+		data[45]->next  = 46
+		data[45]->prev  = 44
+
+		data[46]->value = 0
+		data[46]->next  = 47
+		data[46]->prev  = 45
+
+		data[47]->value = 0
+		data[47]->next  = 48
+		data[47]->prev  = 46
+
+		data[48]->value = 0
+		data[48]->next  = 49
+		data[48]->prev  = 47
+
+		data[49]->value = 0
+		data[49]->next  = 50
+		data[49]->prev  = 48
+
+		data[50]->value = 0
+		data[50]->next  = 51
+		data[50]->prev  = 49
+
+		data[51]->value = 0
+		data[51]->next  = 52
+		data[51]->prev  = 50
+
+		data[52]->value = 0
+		data[52]->next  = 53
+		data[52]->prev  = 51
+
+		data[53]->value = 0
+		data[53]->next  = 54
+		data[53]->prev  = 52
+
+		data[54]->value = 0
+		data[54]->next  = 55
+		data[54]->prev  = 53
+
+		data[55]->value = 0
+		data[55]->next  = 56
+		data[55]->prev  = 54
+
+		data[56]->value = 0
+		data[56]->next  = 57
+		data[56]->prev  = 55
+
+		data[57]->value = 0
+		data[57]->next  = 58
+		data[57]->prev  = 56
+
+		data[58]->value = 0
+		data[58]->next  = 59
+		data[58]->prev  = 57
+
+		data[59]->value = 0
+		data[59]->next  = 60
+		data[59]->prev  = 58
+
+		data[60]->value = 0
+		data[60]->next  = 61
+		data[60]->prev  = 59
+
+		data[61]->value = 0
+		data[61]->next  = 62
+		data[61]->prev  = 60
+
+		data[62]->value = 0
+		data[62]->next  = 63
+		data[62]->prev  = 61
+
+		data[63]->value = 0
+		data[63]->next  = 64
+		data[63]->prev  = 62
+
+		data[64]->value = 0
+		data[64]->next  = 65
+		data[64]->prev  = 63
+
+		data[65]->value = 0
+		data[65]->next  = 66
+		data[65]->prev  = 64
+
+		data[66]->value = 0
+		data[66]->next  = 67
+		data[66]->prev  = 65
+
+		data[67]->value = 0
+		data[67]->next  = 68
+		data[67]->prev  = 66
+
+		data[68]->value = 0
+		data[68]->next  = 69
+		data[68]->prev  = 67
+
+		data[69]->value = 0
+		data[69]->next  = 70
+		data[69]->prev  = 68
+
+		data[70]->value = 0
+		data[70]->next  = 71
+		data[70]->prev  = 69
+
+		data[71]->value = 0
+		data[71]->next  = 72
+		data[71]->prev  = 70
+
+		data[72]->value = 0
+		data[72]->next  = 73
+		data[72]->prev  = 71
+
+		data[73]->value = 0
+		data[73]->next  = 74
+		data[73]->prev  = 72
+
+		data[74]->value = 0
+		data[74]->next  = 75
+		data[74]->prev  = 73
+
+		data[75]->value = 0
+		data[75]->next  = 76
+		data[75]->prev  = 74
+
+		data[76]->value = 0
+		data[76]->next  = 77
+		data[76]->prev  = 75
+
+		data[77]->value = 0
+		data[77]->next  = 78
+		data[77]->prev  = 76
+
+		data[78]->value = 0
+		data[78]->next  = 79
+		data[78]->prev  = 77
+
+		data[79]->value = 0
+		data[79]->next  = 80
+		data[79]->prev  = 78
+
+		data[80]->value = 0
+		data[80]->next  = 81
+		data[80]->prev  = 79
+
+		data[81]->value = 0
+		data[81]->next  = 82
+		data[81]->prev  = 80
+
+		data[82]->value = 0
+		data[82]->next  = 83
+		data[82]->prev  = 81
+
+		data[83]->value = 0
+		data[83]->next  = 84
+		data[83]->prev  = 82
+
+		data[84]->value = 0
+		data[84]->next  = 85
+		data[84]->prev  = 83
+
+		data[85]->value = 0
+		data[85]->next  = 86
+		data[85]->prev  = 84
+
+		data[86]->value = 0
+		data[86]->next  = 87
+		data[86]->prev  = 85
+
+		data[87]->value = 0
+		data[87]->next  = 0
+		data[87]->prev  = 86
+
+		data[88]->value = 0
+		data[88]->next  = 89
+		data[88]->prev  = -1
+
+		data[89]->value = 0
+		data[89]->next  = 90
+		data[89]->prev  = -1
+
+		data[90]->value = 0
+		data[90]->next  = 91
+		data[90]->prev  = -1
+
+		data[91]->value = 0
+		data[91]->next  = 92
+		data[91]->prev  = -1
+
+		data[92]->value = 0
+		data[92]->next  = 93
+		data[92]->prev  = -1
+
+		data[93]->value = 0
+		data[93]->next  = 94
+		data[93]->prev  = -1
+
+		data[94]->value = 0
+		data[94]->next  = 95
+		data[94]->prev  = -1
+
+		data[95]->value = 0
+		data[95]->next  = 96
+		data[95]->prev  = -1
+
+		data[96]->value = 0
+		data[96]->next  = 97
+		data[96]->prev  = -1
+
+		data[97]->value = 0
+		data[97]->next  = 98
+		data[97]->prev  = -1
+
+		data[98]->value = 0
+		data[98]->next  = 99
+		data[98]->prev  = -1
+
+		data[99]->value = 0
+		data[99]->next  = 100
+		data[99]->prev  = -1
+
+		data[100]->value = 0
+		data[100]->next  = 101
+		data[100]->prev  = -1
+
+		data[101]->value = 0
+		data[101]->next  = 102
+		data[101]->prev  = -1
+
+		data[102]->value = 0
+		data[102]->next  = 103
+		data[102]->prev  = -1
+
+		data[103]->value = 0
+		data[103]->next  = 104
+		data[103]->prev  = -1
+
+		data[104]->value = 0
+		data[104]->next  = 105
+		data[104]->prev  = -1
+
+		data[105]->value = 0
+		data[105]->next  = 106
+		data[105]->prev  = -1
+
+		data[106]->value = 0
+		data[106]->next  = 107
+		data[106]->prev  = -1
+
+		data[107]->value = 0
+		data[107]->next  = 108
+		data[107]->prev  = -1
+
+		data[108]->value = 0
+		data[108]->next  = 109
+		data[108]->prev  = -1
+
+		data[109]->value = 0
+		data[109]->next  = 110
+		data[109]->prev  = -1
+
+		data[110]->value = 0
+		data[110]->next  = 111
+		data[110]->prev  = -1
+
+		data[111]->value = 0
+		data[111]->next  = 112
+		data[111]->prev  = -1
+
+		data[112]->value = 0
+		data[112]->next  = 113
+		data[112]->prev  = -1
+
+		data[113]->value = 0
+		data[113]->next  = 114
+		data[113]->prev  = -1
+
+		data[114]->value = 0
+		data[114]->next  = 115
+		data[114]->prev  = -1
+
+		data[115]->value = 0
+		data[115]->next  = 116
+		data[115]->prev  = -1
+
+		data[116]->value = 0
+		data[116]->next  = 117
+		data[116]->prev  = -1
+
+		data[117]->value = 0
+		data[117]->next  = 118
+		data[117]->prev  = -1
+
+		data[118]->value = 0
+		data[118]->next  = 119
+		data[118]->prev  = -1
+
+		data[119]->value = 0
+		data[119]->next  = 120
+		data[119]->prev  = -1
+
+		data[120]->value = 0
+		data[120]->next  = 121
+		data[120]->prev  = -1
+
+		data[121]->value = 0
+		data[121]->next  = 122
+		data[121]->prev  = -1
+
+		data[122]->value = 0
+		data[122]->next  = 123
+		data[122]->prev  = -1
+
+		data[123]->value = 0
+		data[123]->next  = 124
+		data[123]->prev  = -1
+
+		data[124]->value = 0
+		data[124]->next  = 125
+		data[124]->prev  = -1
+
+		data[125]->value = 0
+		data[125]->next  = 126
+		data[125]->prev  = -1
+
+		data[126]->value = 0
+		data[126]->next  = 127
+		data[126]->prev  = -1
+
+		data[127]->value = 0
+		data[127]->next  = 128
+		data[127]->prev  = -1
+
+		data[128]->value = 0
+		data[128]->next  = 129
+		data[128]->prev  = -1
+
+		data[129]->value = 0
+		data[129]->next  = 130
+		data[129]->prev  = -1
+
+		data[130]->value = 0
+		data[130]->next  = 131
+		data[130]->prev  = -1
+
+		data[131]->value = 0
+		data[131]->next  = 132
+		data[131]->prev  = -1
+
+		data[132]->value = 0
+		data[132]->next  = 133
+		data[132]->prev  = -1
+
+		data[133]->value = 0
+		data[133]->next  = 134
+		data[133]->prev  = -1
+
+		data[134]->value = 0
+		data[134]->next  = 135
+		data[134]->prev  = -1
+
+		data[135]->value = 0
+		data[135]->next  = 136
+		data[135]->prev  = -1
+
+		data[136]->value = 0
+		data[136]->next  = 137
+		data[136]->prev  = -1
+
+		data[137]->value = 0
+		data[137]->next  = 138
+		data[137]->prev  = -1
+
+		data[138]->value = 0
+		data[138]->next  = 139
+		data[138]->prev  = -1
+
+		data[139]->value = 0
+		data[139]->next  = 140
+		data[139]->prev  = -1
+
+		data[140]->value = 0
+		data[140]->next  = 141
+		data[140]->prev  = -1
+
+		data[141]->value = 0
+		data[141]->next  = 142
+		data[141]->prev  = -1
+
+		data[142]->value = 0
+		data[142]->next  = 143
+		data[142]->prev  = -1
+
+		data[143]->value = 0
+		data[143]->next  = 144
+		data[143]->prev  = -1
+
+		data[144]->value = 0
+		data[144]->next  = 145
+		data[144]->prev  = -1
+
+		data[145]->value = 0
+		data[145]->next  = 146
+		data[145]->prev  = -1
+
+		data[146]->value = 0
+		data[146]->next  = 147
+		data[146]->prev  = -1
+
+		data[147]->value = 0
+		data[147]->next  = 148
+		data[147]->prev  = -1
+
+		data[148]->value = 0
+		data[148]->next  = 149
+		data[148]->prev  = -1
+
+		data[149]->value = 0
+		data[149]->next  = 150
+		data[149]->prev  = -1
+
+		data[150]->value = 0
+		data[150]->next  = 151
+		data[150]->prev  = -1
+
+		data[151]->value = 0
+		data[151]->next  = 152
+		data[151]->prev  = -1
+
+		data[152]->value = 0
+		data[152]->next  = 153
+		data[152]->prev  = -1
+
+		data[153]->value = 0
+		data[153]->next  = 154
+		data[153]->prev  = -1
+
+		data[154]->value = 0
+		data[154]->next  = 155
+		data[154]->prev  = -1
+
+		data[155]->value = 0
+		data[155]->next  = 156
+		data[155]->prev  = -1
+
+		data[156]->value = 0
+		data[156]->next  = 157
+		data[156]->prev  = -1
+
+		data[157]->value = 0
+		data[157]->next  = 158
+		data[157]->prev  = -1
+
+		data[158]->value = 0
+		data[158]->next  = 159
+		data[158]->prev  = -1
+
+		data[159]->value = 0
+		data[159]->next  = 160
+		data[159]->prev  = -1
+
+		data[160]->value = 0
+		data[160]->next  = 161
+		data[160]->prev  = -1
+
+		data[161]->value = 0
+		data[161]->next  = 162
+		data[161]->prev  = -1
+
+		data[162]->value = 0
+		data[162]->next  = 163
+		data[162]->prev  = -1
+
+		data[163]->value = 0
+		data[163]->next  = 164
+		data[163]->prev  = -1
+
+		data[164]->value = 0
+		data[164]->next  = 165
+		data[164]->prev  = -1
+
+		data[165]->value = 0
+		data[165]->next  = 166
+		data[165]->prev  = -1
+
+		data[166]->value = 0
+		data[166]->next  = 167
+		data[166]->prev  = -1
+
+		data[167]->value = 0
+		data[167]->next  = 168
+		data[167]->prev  = -1
+
+		data[168]->value = 0
+		data[168]->next  = 169
+		data[168]->prev  = -1
+
+		data[169]->value = 0
+		data[169]->next  = 170
+		data[169]->prev  = -1
+
+		data[170]->value = 0
+		data[170]->next  = 171
+		data[170]->prev  = -1
+
+		data[171]->value = 0
+		data[171]->next  = 172
+		data[171]->prev  = -1
+
+		data[172]->value = 0
+		data[172]->next  = 173
+		data[172]->prev  = -1
+
+		data[173]->value = 0
+		data[173]->next  = 174
+		data[173]->prev  = -1
+
+		data[174]->value = 0
+		data[174]->next  = 175
+		data[174]->prev  = -1
+
+		data[175]->value = 0
+		data[175]->next  = 176
+		data[175]->prev  = -1
+
+		data[176]->value = 0
+		data[176]->next  = 177
+		data[176]->prev  = -1
+
+		data[177]->value = 0
+		data[177]->next  = 178
+		data[177]->prev  = -1
+
+		data[178]->value = 0
+		data[178]->next  = 179
+		data[178]->prev  = -1
+
+		data[179]->value = 0
+		data[179]->next  = 180
+		data[179]->prev  = -1
+
+		data[180]->value = 0
+		data[180]->next  = 181
+		data[180]->prev  = -1
+
+		data[181]->value = 0
+		data[181]->next  = 182
+		data[181]->prev  = -1
+
+		data[182]->value = 0
+		data[182]->next  = 183
+		data[182]->prev  = -1
+
+		data[183]->value = 0
+		data[183]->next  = 184
+		data[183]->prev  = -1
+
+		data[184]->value = 0
+		data[184]->next  = 185
+		data[184]->prev  = -1
+
+		data[185]->value = 0
+		data[185]->next  = 186
+		data[185]->prev  = -1
+
+		data[186]->value = 0
+		data[186]->next  = 187
+		data[186]->prev  = -1
+
+		data[187]->value = 0
+		data[187]->next  = 188
+		data[187]->prev  = -1
+
+		data[188]->value = 0
+		data[188]->next  = 189
+		data[188]->prev  = -1
+
+		data[189]->value = 0
+		data[189]->next  = 190
+		data[189]->prev  = -1
+
+		data[190]->value = 0
+		data[190]->next  = 191
+		data[190]->prev  = -1
+
+		data[191]->value = 0
+		data[191]->next  = 192
+		data[191]->prev  = -1
+
+		data[192]->value = 0
+		data[192]->next  = 193
+		data[192]->prev  = -1
+
+		data[193]->value = 0
+		data[193]->next  = 194
+		data[193]->prev  = -1
+
+		data[194]->value = 0
+		data[194]->next  = 195
+		data[194]->prev  = -1
+
+		data[195]->value = 0
+		data[195]->next  = 196
+		data[195]->prev  = -1
+
+		data[196]->value = 0
+		data[196]->next  = 197
+		data[196]->prev  = -1
+
+		data[197]->value = 0
+		data[197]->next  = 198
+		data[197]->prev  = -1
+
+		data[198]->value = 0
+		data[198]->next  = 199
+		data[198]->prev  = -1
+
+		data[199]->value = 0
+		data[199]->next  = 0
+		data[199]->prev  = -1
+
+	}
+}
+
+-----------------------------------------------------------
+[31mERROR: the connection between the list nodes is broken[0m
+[31mERROR: the connection between free nodes of the list is broken[0m
+[31mERROR: the number of nodes is incorrect[0m
+list[0x7ffc098f67f0] "list" called from src/main.cpp(25) main
+{
+	size = 200
+	head = 1
+	tail = 87
+	free = 88
+	data[0x5bd439c41fd0]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = 87
+
+		data[1]->value = 100
+		data[1]->next  = 2
+		data[1]->prev  = 0
+
+		data[2]->value = 0
+		data[2]->next  = 3
+		data[2]->prev  = 1
+
+		data[3]->value = 0
+		data[3]->next  = 4
+		data[3]->prev  = 2
+
+		data[4]->value = 0
+		data[4]->next  = 5
+		data[4]->prev  = 3
+
+		data[5]->value = 0
+		data[5]->next  = 6
+		data[5]->prev  = 4
+
+		data[6]->value = 0
+		data[6]->next  = 7
+		data[6]->prev  = 5
+
+		data[7]->value = 0
+		data[7]->next  = 8
+		data[7]->prev  = 6
+
+		data[8]->value = 0
+		data[8]->next  = 9
+		data[8]->prev  = 7
+
+		data[9]->value = 0
+		data[9]->next  = 10
+		data[9]->prev  = 8
+
+		data[10]->value = 0
+		data[10]->next  = 11
+		data[10]->prev  = 9
+
+		data[11]->value = 0
+		data[11]->next  = 12
+		data[11]->prev  = 10
+
+		data[12]->value = 0
+		data[12]->next  = 13
+		data[12]->prev  = 11
+
+		data[13]->value = 0
+		data[13]->next  = 14
+		data[13]->prev  = 12
+
+		data[14]->value = 0
+		data[14]->next  = 15
+		data[14]->prev  = 13
+
+		data[15]->value = 0
+		data[15]->next  = 16
+		data[15]->prev  = 14
+
+		data[16]->value = 0
+		data[16]->next  = 17
+		data[16]->prev  = 15
+
+		data[17]->value = 0
+		data[17]->next  = 18
+		data[17]->prev  = 16
+
+		data[18]->value = 0
+		data[18]->next  = 19
+		data[18]->prev  = 17
+
+		data[19]->value = 0
+		data[19]->next  = 20
+		data[19]->prev  = 18
+
+		data[20]->value = 0
+		data[20]->next  = 21
+		data[20]->prev  = 19
+
+		data[21]->value = 0
+		data[21]->next  = 22
+		data[21]->prev  = 20
+
+		data[22]->value = 0
+		data[22]->next  = 23
+		data[22]->prev  = 21
+
+		data[23]->value = 0
+		data[23]->next  = 24
+		data[23]->prev  = 22
+
+		data[24]->value = 0
+		data[24]->next  = 25
+		data[24]->prev  = 23
+
+		data[25]->value = 0
+		data[25]->next  = 26
+		data[25]->prev  = 24
+
+		data[26]->value = 0
+		data[26]->next  = 27
+		data[26]->prev  = 25
+
+		data[27]->value = 0
+		data[27]->next  = 28
+		data[27]->prev  = 26
+
+		data[28]->value = 0
+		data[28]->next  = 29
+		data[28]->prev  = 27
+
+		data[29]->value = 0
+		data[29]->next  = 30
+		data[29]->prev  = 28
+
+		data[30]->value = 0
+		data[30]->next  = 31
+		data[30]->prev  = 29
+
+		data[31]->value = 0
+		data[31]->next  = 32
+		data[31]->prev  = 30
+
+		data[32]->value = 0
+		data[32]->next  = 33
+		data[32]->prev  = 31
+
+		data[33]->value = 0
+		data[33]->next  = 34
+		data[33]->prev  = 32
+
+		data[34]->value = 0
+		data[34]->next  = 35
+		data[34]->prev  = 33
+
+		data[35]->value = 0
+		data[35]->next  = 36
+		data[35]->prev  = 34
+
+		data[36]->value = 0
+		data[36]->next  = 37
+		data[36]->prev  = 35
+
+		data[37]->value = 0
+		data[37]->next  = 38
+		data[37]->prev  = 36
+
+		data[38]->value = 0
+		data[38]->next  = 39
+		data[38]->prev  = 37
+
+		data[39]->value = 0
+		data[39]->next  = 40
+		data[39]->prev  = 38
+
+		data[40]->value = 0
+		data[40]->next  = 41
+		data[40]->prev  = 39
+
+		data[41]->value = 0
+		data[41]->next  = 42
+		data[41]->prev  = 40
+
+		data[42]->value = 0
+		data[42]->next  = 43
+		data[42]->prev  = 41
+
+		data[43]->value = 0
+		data[43]->next  = 44
+		data[43]->prev  = 42
+
+		data[44]->value = 0
+		data[44]->next  = 45
+		data[44]->prev  = 43
+
+		data[45]->value = 0
+		data[45]->next  = 46
+		data[45]->prev  = 44
+
+		data[46]->value = 0
+		data[46]->next  = 47
+		data[46]->prev  = 45
+
+		data[47]->value = 0
+		data[47]->next  = 48
+		data[47]->prev  = 46
+
+		data[48]->value = 0
+		data[48]->next  = 49
+		data[48]->prev  = 47
+
+		data[49]->value = 0
+		data[49]->next  = 50
+		data[49]->prev  = 48
+
+		data[50]->value = 0
+		data[50]->next  = 51
+		data[50]->prev  = 49
+
+		data[51]->value = 0
+		data[51]->next  = 52
+		data[51]->prev  = 50
+
+		data[52]->value = 0
+		data[52]->next  = 53
+		data[52]->prev  = 51
+
+		data[53]->value = 0
+		data[53]->next  = 54
+		data[53]->prev  = 52
+
+		data[54]->value = 0
+		data[54]->next  = 55
+		data[54]->prev  = 53
+
+		data[55]->value = 0
+		data[55]->next  = 56
+		data[55]->prev  = 54
+
+		data[56]->value = 0
+		data[56]->next  = 57
+		data[56]->prev  = 55
+
+		data[57]->value = 0
+		data[57]->next  = 58
+		data[57]->prev  = 56
+
+		data[58]->value = 0
+		data[58]->next  = 59
+		data[58]->prev  = 57
+
+		data[59]->value = 0
+		data[59]->next  = 60
+		data[59]->prev  = 58
+
+		data[60]->value = 0
+		data[60]->next  = 61
+		data[60]->prev  = 59
+
+		data[61]->value = 0
+		data[61]->next  = 62
+		data[61]->prev  = 60
+
+		data[62]->value = 0
+		data[62]->next  = 63
+		data[62]->prev  = 61
+
+		data[63]->value = 0
+		data[63]->next  = 64
+		data[63]->prev  = 62
+
+		data[64]->value = 0
+		data[64]->next  = 65
+		data[64]->prev  = 63
+
+		data[65]->value = 0
+		data[65]->next  = 66
+		data[65]->prev  = 64
+
+		data[66]->value = 0
+		data[66]->next  = 67
+		data[66]->prev  = 65
+
+		data[67]->value = 0
+		data[67]->next  = 68
+		data[67]->prev  = 66
+
+		data[68]->value = 0
+		data[68]->next  = 69
+		data[68]->prev  = 67
+
+		data[69]->value = 0
+		data[69]->next  = 70
+		data[69]->prev  = 68
+
+		data[70]->value = 0
+		data[70]->next  = 71
+		data[70]->prev  = 69
+
+		data[71]->value = 0
+		data[71]->next  = 72
+		data[71]->prev  = 70
+
+		data[72]->value = 0
+		data[72]->next  = 73
+		data[72]->prev  = 71
+
+		data[73]->value = 0
+		data[73]->next  = 74
+		data[73]->prev  = 72
+
+		data[74]->value = 0
+		data[74]->next  = 75
+		data[74]->prev  = 73
+
+		data[75]->value = 0
+		data[75]->next  = 76
+		data[75]->prev  = 74
+
+		data[76]->value = 0
+		data[76]->next  = 77
+		data[76]->prev  = 75
+
+		data[77]->value = 0
+		data[77]->next  = 78
+		data[77]->prev  = 76
+
+		data[78]->value = 0
+		data[78]->next  = 79
+		data[78]->prev  = 77
+
+		data[79]->value = 0
+		data[79]->next  = 80
+		data[79]->prev  = 78
+
+		data[80]->value = 0
+		data[80]->next  = 81
+		data[80]->prev  = 79
+
+		data[81]->value = 0
+		data[81]->next  = 82
+		data[81]->prev  = 80
+
+		data[82]->value = 0
+		data[82]->next  = 83
+		data[82]->prev  = 81
+
+		data[83]->value = 0
+		data[83]->next  = 84
+		data[83]->prev  = 82
+
+		data[84]->value = 0
+		data[84]->next  = 85
+		data[84]->prev  = 83
+
+		data[85]->value = 0
+		data[85]->next  = 86
+		data[85]->prev  = 84
+
+		data[86]->value = 0
+		data[86]->next  = 87
+		data[86]->prev  = 85
+
+		data[87]->value = 0
+		data[87]->next  = 0
+		data[87]->prev  = 86
+
+		data[88]->value = 0
+		data[88]->next  = 89
+		data[88]->prev  = -1
+
+		data[89]->value = 0
+		data[89]->next  = 90
+		data[89]->prev  = -1
+
+		data[90]->value = 0
+		data[90]->next  = 91
+		data[90]->prev  = -1
+
+		data[91]->value = 0
+		data[91]->next  = 92
+		data[91]->prev  = -1
+
+		data[92]->value = 0
+		data[92]->next  = 93
+		data[92]->prev  = -1
+
+		data[93]->value = 0
+		data[93]->next  = 94
+		data[93]->prev  = -1
+
+		data[94]->value = 0
+		data[94]->next  = 95
+		data[94]->prev  = -1
+
+		data[95]->value = 0
+		data[95]->next  = 96
+		data[95]->prev  = -1
+
+		data[96]->value = 0
+		data[96]->next  = 97
+		data[96]->prev  = -1
+
+		data[97]->value = 0
+		data[97]->next  = 98
+		data[97]->prev  = -1
+
+		data[98]->value = 0
+		data[98]->next  = 99
+		data[98]->prev  = -1
+
+		data[99]->value = 0
+		data[99]->next  = 100
+		data[99]->prev  = -1
+
+		data[100]->value = 0
+		data[100]->next  = 101
+		data[100]->prev  = -1
+
+		data[101]->value = 0
+		data[101]->next  = 102
+		data[101]->prev  = -1
+
+		data[102]->value = 0
+		data[102]->next  = 103
+		data[102]->prev  = -1
+
+		data[103]->value = 0
+		data[103]->next  = 104
+		data[103]->prev  = -1
+
+		data[104]->value = 0
+		data[104]->next  = 105
+		data[104]->prev  = -1
+
+		data[105]->value = 0
+		data[105]->next  = 106
+		data[105]->prev  = -1
+
+		data[106]->value = 0
+		data[106]->next  = 107
+		data[106]->prev  = -1
+
+		data[107]->value = 0
+		data[107]->next  = 108
+		data[107]->prev  = -1
+
+		data[108]->value = 0
+		data[108]->next  = 109
+		data[108]->prev  = -1
+
+		data[109]->value = 0
+		data[109]->next  = 110
+		data[109]->prev  = -1
+
+		data[110]->value = 0
+		data[110]->next  = 111
+		data[110]->prev  = -1
+
+		data[111]->value = 0
+		data[111]->next  = 112
+		data[111]->prev  = -1
+
+		data[112]->value = 0
+		data[112]->next  = 113
+		data[112]->prev  = -1
+
+		data[113]->value = 0
+		data[113]->next  = 114
+		data[113]->prev  = -1
+
+		data[114]->value = 0
+		data[114]->next  = 115
+		data[114]->prev  = -1
+
+		data[115]->value = 0
+		data[115]->next  = 116
+		data[115]->prev  = -1
+
+		data[116]->value = 0
+		data[116]->next  = 117
+		data[116]->prev  = -1
+
+		data[117]->value = 0
+		data[117]->next  = 118
+		data[117]->prev  = -1
+
+		data[118]->value = 0
+		data[118]->next  = 119
+		data[118]->prev  = -1
+
+		data[119]->value = 0
+		data[119]->next  = 120
+		data[119]->prev  = -1
+
+		data[120]->value = 0
+		data[120]->next  = 121
+		data[120]->prev  = -1
+
+		data[121]->value = 0
+		data[121]->next  = 122
+		data[121]->prev  = -1
+
+		data[122]->value = 0
+		data[122]->next  = 123
+		data[122]->prev  = -1
+
+		data[123]->value = 0
+		data[123]->next  = 124
+		data[123]->prev  = -1
+
+		data[124]->value = 0
+		data[124]->next  = 125
+		data[124]->prev  = -1
+
+		data[125]->value = 0
+		data[125]->next  = 126
+		data[125]->prev  = -1
+
+		data[126]->value = 0
+		data[126]->next  = 127
+		data[126]->prev  = -1
+
+		data[127]->value = 0
+		data[127]->next  = 128
+		data[127]->prev  = -1
+
+		data[128]->value = 0
+		data[128]->next  = 129
+		data[128]->prev  = -1
+
+		data[129]->value = 0
+		data[129]->next  = 130
+		data[129]->prev  = -1
+
+		data[130]->value = 0
+		data[130]->next  = 131
+		data[130]->prev  = -1
+
+		data[131]->value = 0
+		data[131]->next  = 132
+		data[131]->prev  = -1
+
+		data[132]->value = 0
+		data[132]->next  = 133
+		data[132]->prev  = -1
+
+		data[133]->value = 0
+		data[133]->next  = 134
+		data[133]->prev  = -1
+
+		data[134]->value = 0
+		data[134]->next  = 135
+		data[134]->prev  = -1
+
+		data[135]->value = 0
+		data[135]->next  = 136
+		data[135]->prev  = -1
+
+		data[136]->value = 0
+		data[136]->next  = 137
+		data[136]->prev  = -1
+
+		data[137]->value = 0
+		data[137]->next  = 138
+		data[137]->prev  = -1
+
+		data[138]->value = 0
+		data[138]->next  = 139
+		data[138]->prev  = -1
+
+		data[139]->value = 0
+		data[139]->next  = 140
+		data[139]->prev  = -1
+
+		data[140]->value = 0
+		data[140]->next  = 141
+		data[140]->prev  = -1
+
+		data[141]->value = 0
+		data[141]->next  = 142
+		data[141]->prev  = -1
+
+		data[142]->value = 0
+		data[142]->next  = 143
+		data[142]->prev  = -1
+
+		data[143]->value = 0
+		data[143]->next  = 144
+		data[143]->prev  = -1
+
+		data[144]->value = 0
+		data[144]->next  = 145
+		data[144]->prev  = -1
+
+		data[145]->value = 0
+		data[145]->next  = 146
+		data[145]->prev  = -1
+
+		data[146]->value = 0
+		data[146]->next  = 147
+		data[146]->prev  = -1
+
+		data[147]->value = 0
+		data[147]->next  = 148
+		data[147]->prev  = -1
+
+		data[148]->value = 0
+		data[148]->next  = 149
+		data[148]->prev  = -1
+
+		data[149]->value = 0
+		data[149]->next  = 150
+		data[149]->prev  = -1
+
+		data[150]->value = 0
+		data[150]->next  = 151
+		data[150]->prev  = -1
+
+		data[151]->value = 0
+		data[151]->next  = 152
+		data[151]->prev  = -1
+
+		data[152]->value = 0
+		data[152]->next  = 153
+		data[152]->prev  = -1
+
+		data[153]->value = 0
+		data[153]->next  = 154
+		data[153]->prev  = -1
+
+		data[154]->value = 0
+		data[154]->next  = 155
+		data[154]->prev  = -1
+
+		data[155]->value = 0
+		data[155]->next  = 156
+		data[155]->prev  = -1
+
+		data[156]->value = 0
+		data[156]->next  = 157
+		data[156]->prev  = -1
+
+		data[157]->value = 0
+		data[157]->next  = 158
+		data[157]->prev  = -1
+
+		data[158]->value = 0
+		data[158]->next  = 159
+		data[158]->prev  = -1
+
+		data[159]->value = 0
+		data[159]->next  = 160
+		data[159]->prev  = -1
+
+		data[160]->value = 0
+		data[160]->next  = 161
+		data[160]->prev  = -1
+
+		data[161]->value = 0
+		data[161]->next  = 162
+		data[161]->prev  = -1
+
+		data[162]->value = 0
+		data[162]->next  = 163
+		data[162]->prev  = -1
+
+		data[163]->value = 0
+		data[163]->next  = 164
+		data[163]->prev  = -1
+
+		data[164]->value = 0
+		data[164]->next  = 165
+		data[164]->prev  = -1
+
+		data[165]->value = 0
+		data[165]->next  = 166
+		data[165]->prev  = -1
+
+		data[166]->value = 0
+		data[166]->next  = 167
+		data[166]->prev  = -1
+
+		data[167]->value = 0
+		data[167]->next  = 168
+		data[167]->prev  = -1
+
+		data[168]->value = 0
+		data[168]->next  = 169
+		data[168]->prev  = -1
+
+		data[169]->value = 0
+		data[169]->next  = 170
+		data[169]->prev  = -1
+
+		data[170]->value = 0
+		data[170]->next  = 171
+		data[170]->prev  = -1
+
+		data[171]->value = 0
+		data[171]->next  = 172
+		data[171]->prev  = -1
+
+		data[172]->value = 0
+		data[172]->next  = 173
+		data[172]->prev  = -1
+
+		data[173]->value = 0
+		data[173]->next  = 174
+		data[173]->prev  = -1
+
+		data[174]->value = 0
+		data[174]->next  = 175
+		data[174]->prev  = -1
+
+		data[175]->value = 0
+		data[175]->next  = 176
+		data[175]->prev  = -1
+
+		data[176]->value = 0
+		data[176]->next  = 177
+		data[176]->prev  = -1
+
+		data[177]->value = 0
+		data[177]->next  = 178
+		data[177]->prev  = -1
+
+		data[178]->value = 0
+		data[178]->next  = 179
+		data[178]->prev  = -1
+
+		data[179]->value = 0
+		data[179]->next  = 180
+		data[179]->prev  = -1
+
+		data[180]->value = 0
+		data[180]->next  = 181
+		data[180]->prev  = -1
+
+		data[181]->value = 0
+		data[181]->next  = 182
+		data[181]->prev  = -1
+
+		data[182]->value = 0
+		data[182]->next  = 183
+		data[182]->prev  = -1
+
+		data[183]->value = 0
+		data[183]->next  = 184
+		data[183]->prev  = -1
+
+		data[184]->value = 0
+		data[184]->next  = 185
+		data[184]->prev  = -1
+
+		data[185]->value = 0
+		data[185]->next  = 186
+		data[185]->prev  = -1
+
+		data[186]->value = 0
+		data[186]->next  = 187
+		data[186]->prev  = -1
+
+		data[187]->value = 0
+		data[187]->next  = 188
+		data[187]->prev  = -1
+
+		data[188]->value = 0
+		data[188]->next  = 189
+		data[188]->prev  = -1
+
+		data[189]->value = 0
+		data[189]->next  = 190
+		data[189]->prev  = -1
+
+		data[190]->value = 0
+		data[190]->next  = 191
+		data[190]->prev  = -1
+
+		data[191]->value = 0
+		data[191]->next  = 192
+		data[191]->prev  = -1
+
+		data[192]->value = 0
+		data[192]->next  = 193
+		data[192]->prev  = -1
+
+		data[193]->value = 0
+		data[193]->next  = 194
+		data[193]->prev  = -1
+
+		data[194]->value = 0
+		data[194]->next  = 195
+		data[194]->prev  = -1
+
+		data[195]->value = 0
+		data[195]->next  = 196
+		data[195]->prev  = -1
+
+		data[196]->value = 0
+		data[196]->next  = 197
+		data[196]->prev  = -1
+
+		data[197]->value = 0
+		data[197]->next  = 198
+		data[197]->prev  = -1
+
+		data[198]->value = 0
+		data[198]->next  = 199
+		data[198]->prev  = -1
+
+		data[199]->value = 0
+		data[199]->next  = 0
+		data[199]->prev  = -1
+
+	}
+}
+
+-----------------------------------------------------------
+[31mERROR: the connection between the list nodes is broken[0m
+[31mERROR: the connection between free nodes of the list is broken[0m
+[31mERROR: the number of nodes is incorrect[0m
+list[0x7ffc098f67f0] "list" called from src/list.cpp(380) list_print
+{
+	size = 200
+	head = 1
+	tail = 87
+	free = 88
+	data[0x5bd439c41fd0]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = 87
+
+		data[1]->value = 100
+		data[1]->next  = 2
+		data[1]->prev  = 0
+
+		data[2]->value = 0
+		data[2]->next  = 3
+		data[2]->prev  = 1
+
+		data[3]->value = 0
+		data[3]->next  = 4
+		data[3]->prev  = 2
+
+		data[4]->value = 0
+		data[4]->next  = 5
+		data[4]->prev  = 3
+
+		data[5]->value = 0
+		data[5]->next  = 6
+		data[5]->prev  = 4
+
+		data[6]->value = 0
+		data[6]->next  = 7
+		data[6]->prev  = 5
+
+		data[7]->value = 0
+		data[7]->next  = 8
+		data[7]->prev  = 6
+
+		data[8]->value = 0
+		data[8]->next  = 9
+		data[8]->prev  = 7
+
+		data[9]->value = 0
+		data[9]->next  = 10
+		data[9]->prev  = 8
+
+		data[10]->value = 0
+		data[10]->next  = 11
+		data[10]->prev  = 9
+
+		data[11]->value = 0
+		data[11]->next  = 12
+		data[11]->prev  = 10
+
+		data[12]->value = 0
+		data[12]->next  = 13
+		data[12]->prev  = 11
+
+		data[13]->value = 0
+		data[13]->next  = 14
+		data[13]->prev  = 12
+
+		data[14]->value = 0
+		data[14]->next  = 15
+		data[14]->prev  = 13
+
+		data[15]->value = 0
+		data[15]->next  = 16
+		data[15]->prev  = 14
+
+		data[16]->value = 0
+		data[16]->next  = 17
+		data[16]->prev  = 15
+
+		data[17]->value = 0
+		data[17]->next  = 18
+		data[17]->prev  = 16
+
+		data[18]->value = 0
+		data[18]->next  = 19
+		data[18]->prev  = 17
+
+		data[19]->value = 0
+		data[19]->next  = 20
+		data[19]->prev  = 18
+
+		data[20]->value = 0
+		data[20]->next  = 21
+		data[20]->prev  = 19
+
+		data[21]->value = 0
+		data[21]->next  = 22
+		data[21]->prev  = 20
+
+		data[22]->value = 0
+		data[22]->next  = 23
+		data[22]->prev  = 21
+
+		data[23]->value = 0
+		data[23]->next  = 24
+		data[23]->prev  = 22
+
+		data[24]->value = 0
+		data[24]->next  = 25
+		data[24]->prev  = 23
+
+		data[25]->value = 0
+		data[25]->next  = 26
+		data[25]->prev  = 24
+
+		data[26]->value = 0
+		data[26]->next  = 27
+		data[26]->prev  = 25
+
+		data[27]->value = 0
+		data[27]->next  = 28
+		data[27]->prev  = 26
+
+		data[28]->value = 0
+		data[28]->next  = 29
+		data[28]->prev  = 27
+
+		data[29]->value = 0
+		data[29]->next  = 30
+		data[29]->prev  = 28
+
+		data[30]->value = 0
+		data[30]->next  = 31
+		data[30]->prev  = 29
+
+		data[31]->value = 0
+		data[31]->next  = 32
+		data[31]->prev  = 30
+
+		data[32]->value = 0
+		data[32]->next  = 33
+		data[32]->prev  = 31
+
+		data[33]->value = 0
+		data[33]->next  = 34
+		data[33]->prev  = 32
+
+		data[34]->value = 0
+		data[34]->next  = 35
+		data[34]->prev  = 33
+
+		data[35]->value = 0
+		data[35]->next  = 36
+		data[35]->prev  = 34
+
+		data[36]->value = 0
+		data[36]->next  = 37
+		data[36]->prev  = 35
+
+		data[37]->value = 0
+		data[37]->next  = 38
+		data[37]->prev  = 36
+
+		data[38]->value = 0
+		data[38]->next  = 39
+		data[38]->prev  = 37
+
+		data[39]->value = 0
+		data[39]->next  = 40
+		data[39]->prev  = 38
+
+		data[40]->value = 0
+		data[40]->next  = 41
+		data[40]->prev  = 39
+
+		data[41]->value = 0
+		data[41]->next  = 42
+		data[41]->prev  = 40
+
+		data[42]->value = 0
+		data[42]->next  = 43
+		data[42]->prev  = 41
+
+		data[43]->value = 0
+		data[43]->next  = 44
+		data[43]->prev  = 42
+
+		data[44]->value = 0
+		data[44]->next  = 45
+		data[44]->prev  = 43
+
+		data[45]->value = 0
+		data[45]->next  = 46
+		data[45]->prev  = 44
+
+		data[46]->value = 0
+		data[46]->next  = 47
+		data[46]->prev  = 45
+
+		data[47]->value = 0
+		data[47]->next  = 48
+		data[47]->prev  = 46
+
+		data[48]->value = 0
+		data[48]->next  = 49
+		data[48]->prev  = 47
+
+		data[49]->value = 0
+		data[49]->next  = 50
+		data[49]->prev  = 48
+
+		data[50]->value = 0
+		data[50]->next  = 51
+		data[50]->prev  = 49
+
+		data[51]->value = 0
+		data[51]->next  = 52
+		data[51]->prev  = 50
+
+		data[52]->value = 0
+		data[52]->next  = 53
+		data[52]->prev  = 51
+
+		data[53]->value = 0
+		data[53]->next  = 54
+		data[53]->prev  = 52
+
+		data[54]->value = 0
+		data[54]->next  = 55
+		data[54]->prev  = 53
+
+		data[55]->value = 0
+		data[55]->next  = 56
+		data[55]->prev  = 54
+
+		data[56]->value = 0
+		data[56]->next  = 57
+		data[56]->prev  = 55
+
+		data[57]->value = 0
+		data[57]->next  = 58
+		data[57]->prev  = 56
+
+		data[58]->value = 0
+		data[58]->next  = 59
+		data[58]->prev  = 57
+
+		data[59]->value = 0
+		data[59]->next  = 60
+		data[59]->prev  = 58
+
+		data[60]->value = 0
+		data[60]->next  = 61
+		data[60]->prev  = 59
+
+		data[61]->value = 0
+		data[61]->next  = 62
+		data[61]->prev  = 60
+
+		data[62]->value = 0
+		data[62]->next  = 63
+		data[62]->prev  = 61
+
+		data[63]->value = 0
+		data[63]->next  = 64
+		data[63]->prev  = 62
+
+		data[64]->value = 0
+		data[64]->next  = 65
+		data[64]->prev  = 63
+
+		data[65]->value = 0
+		data[65]->next  = 66
+		data[65]->prev  = 64
+
+		data[66]->value = 0
+		data[66]->next  = 67
+		data[66]->prev  = 65
+
+		data[67]->value = 0
+		data[67]->next  = 68
+		data[67]->prev  = 66
+
+		data[68]->value = 0
+		data[68]->next  = 69
+		data[68]->prev  = 67
+
+		data[69]->value = 0
+		data[69]->next  = 70
+		data[69]->prev  = 68
+
+		data[70]->value = 0
+		data[70]->next  = 71
+		data[70]->prev  = 69
+
+		data[71]->value = 0
+		data[71]->next  = 72
+		data[71]->prev  = 70
+
+		data[72]->value = 0
+		data[72]->next  = 73
+		data[72]->prev  = 71
+
+		data[73]->value = 0
+		data[73]->next  = 74
+		data[73]->prev  = 72
+
+		data[74]->value = 0
+		data[74]->next  = 75
+		data[74]->prev  = 73
+
+		data[75]->value = 0
+		data[75]->next  = 76
+		data[75]->prev  = 74
+
+		data[76]->value = 0
+		data[76]->next  = 77
+		data[76]->prev  = 75
+
+		data[77]->value = 0
+		data[77]->next  = 78
+		data[77]->prev  = 76
+
+		data[78]->value = 0
+		data[78]->next  = 79
+		data[78]->prev  = 77
+
+		data[79]->value = 0
+		data[79]->next  = 80
+		data[79]->prev  = 78
+
+		data[80]->value = 0
+		data[80]->next  = 81
+		data[80]->prev  = 79
+
+		data[81]->value = 0
+		data[81]->next  = 82
+		data[81]->prev  = 80
+
+		data[82]->value = 0
+		data[82]->next  = 83
+		data[82]->prev  = 81
+
+		data[83]->value = 0
+		data[83]->next  = 84
+		data[83]->prev  = 82
+
+		data[84]->value = 0
+		data[84]->next  = 85
+		data[84]->prev  = 83
+
+		data[85]->value = 0
+		data[85]->next  = 86
+		data[85]->prev  = 84
+
+		data[86]->value = 0
+		data[86]->next  = 87
+		data[86]->prev  = 85
+
+		data[87]->value = 0
+		data[87]->next  = 0
+		data[87]->prev  = 86
+
+		data[88]->value = 0
+		data[88]->next  = 89
+		data[88]->prev  = -1
+
+		data[89]->value = 0
+		data[89]->next  = 90
+		data[89]->prev  = -1
+
+		data[90]->value = 0
+		data[90]->next  = 91
+		data[90]->prev  = -1
+
+		data[91]->value = 0
+		data[91]->next  = 92
+		data[91]->prev  = -1
+
+		data[92]->value = 0
+		data[92]->next  = 93
+		data[92]->prev  = -1
+
+		data[93]->value = 0
+		data[93]->next  = 94
+		data[93]->prev  = -1
+
+		data[94]->value = 0
+		data[94]->next  = 95
+		data[94]->prev  = -1
+
+		data[95]->value = 0
+		data[95]->next  = 96
+		data[95]->prev  = -1
+
+		data[96]->value = 0
+		data[96]->next  = 97
+		data[96]->prev  = -1
+
+		data[97]->value = 0
+		data[97]->next  = 98
+		data[97]->prev  = -1
+
+		data[98]->value = 0
+		data[98]->next  = 99
+		data[98]->prev  = -1
+
+		data[99]->value = 0
+		data[99]->next  = 100
+		data[99]->prev  = -1
+
+		data[100]->value = 0
+		data[100]->next  = 101
+		data[100]->prev  = -1
+
+		data[101]->value = 0
+		data[101]->next  = 102
+		data[101]->prev  = -1
+
+		data[102]->value = 0
+		data[102]->next  = 103
+		data[102]->prev  = -1
+
+		data[103]->value = 0
+		data[103]->next  = 104
+		data[103]->prev  = -1
+
+		data[104]->value = 0
+		data[104]->next  = 105
+		data[104]->prev  = -1
+
+		data[105]->value = 0
+		data[105]->next  = 106
+		data[105]->prev  = -1
+
+		data[106]->value = 0
+		data[106]->next  = 107
+		data[106]->prev  = -1
+
+		data[107]->value = 0
+		data[107]->next  = 108
+		data[107]->prev  = -1
+
+		data[108]->value = 0
+		data[108]->next  = 109
+		data[108]->prev  = -1
+
+		data[109]->value = 0
+		data[109]->next  = 110
+		data[109]->prev  = -1
+
+		data[110]->value = 0
+		data[110]->next  = 111
+		data[110]->prev  = -1
+
+		data[111]->value = 0
+		data[111]->next  = 112
+		data[111]->prev  = -1
+
+		data[112]->value = 0
+		data[112]->next  = 113
+		data[112]->prev  = -1
+
+		data[113]->value = 0
+		data[113]->next  = 114
+		data[113]->prev  = -1
+
+		data[114]->value = 0
+		data[114]->next  = 115
+		data[114]->prev  = -1
+
+		data[115]->value = 0
+		data[115]->next  = 116
+		data[115]->prev  = -1
+
+		data[116]->value = 0
+		data[116]->next  = 117
+		data[116]->prev  = -1
+
+		data[117]->value = 0
+		data[117]->next  = 118
+		data[117]->prev  = -1
+
+		data[118]->value = 0
+		data[118]->next  = 119
+		data[118]->prev  = -1
+
+		data[119]->value = 0
+		data[119]->next  = 120
+		data[119]->prev  = -1
+
+		data[120]->value = 0
+		data[120]->next  = 121
+		data[120]->prev  = -1
+
+		data[121]->value = 0
+		data[121]->next  = 122
+		data[121]->prev  = -1
+
+		data[122]->value = 0
+		data[122]->next  = 123
+		data[122]->prev  = -1
+
+		data[123]->value = 0
+		data[123]->next  = 124
+		data[123]->prev  = -1
+
+		data[124]->value = 0
+		data[124]->next  = 125
+		data[124]->prev  = -1
+
+		data[125]->value = 0
+		data[125]->next  = 126
+		data[125]->prev  = -1
+
+		data[126]->value = 0
+		data[126]->next  = 127
+		data[126]->prev  = -1
+
+		data[127]->value = 0
+		data[127]->next  = 128
+		data[127]->prev  = -1
+
+		data[128]->value = 0
+		data[128]->next  = 129
+		data[128]->prev  = -1
+
+		data[129]->value = 0
+		data[129]->next  = 130
+		data[129]->prev  = -1
+
+		data[130]->value = 0
+		data[130]->next  = 131
+		data[130]->prev  = -1
+
+		data[131]->value = 0
+		data[131]->next  = 132
+		data[131]->prev  = -1
+
+		data[132]->value = 0
+		data[132]->next  = 133
+		data[132]->prev  = -1
+
+		data[133]->value = 0
+		data[133]->next  = 134
+		data[133]->prev  = -1
+
+		data[134]->value = 0
+		data[134]->next  = 135
+		data[134]->prev  = -1
+
+		data[135]->value = 0
+		data[135]->next  = 136
+		data[135]->prev  = -1
+
+		data[136]->value = 0
+		data[136]->next  = 137
+		data[136]->prev  = -1
+
+		data[137]->value = 0
+		data[137]->next  = 138
+		data[137]->prev  = -1
+
+		data[138]->value = 0
+		data[138]->next  = 139
+		data[138]->prev  = -1
+
+		data[139]->value = 0
+		data[139]->next  = 140
+		data[139]->prev  = -1
+
+		data[140]->value = 0
+		data[140]->next  = 141
+		data[140]->prev  = -1
+
+		data[141]->value = 0
+		data[141]->next  = 142
+		data[141]->prev  = -1
+
+		data[142]->value = 0
+		data[142]->next  = 143
+		data[142]->prev  = -1
+
+		data[143]->value = 0
+		data[143]->next  = 144
+		data[143]->prev  = -1
+
+		data[144]->value = 0
+		data[144]->next  = 145
+		data[144]->prev  = -1
+
+		data[145]->value = 0
+		data[145]->next  = 146
+		data[145]->prev  = -1
+
+		data[146]->value = 0
+		data[146]->next  = 147
+		data[146]->prev  = -1
+
+		data[147]->value = 0
+		data[147]->next  = 148
+		data[147]->prev  = -1
+
+		data[148]->value = 0
+		data[148]->next  = 149
+		data[148]->prev  = -1
+
+		data[149]->value = 0
+		data[149]->next  = 150
+		data[149]->prev  = -1
+
+		data[150]->value = 0
+		data[150]->next  = 151
+		data[150]->prev  = -1
+
+		data[151]->value = 0
+		data[151]->next  = 152
+		data[151]->prev  = -1
+
+		data[152]->value = 0
+		data[152]->next  = 153
+		data[152]->prev  = -1
+
+		data[153]->value = 0
+		data[153]->next  = 154
+		data[153]->prev  = -1
+
+		data[154]->value = 0
+		data[154]->next  = 155
+		data[154]->prev  = -1
+
+		data[155]->value = 0
+		data[155]->next  = 156
+		data[155]->prev  = -1
+
+		data[156]->value = 0
+		data[156]->next  = 157
+		data[156]->prev  = -1
+
+		data[157]->value = 0
+		data[157]->next  = 158
+		data[157]->prev  = -1
+
+		data[158]->value = 0
+		data[158]->next  = 159
+		data[158]->prev  = -1
+
+		data[159]->value = 0
+		data[159]->next  = 160
+		data[159]->prev  = -1
+
+		data[160]->value = 0
+		data[160]->next  = 161
+		data[160]->prev  = -1
+
+		data[161]->value = 0
+		data[161]->next  = 162
+		data[161]->prev  = -1
+
+		data[162]->value = 0
+		data[162]->next  = 163
+		data[162]->prev  = -1
+
+		data[163]->value = 0
+		data[163]->next  = 164
+		data[163]->prev  = -1
+
+		data[164]->value = 0
+		data[164]->next  = 165
+		data[164]->prev  = -1
+
+		data[165]->value = 0
+		data[165]->next  = 166
+		data[165]->prev  = -1
+
+		data[166]->value = 0
+		data[166]->next  = 167
+		data[166]->prev  = -1
+
+		data[167]->value = 0
+		data[167]->next  = 168
+		data[167]->prev  = -1
+
+		data[168]->value = 0
+		data[168]->next  = 169
+		data[168]->prev  = -1
+
+		data[169]->value = 0
+		data[169]->next  = 170
+		data[169]->prev  = -1
+
+		data[170]->value = 0
+		data[170]->next  = 171
+		data[170]->prev  = -1
+
+		data[171]->value = 0
+		data[171]->next  = 172
+		data[171]->prev  = -1
+
+		data[172]->value = 0
+		data[172]->next  = 173
+		data[172]->prev  = -1
+
+		data[173]->value = 0
+		data[173]->next  = 174
+		data[173]->prev  = -1
+
+		data[174]->value = 0
+		data[174]->next  = 175
+		data[174]->prev  = -1
+
+		data[175]->value = 0
+		data[175]->next  = 176
+		data[175]->prev  = -1
+
+		data[176]->value = 0
+		data[176]->next  = 177
+		data[176]->prev  = -1
+
+		data[177]->value = 0
+		data[177]->next  = 178
+		data[177]->prev  = -1
+
+		data[178]->value = 0
+		data[178]->next  = 179
+		data[178]->prev  = -1
+
+		data[179]->value = 0
+		data[179]->next  = 180
+		data[179]->prev  = -1
+
+		data[180]->value = 0
+		data[180]->next  = 181
+		data[180]->prev  = -1
+
+		data[181]->value = 0
+		data[181]->next  = 182
+		data[181]->prev  = -1
+
+		data[182]->value = 0
+		data[182]->next  = 183
+		data[182]->prev  = -1
+
+		data[183]->value = 0
+		data[183]->next  = 184
+		data[183]->prev  = -1
+
+		data[184]->value = 0
+		data[184]->next  = 185
+		data[184]->prev  = -1
+
+		data[185]->value = 0
+		data[185]->next  = 186
+		data[185]->prev  = -1
+
+		data[186]->value = 0
+		data[186]->next  = 187
+		data[186]->prev  = -1
+
+		data[187]->value = 0
+		data[187]->next  = 188
+		data[187]->prev  = -1
+
+		data[188]->value = 0
+		data[188]->next  = 189
+		data[188]->prev  = -1
+
+		data[189]->value = 0
+		data[189]->next  = 190
+		data[189]->prev  = -1
+
+		data[190]->value = 0
+		data[190]->next  = 191
+		data[190]->prev  = -1
+
+		data[191]->value = 0
+		data[191]->next  = 192
+		data[191]->prev  = -1
+
+		data[192]->value = 0
+		data[192]->next  = 193
+		data[192]->prev  = -1
+
+		data[193]->value = 0
+		data[193]->next  = 194
+		data[193]->prev  = -1
+
+		data[194]->value = 0
+		data[194]->next  = 195
+		data[194]->prev  = -1
+
+		data[195]->value = 0
+		data[195]->next  = 196
+		data[195]->prev  = -1
+
+		data[196]->value = 0
+		data[196]->next  = 197
+		data[196]->prev  = -1
+
+		data[197]->value = 0
+		data[197]->next  = 198
+		data[197]->prev  = -1
+
+		data[198]->value = 0
+		data[198]->next  = 199
+		data[198]->prev  = -1
+
+		data[199]->value = 0
+		data[199]->next  = 0
+		data[199]->prev  = -1
+
+	}
+}
+
+-----------------------------------------------------------
+[31mERROR: the connection between the list nodes is broken[0m
+[31mERROR: the connection between free nodes of the list is broken[0m
+[31mERROR: the number of nodes is incorrect[0m
+list[0x7ffc098f67f0] "list" called from src/list.cpp(394) list_deinit
+{
+	size = 200
+	head = 1
+	tail = 87
+	free = 88
+	data[0x5bd439c41fd0]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = 87
+
+		data[1]->value = 100
+		data[1]->next  = 2
+		data[1]->prev  = 0
+
+		data[2]->value = 0
+		data[2]->next  = 3
+		data[2]->prev  = 1
+
+		data[3]->value = 0
+		data[3]->next  = 4
+		data[3]->prev  = 2
+
+		data[4]->value = 0
+		data[4]->next  = 5
+		data[4]->prev  = 3
+
+		data[5]->value = 0
+		data[5]->next  = 6
+		data[5]->prev  = 4
+
+		data[6]->value = 0
+		data[6]->next  = 7
+		data[6]->prev  = 5
+
+		data[7]->value = 0
+		data[7]->next  = 8
+		data[7]->prev  = 6
+
+		data[8]->value = 0
+		data[8]->next  = 9
+		data[8]->prev  = 7
+
+		data[9]->value = 0
+		data[9]->next  = 10
+		data[9]->prev  = 8
+
+		data[10]->value = 0
+		data[10]->next  = 11
+		data[10]->prev  = 9
+
+		data[11]->value = 0
+		data[11]->next  = 12
+		data[11]->prev  = 10
+
+		data[12]->value = 0
+		data[12]->next  = 13
+		data[12]->prev  = 11
+
+		data[13]->value = 0
+		data[13]->next  = 14
+		data[13]->prev  = 12
+
+		data[14]->value = 0
+		data[14]->next  = 15
+		data[14]->prev  = 13
+
+		data[15]->value = 0
+		data[15]->next  = 16
+		data[15]->prev  = 14
+
+		data[16]->value = 0
+		data[16]->next  = 17
+		data[16]->prev  = 15
+
+		data[17]->value = 0
+		data[17]->next  = 18
+		data[17]->prev  = 16
+
+		data[18]->value = 0
+		data[18]->next  = 19
+		data[18]->prev  = 17
+
+		data[19]->value = 0
+		data[19]->next  = 20
+		data[19]->prev  = 18
+
+		data[20]->value = 0
+		data[20]->next  = 21
+		data[20]->prev  = 19
+
+		data[21]->value = 0
+		data[21]->next  = 22
+		data[21]->prev  = 20
+
+		data[22]->value = 0
+		data[22]->next  = 23
+		data[22]->prev  = 21
+
+		data[23]->value = 0
+		data[23]->next  = 24
+		data[23]->prev  = 22
+
+		data[24]->value = 0
+		data[24]->next  = 25
+		data[24]->prev  = 23
+
+		data[25]->value = 0
+		data[25]->next  = 26
+		data[25]->prev  = 24
+
+		data[26]->value = 0
+		data[26]->next  = 27
+		data[26]->prev  = 25
+
+		data[27]->value = 0
+		data[27]->next  = 28
+		data[27]->prev  = 26
+
+		data[28]->value = 0
+		data[28]->next  = 29
+		data[28]->prev  = 27
+
+		data[29]->value = 0
+		data[29]->next  = 30
+		data[29]->prev  = 28
+
+		data[30]->value = 0
+		data[30]->next  = 31
+		data[30]->prev  = 29
+
+		data[31]->value = 0
+		data[31]->next  = 32
+		data[31]->prev  = 30
+
+		data[32]->value = 0
+		data[32]->next  = 33
+		data[32]->prev  = 31
+
+		data[33]->value = 0
+		data[33]->next  = 34
+		data[33]->prev  = 32
+
+		data[34]->value = 0
+		data[34]->next  = 35
+		data[34]->prev  = 33
+
+		data[35]->value = 0
+		data[35]->next  = 36
+		data[35]->prev  = 34
+
+		data[36]->value = 0
+		data[36]->next  = 37
+		data[36]->prev  = 35
+
+		data[37]->value = 0
+		data[37]->next  = 38
+		data[37]->prev  = 36
+
+		data[38]->value = 0
+		data[38]->next  = 39
+		data[38]->prev  = 37
+
+		data[39]->value = 0
+		data[39]->next  = 40
+		data[39]->prev  = 38
+
+		data[40]->value = 0
+		data[40]->next  = 41
+		data[40]->prev  = 39
+
+		data[41]->value = 0
+		data[41]->next  = 42
+		data[41]->prev  = 40
+
+		data[42]->value = 0
+		data[42]->next  = 43
+		data[42]->prev  = 41
+
+		data[43]->value = 0
+		data[43]->next  = 44
+		data[43]->prev  = 42
+
+		data[44]->value = 0
+		data[44]->next  = 45
+		data[44]->prev  = 43
+
+		data[45]->value = 0
+		data[45]->next  = 46
+		data[45]->prev  = 44
+
+		data[46]->value = 0
+		data[46]->next  = 47
+		data[46]->prev  = 45
+
+		data[47]->value = 0
+		data[47]->next  = 48
+		data[47]->prev  = 46
+
+		data[48]->value = 0
+		data[48]->next  = 49
+		data[48]->prev  = 47
+
+		data[49]->value = 0
+		data[49]->next  = 50
+		data[49]->prev  = 48
+
+		data[50]->value = 0
+		data[50]->next  = 51
+		data[50]->prev  = 49
+
+		data[51]->value = 0
+		data[51]->next  = 52
+		data[51]->prev  = 50
+
+		data[52]->value = 0
+		data[52]->next  = 53
+		data[52]->prev  = 51
+
+		data[53]->value = 0
+		data[53]->next  = 54
+		data[53]->prev  = 52
+
+		data[54]->value = 0
+		data[54]->next  = 55
+		data[54]->prev  = 53
+
+		data[55]->value = 0
+		data[55]->next  = 56
+		data[55]->prev  = 54
+
+		data[56]->value = 0
+		data[56]->next  = 57
+		data[56]->prev  = 55
+
+		data[57]->value = 0
+		data[57]->next  = 58
+		data[57]->prev  = 56
+
+		data[58]->value = 0
+		data[58]->next  = 59
+		data[58]->prev  = 57
+
+		data[59]->value = 0
+		data[59]->next  = 60
+		data[59]->prev  = 58
+
+		data[60]->value = 0
+		data[60]->next  = 61
+		data[60]->prev  = 59
+
+		data[61]->value = 0
+		data[61]->next  = 62
+		data[61]->prev  = 60
+
+		data[62]->value = 0
+		data[62]->next  = 63
+		data[62]->prev  = 61
+
+		data[63]->value = 0
+		data[63]->next  = 64
+		data[63]->prev  = 62
+
+		data[64]->value = 0
+		data[64]->next  = 65
+		data[64]->prev  = 63
+
+		data[65]->value = 0
+		data[65]->next  = 66
+		data[65]->prev  = 64
+
+		data[66]->value = 0
+		data[66]->next  = 67
+		data[66]->prev  = 65
+
+		data[67]->value = 0
+		data[67]->next  = 68
+		data[67]->prev  = 66
+
+		data[68]->value = 0
+		data[68]->next  = 69
+		data[68]->prev  = 67
+
+		data[69]->value = 0
+		data[69]->next  = 70
+		data[69]->prev  = 68
+
+		data[70]->value = 0
+		data[70]->next  = 71
+		data[70]->prev  = 69
+
+		data[71]->value = 0
+		data[71]->next  = 72
+		data[71]->prev  = 70
+
+		data[72]->value = 0
+		data[72]->next  = 73
+		data[72]->prev  = 71
+
+		data[73]->value = 0
+		data[73]->next  = 74
+		data[73]->prev  = 72
+
+		data[74]->value = 0
+		data[74]->next  = 75
+		data[74]->prev  = 73
+
+		data[75]->value = 0
+		data[75]->next  = 76
+		data[75]->prev  = 74
+
+		data[76]->value = 0
+		data[76]->next  = 77
+		data[76]->prev  = 75
+
+		data[77]->value = 0
+		data[77]->next  = 78
+		data[77]->prev  = 76
+
+		data[78]->value = 0
+		data[78]->next  = 79
+		data[78]->prev  = 77
+
+		data[79]->value = 0
+		data[79]->next  = 80
+		data[79]->prev  = 78
+
+		data[80]->value = 0
+		data[80]->next  = 81
+		data[80]->prev  = 79
+
+		data[81]->value = 0
+		data[81]->next  = 82
+		data[81]->prev  = 80
+
+		data[82]->value = 0
+		data[82]->next  = 83
+		data[82]->prev  = 81
+
+		data[83]->value = 0
+		data[83]->next  = 84
+		data[83]->prev  = 82
+
+		data[84]->value = 0
+		data[84]->next  = 85
+		data[84]->prev  = 83
+
+		data[85]->value = 0
+		data[85]->next  = 86
+		data[85]->prev  = 84
+
+		data[86]->value = 0
+		data[86]->next  = 87
+		data[86]->prev  = 85
+
+		data[87]->value = 0
+		data[87]->next  = 0
+		data[87]->prev  = 86
+
+		data[88]->value = 0
+		data[88]->next  = 89
+		data[88]->prev  = -1
+
+		data[89]->value = 0
+		data[89]->next  = 90
+		data[89]->prev  = -1
+
+		data[90]->value = 0
+		data[90]->next  = 91
+		data[90]->prev  = -1
+
+		data[91]->value = 0
+		data[91]->next  = 92
+		data[91]->prev  = -1
+
+		data[92]->value = 0
+		data[92]->next  = 93
+		data[92]->prev  = -1
+
+		data[93]->value = 0
+		data[93]->next  = 94
+		data[93]->prev  = -1
+
+		data[94]->value = 0
+		data[94]->next  = 95
+		data[94]->prev  = -1
+
+		data[95]->value = 0
+		data[95]->next  = 96
+		data[95]->prev  = -1
+
+		data[96]->value = 0
+		data[96]->next  = 97
+		data[96]->prev  = -1
+
+		data[97]->value = 0
+		data[97]->next  = 98
+		data[97]->prev  = -1
+
+		data[98]->value = 0
+		data[98]->next  = 99
+		data[98]->prev  = -1
+
+		data[99]->value = 0
+		data[99]->next  = 100
+		data[99]->prev  = -1
+
+		data[100]->value = 0
+		data[100]->next  = 101
+		data[100]->prev  = -1
+
+		data[101]->value = 0
+		data[101]->next  = 102
+		data[101]->prev  = -1
+
+		data[102]->value = 0
+		data[102]->next  = 103
+		data[102]->prev  = -1
+
+		data[103]->value = 0
+		data[103]->next  = 104
+		data[103]->prev  = -1
+
+		data[104]->value = 0
+		data[104]->next  = 105
+		data[104]->prev  = -1
+
+		data[105]->value = 0
+		data[105]->next  = 106
+		data[105]->prev  = -1
+
+		data[106]->value = 0
+		data[106]->next  = 107
+		data[106]->prev  = -1
+
+		data[107]->value = 0
+		data[107]->next  = 108
+		data[107]->prev  = -1
+
+		data[108]->value = 0
+		data[108]->next  = 109
+		data[108]->prev  = -1
+
+		data[109]->value = 0
+		data[109]->next  = 110
+		data[109]->prev  = -1
+
+		data[110]->value = 0
+		data[110]->next  = 111
+		data[110]->prev  = -1
+
+		data[111]->value = 0
+		data[111]->next  = 112
+		data[111]->prev  = -1
+
+		data[112]->value = 0
+		data[112]->next  = 113
+		data[112]->prev  = -1
+
+		data[113]->value = 0
+		data[113]->next  = 114
+		data[113]->prev  = -1
+
+		data[114]->value = 0
+		data[114]->next  = 115
+		data[114]->prev  = -1
+
+		data[115]->value = 0
+		data[115]->next  = 116
+		data[115]->prev  = -1
+
+		data[116]->value = 0
+		data[116]->next  = 117
+		data[116]->prev  = -1
+
+		data[117]->value = 0
+		data[117]->next  = 118
+		data[117]->prev  = -1
+
+		data[118]->value = 0
+		data[118]->next  = 119
+		data[118]->prev  = -1
+
+		data[119]->value = 0
+		data[119]->next  = 120
+		data[119]->prev  = -1
+
+		data[120]->value = 0
+		data[120]->next  = 121
+		data[120]->prev  = -1
+
+		data[121]->value = 0
+		data[121]->next  = 122
+		data[121]->prev  = -1
+
+		data[122]->value = 0
+		data[122]->next  = 123
+		data[122]->prev  = -1
+
+		data[123]->value = 0
+		data[123]->next  = 124
+		data[123]->prev  = -1
+
+		data[124]->value = 0
+		data[124]->next  = 125
+		data[124]->prev  = -1
+
+		data[125]->value = 0
+		data[125]->next  = 126
+		data[125]->prev  = -1
+
+		data[126]->value = 0
+		data[126]->next  = 127
+		data[126]->prev  = -1
+
+		data[127]->value = 0
+		data[127]->next  = 128
+		data[127]->prev  = -1
+
+		data[128]->value = 0
+		data[128]->next  = 129
+		data[128]->prev  = -1
+
+		data[129]->value = 0
+		data[129]->next  = 130
+		data[129]->prev  = -1
+
+		data[130]->value = 0
+		data[130]->next  = 131
+		data[130]->prev  = -1
+
+		data[131]->value = 0
+		data[131]->next  = 132
+		data[131]->prev  = -1
+
+		data[132]->value = 0
+		data[132]->next  = 133
+		data[132]->prev  = -1
+
+		data[133]->value = 0
+		data[133]->next  = 134
+		data[133]->prev  = -1
+
+		data[134]->value = 0
+		data[134]->next  = 135
+		data[134]->prev  = -1
+
+		data[135]->value = 0
+		data[135]->next  = 136
+		data[135]->prev  = -1
+
+		data[136]->value = 0
+		data[136]->next  = 137
+		data[136]->prev  = -1
+
+		data[137]->value = 0
+		data[137]->next  = 138
+		data[137]->prev  = -1
+
+		data[138]->value = 0
+		data[138]->next  = 139
+		data[138]->prev  = -1
+
+		data[139]->value = 0
+		data[139]->next  = 140
+		data[139]->prev  = -1
+
+		data[140]->value = 0
+		data[140]->next  = 141
+		data[140]->prev  = -1
+
+		data[141]->value = 0
+		data[141]->next  = 142
+		data[141]->prev  = -1
+
+		data[142]->value = 0
+		data[142]->next  = 143
+		data[142]->prev  = -1
+
+		data[143]->value = 0
+		data[143]->next  = 144
+		data[143]->prev  = -1
+
+		data[144]->value = 0
+		data[144]->next  = 145
+		data[144]->prev  = -1
+
+		data[145]->value = 0
+		data[145]->next  = 146
+		data[145]->prev  = -1
+
+		data[146]->value = 0
+		data[146]->next  = 147
+		data[146]->prev  = -1
+
+		data[147]->value = 0
+		data[147]->next  = 148
+		data[147]->prev  = -1
+
+		data[148]->value = 0
+		data[148]->next  = 149
+		data[148]->prev  = -1
+
+		data[149]->value = 0
+		data[149]->next  = 150
+		data[149]->prev  = -1
+
+		data[150]->value = 0
+		data[150]->next  = 151
+		data[150]->prev  = -1
+
+		data[151]->value = 0
+		data[151]->next  = 152
+		data[151]->prev  = -1
+
+		data[152]->value = 0
+		data[152]->next  = 153
+		data[152]->prev  = -1
+
+		data[153]->value = 0
+		data[153]->next  = 154
+		data[153]->prev  = -1
+
+		data[154]->value = 0
+		data[154]->next  = 155
+		data[154]->prev  = -1
+
+		data[155]->value = 0
+		data[155]->next  = 156
+		data[155]->prev  = -1
+
+		data[156]->value = 0
+		data[156]->next  = 157
+		data[156]->prev  = -1
+
+		data[157]->value = 0
+		data[157]->next  = 158
+		data[157]->prev  = -1
+
+		data[158]->value = 0
+		data[158]->next  = 159
+		data[158]->prev  = -1
+
+		data[159]->value = 0
+		data[159]->next  = 160
+		data[159]->prev  = -1
+
+		data[160]->value = 0
+		data[160]->next  = 161
+		data[160]->prev  = -1
+
+		data[161]->value = 0
+		data[161]->next  = 162
+		data[161]->prev  = -1
+
+		data[162]->value = 0
+		data[162]->next  = 163
+		data[162]->prev  = -1
+
+		data[163]->value = 0
+		data[163]->next  = 164
+		data[163]->prev  = -1
+
+		data[164]->value = 0
+		data[164]->next  = 165
+		data[164]->prev  = -1
+
+		data[165]->value = 0
+		data[165]->next  = 166
+		data[165]->prev  = -1
+
+		data[166]->value = 0
+		data[166]->next  = 167
+		data[166]->prev  = -1
+
+		data[167]->value = 0
+		data[167]->next  = 168
+		data[167]->prev  = -1
+
+		data[168]->value = 0
+		data[168]->next  = 169
+		data[168]->prev  = -1
+
+		data[169]->value = 0
+		data[169]->next  = 170
+		data[169]->prev  = -1
+
+		data[170]->value = 0
+		data[170]->next  = 171
+		data[170]->prev  = -1
+
+		data[171]->value = 0
+		data[171]->next  = 172
+		data[171]->prev  = -1
+
+		data[172]->value = 0
+		data[172]->next  = 173
+		data[172]->prev  = -1
+
+		data[173]->value = 0
+		data[173]->next  = 174
+		data[173]->prev  = -1
+
+		data[174]->value = 0
+		data[174]->next  = 175
+		data[174]->prev  = -1
+
+		data[175]->value = 0
+		data[175]->next  = 176
+		data[175]->prev  = -1
+
+		data[176]->value = 0
+		data[176]->next  = 177
+		data[176]->prev  = -1
+
+		data[177]->value = 0
+		data[177]->next  = 178
+		data[177]->prev  = -1
+
+		data[178]->value = 0
+		data[178]->next  = 179
+		data[178]->prev  = -1
+
+		data[179]->value = 0
+		data[179]->next  = 180
+		data[179]->prev  = -1
+
+		data[180]->value = 0
+		data[180]->next  = 181
+		data[180]->prev  = -1
+
+		data[181]->value = 0
+		data[181]->next  = 182
+		data[181]->prev  = -1
+
+		data[182]->value = 0
+		data[182]->next  = 183
+		data[182]->prev  = -1
+
+		data[183]->value = 0
+		data[183]->next  = 184
+		data[183]->prev  = -1
+
+		data[184]->value = 0
+		data[184]->next  = 185
+		data[184]->prev  = -1
+
+		data[185]->value = 0
+		data[185]->next  = 186
+		data[185]->prev  = -1
+
+		data[186]->value = 0
+		data[186]->next  = 187
+		data[186]->prev  = -1
+
+		data[187]->value = 0
+		data[187]->next  = 188
+		data[187]->prev  = -1
+
+		data[188]->value = 0
+		data[188]->next  = 189
+		data[188]->prev  = -1
+
+		data[189]->value = 0
+		data[189]->next  = 190
+		data[189]->prev  = -1
+
+		data[190]->value = 0
+		data[190]->next  = 191
+		data[190]->prev  = -1
+
+		data[191]->value = 0
+		data[191]->next  = 192
+		data[191]->prev  = -1
+
+		data[192]->value = 0
+		data[192]->next  = 193
+		data[192]->prev  = -1
+
+		data[193]->value = 0
+		data[193]->next  = 194
+		data[193]->prev  = -1
+
+		data[194]->value = 0
+		data[194]->next  = 195
+		data[194]->prev  = -1
+
+		data[195]->value = 0
+		data[195]->next  = 196
+		data[195]->prev  = -1
+
+		data[196]->value = 0
+		data[196]->next  = 197
+		data[196]->prev  = -1
+
+		data[197]->value = 0
+		data[197]->next  = 198
+		data[197]->prev  = -1
+
+		data[198]->value = 0
+		data[198]->next  = 199
+		data[198]->prev  = -1
+
+		data[199]->value = 0
+		data[199]->next  = 0
+		data[199]->prev  = -1
+
+	}
+}
+
+-----------------------------------------------------------
+list[0x7ffc686a3100] "list" called from src/main.cpp(21) main
+{
+	size = 20
+	head = 3
+	tail = 10
+	free = 11
+	data[0x638b8527a2a0]
+	{
+		data[0]->value = 0
+		data[0]->next  = 3
+		data[0]->prev  = 10
+
+		data[1]->value = 1
+		data[1]->next  = 2
+		data[1]->prev  = 3
+
+		data[2]->value = 2
+		data[2]->next  = 8
+		data[2]->prev  = 1
+
+		data[3]->value = 100
+		data[3]->next  = 1
+		data[3]->prev  = 0
+
+		data[4]->value = 4
+		data[4]->next  = 9
+		data[4]->prev  = 8
+
+		data[5]->value = 5
+		data[5]->next  = 6
+		data[5]->prev  = 9
+
+		data[6]->value = 6
+		data[6]->next  = 7
+		data[6]->prev  = 5
+
+		data[7]->value = 7
+		data[7]->next  = 10
+		data[7]->prev  = 6
+
+		data[8]->value = 300
+		data[8]->next  = 4
+		data[8]->prev  = 2
+
+		data[9]->value = 200
+		data[9]->next  = 5
+		data[9]->prev  = 4
+
+		data[10]->value = 400
+		data[10]->next  = 0
+		data[10]->prev  = 7
+
+		data[11]->value = 0
+		data[11]->next  = 12
+		data[11]->prev  = -1
+
+		data[12]->value = 0
+		data[12]->next  = 13
+		data[12]->prev  = -1
+
+		data[13]->value = 0
+		data[13]->next  = 14
+		data[13]->prev  = -1
+
+		data[14]->value = 0
+		data[14]->next  = 15
+		data[14]->prev  = -1
+
+		data[15]->value = 0
+		data[15]->next  = 16
+		data[15]->prev  = -1
+
+		data[16]->value = 0
+		data[16]->next  = 17
+		data[16]->prev  = -1
+
+		data[17]->value = 0
+		data[17]->next  = 18
+		data[17]->prev  = -1
+
+		data[18]->value = 0
+		data[18]->next  = 19
+		data[18]->prev  = -1
+
+		data[19]->value = 0
+		data[19]->next  = 0
+		data[19]->prev  = -1
+
+	}
+}
+
+-----------------------------------------------------------
+list[0x7ffc686a3100] "list" called from src/main.cpp(27) main
+{
+	size = 11
+	head = 1
+	tail = 10
+	free = 0
+	data[0x638b8527a860]
+	{
+		data[0]->value = 0
+		data[0]->next  = 1
+		data[0]->prev  = 10
+
+		data[1]->value = 100
+		data[1]->next  = 2
+		data[1]->prev  = 0
+
+		data[2]->value = 1
+		data[2]->next  = 3
+		data[2]->prev  = 1
+
+		data[3]->value = 2
+		data[3]->next  = 4
+		data[3]->prev  = 2
+
+		data[4]->value = 300
+		data[4]->next  = 5
+		data[4]->prev  = 3
+
+		data[5]->value = 4
+		data[5]->next  = 6
+		data[5]->prev  = 4
+
+		data[6]->value = 200
+		data[6]->next  = 7
+		data[6]->prev  = 5
+
+		data[7]->value = 5
+		data[7]->next  = 8
+		data[7]->prev  = 6
+
+		data[8]->value = 6
+		data[8]->next  = 9
+		data[8]->prev  = 7
+
+		data[9]->value = 7
+		data[9]->next  = 10
+		data[9]->prev  = 8
+
+		data[10]->value = 400
+		data[10]->next  = 0
+		data[10]->prev  = 9
+
+	}
+}
+
+-----------------------------------------------------------

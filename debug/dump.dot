@@ -31,5 +31,5 @@ digraph List {
 	head -> 1
 	tail -> 10
 	free -> 0
-	label = "list_dump from function main, List/main.cpp:29";
+	label = "list_dump from function main, List/src/main.cpp:27";
 	All[shape = Mrecord, style = filled, fillcolor = "#8B00FF", label = "size = 11"];}

@@ -6,16 +6,16 @@ CFLAGS = -c -I -Wshadow -Winit-self -Wredundant-decls -Wcast-align -Wundef -Wflo
 	-Wempty-body -Wformat-security -Wformat=2 -Wignored-qualifiers -Wlogical-op -Wno-missing-field-initializers \
 	-Wnon-virtual-dtor -Woverloaded-virtual -Wpointer-arith -Wsign-promo -Wstack-usage=8192 -Wstrict-aliasing   \
 	-Wstrict-null-sentinel -Wtype-limits -Wwrite-strings -Werror=vla -D_DEBUG -D_EJUDGE_CLIENT_SIDE
-	
-INCLUDES = list.h error.h utils.cpp
 
-SOURCES = main.cpp error.cpp list.cpp utils.cpp
+INCLUDES = include/list.h error/error.h utilities/utils.cpp
+
+SOURCES = main.cpp list.cpp error/error.cpp utilities/utils.cpp
 
 OBJECTS = $(SOURCES:.cpp=.o)
 
-EXECUTABLE = list
+EXECUTABLE = list.exe
 
-VPATH = include/
+VPATH = src/
 
 all: $(SOURCES) $(INCLUDES) $(EXECUTABLE)
 
@@ -32,3 +32,7 @@ clean:
 	rm -rf list.exe
 	rm -rf list.exe.log
 	rm -rf list.exe.log.dmp
+	rm -rf ./debug/dot.html
+	rm -rf ./debug/dot.svg
+	rm -rf ./debug/dump.dot
+	rm -rf ./debug/file_err.txt
